@@ -1,8 +1,18 @@
+import javax.swing.*;
+
 public class SistemasNumericos {
     public static void main(String[] args) {
 
 
-        int numeroDecimal = 500;
+        String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un número entero");
+        int numeroDecimal = 0;
+        try {
+            numeroDecimal = Integer.parseInt(numeroStr);
+        } catch (NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Error debe ingresar un número entero");
+            main(args);
+            System.exit(0);
+        }
         System.out.println("numeroDecimal = " + numeroDecimal);
 
         //decimal a binario
@@ -23,5 +33,12 @@ public class SistemasNumericos {
         System.out.println(resultadoHex);
         int numeroHex = 0x1e;
         System.out.println("numeroHex = " + numeroHex);
+
+        //Concatenacion dinamica;
+        String mensaje = resultadoBinario;
+        mensaje += "\n" + resultadoOctal;
+        mensaje += "\n" + resultadoHex;
+
+        JOptionPane.showMessageDialog(null, mensaje);
     }
 }

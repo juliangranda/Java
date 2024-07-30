@@ -1,6 +1,6 @@
 public class ConversionDeTipos {
     public static void main(String[] args) {
-        
+
         String numeroStr = "50";
 
         int numeroInt = Integer.parseInt(numeroStr);
@@ -13,5 +13,22 @@ public class ConversionDeTipos {
         String logicoStr = "TruE";
         boolean logicoBoolean = Boolean.parseBoolean(logicoStr);
         System.out.println("logicoBoolean = " + logicoBoolean);
+
+        int otroNumeroInt = 100;
+        System.out.println("otroNumeroInt = " + otroNumeroInt);
+
+        String otroNumeroStr = Integer.toString(otroNumeroInt);
+        System.out.println("otroNumeroStr = " + otroNumeroStr);
+
+        //String.valueOf : convierte un numero a string.
+        otroNumeroStr = String.valueOf(otroNumeroInt+10);
+        System.out.println("otroNumeroStr = " + otroNumeroStr);
+
+        double otroRealDouble = 1.23456e2;
+        String otroRealStr = Double.toString(otroRealDouble);
+        System.out.println("otroRealStr = " + otroRealStr);
+
+        otroRealStr = String.valueOf(1.23456e2f);
+        System.out.println("otroRealStr = " + otroRealStr);
     }
 }

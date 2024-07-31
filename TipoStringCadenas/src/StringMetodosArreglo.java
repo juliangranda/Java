@@ -31,6 +31,7 @@ public class StringMetodosArreglo {
         for(int j=0; j < l; j++){
             System.out.println(archivoArr[j]);
         }
+        //-1 se pone por que se sale del tamaño del array.
         System.out.println("extension = " + archivoArr[l-1]);
     }
 }

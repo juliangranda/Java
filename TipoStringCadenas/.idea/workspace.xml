@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d57b0b44-6f5b-4f00-a592-4ece2a7d3cd2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2jz5mFRci3ICfcOP3hXnkTZ101q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Concatenacion.executor": "Run",
+    "Application.EjemploString.executor": "Run",
+    "Application.ExtensionArchivo.executor": "Run",
+    "Application.Inmutable.executor": "Run",
+    "Application.Metodos.executor": "Run",
+    "Application.ProgramaManejoDeNombres.executor": "Run",
+    "Application.StringMetodosArreglo.executor": "Run",
+    "Application.StringValidar.executor": "Run",
+    "Application.TestRendimientoConcat.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Variables",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/cursos/java/Java"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.ProgramaManejoDeNombres">
+    <configuration name="ExtensionArchivo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExtensionArchivo" />
+      <module name="TipoStringCadenas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Metodos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Metodos" />
+      <module name="TipoStringCadenas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProgramaManejoDeNombres" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaManejoDeNombres" />
+      <module name="TipoStringCadenas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringMetodosArreglo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringMetodosArreglo" />
+      <module name="TipoStringCadenas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringValidar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringValidar" />
+      <module name="TipoStringCadenas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProgramaManejoDeNombres" />
+        <item itemvalue="Application.StringMetodosArreglo" />
+        <item itemvalue="Application.ExtensionArchivo" />
+        <item itemvalue="Application.Metodos" />
+        <item itemvalue="Application.StringValidar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d57b0b44-6f5b-4f00-a592-4ece2a7d3cd2" name="Changes" comment="" />
+      <created>1722377221529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722377221529</updated>
+    </task>
+    <servers />
+  </component>
+</project>

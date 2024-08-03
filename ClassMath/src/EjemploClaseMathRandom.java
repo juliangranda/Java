@@ -18,6 +18,13 @@ public class EjemploClaseMathRandom {
 
         //casting de double a int el numero random.
         System.out.println("colores = " + colores[(int) random]);
-        
+
+        Random randomObj = new Random();
+        int randomInt = 15 + randomObj.nextInt(25-15+1);
+        System.out.println("randomInt = " + randomInt);
+
+        randomInt = randomObj.nextInt(colores.length);
+        System.out.println("randomInt = " + randomInt);
+        System.out.println("colores = " + colores[randomInt]);
     }
 }

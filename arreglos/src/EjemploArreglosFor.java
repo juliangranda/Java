@@ -1,4 +1,4 @@
-public class EejemploArreglosFor {
+public class EjemploArreglosFor {
     public static void main(String[] args) {
 
         String[] productos = new String[7];

@@ -12,7 +12,7 @@ public class Tarea14 {
         int maximo = 0;
         for (int i = 0; i < numeros.length; i++)
         {
-            maximo = (maximo > numeros[i]? maximo:numeros[i]);
+            maximo = (maximo > numeros[i])? maximo:numeros[i];
         }
 //        for (int n : numeros){
 //            max = Math.max(n, maximo);

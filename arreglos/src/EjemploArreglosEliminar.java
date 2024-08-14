@@ -19,6 +19,7 @@ public class EjemploArreglosEliminar {
         }
 
         int[] b = new int[a.length-1];
+        //clonar un arreglo.
         System.arraycopy(a, 0, b, 0, b.length);
 
         a = b;

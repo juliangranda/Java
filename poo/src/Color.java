@@ -11,6 +11,8 @@ public enum Color {
 
     //el punto y coma ( ; ) solo es necesario cuando vamos a crear un constructor
     //de lo contrario no va este.
+    //ademas se pondria al lado de la constante en mayusculas ->
+    //la palabra o string que se quisiera mostrar pero sino va el punto y coma no es necesario.
 
     private final String color;
 

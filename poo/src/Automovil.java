@@ -5,6 +5,7 @@ public class Automovil {
     String modelo;
     String color;
     double cilindrada;
+    int capacidadEstanque = 40;
 
     //metodos
     public void verDetalles(){
@@ -27,6 +28,15 @@ public class Automovil {
         String acelerar = this.acelerar(rpm);
         String frenar = this.frenar();
         return acelerar + "\n" + frenar;
+    }
+    public float calcularConsumo(int km, float porcentajeBencina) {
+        return km / (capacidadEstanque * porcentajeBencina);
+    }
+
+    //sobreCarga de metodos:
+    //mismo tipo de nombre pero diferente tipo primitivos en los parametros.
+    public float calcularConsumo(int km, int porcentajeBencina) {
+        return km / (capacidadEstanque * (porcentajeBencina/100f));
     }
 
 }

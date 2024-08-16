@@ -1,13 +1,54 @@
 public class Automovil {
 
     //atributos
-    String fabricante;
-    String modelo;
-    String color;
-    double cilindrada;
-    int capacidadEstanque = 40;
+    private String fabricante;
+    private String modelo;
+    private String color;
+    private double cilindrada;
+    private int capacidadEstanque = 40;
 
     //metodos
+
+    public String getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getCilindrada() {
+        return cilindrada;
+    }
+
+    public void setCilindrada(double cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+
+    public int getCapacidadEstanque() {
+        return capacidadEstanque;
+    }
+
+    public void setCapacidadEstanque(int capacidadEstanque) {
+        this.capacidadEstanque = capacidadEstanque;
+    }
+
     public void verDetalles(){
         //this hace referencia a la misma clase/instancia.
         System.out.println("auto.fabricante = " + this.fabricante);

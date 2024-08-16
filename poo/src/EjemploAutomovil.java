@@ -5,19 +5,19 @@ public class EjemploAutomovil {
         subaru.setCilindrada(2.0);
         subaru.setColor("blanco");
 
-        Automovil mazda = new Automovil("Mazda", "BT-50");
-        mazda.setCilindrada(3.0);
-        mazda.setColor("Rojo");
+        Automovil mazda = new Automovil("Mazda", "BT-50", "Rojo", 3.0);
+        Automovil nissan = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
 
-        Automovil nissan = new Automovil("Nissan", "");
 
         subaru.verDetalles();
         mazda.verDetalles();
+        nissan.verDetalles();
         System.out.println(subaru.acelerar(50));
         System.out.println(subaru.frenar());
         System.out.println(mazda.acelerarFrenar(4000));
 
         System.out.println("kilometro por litro " + subaru.calcularConsumo(300, 0.6f));
         System.out.println("kilometro por litro " + subaru.calcularConsumo(300, 60));
+        System.out.println("kilometro por litro " + nissan.calcularConsumo(300, 60));
     }
 }

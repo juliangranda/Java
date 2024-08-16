@@ -13,7 +13,8 @@ public class EjemploAutomovil {
         Automovil auto = new Automovil();
         Date fecha = new Date();
 
-        System.out.println(auto.equals(new String()));
+        System.out.println(auto.equals(fecha));
+        System.out.println(nissan.toString());
 
         //la referencia en la memoria es diferene.
         System.out.println("son iguales?: " + (nissan == nissan2));

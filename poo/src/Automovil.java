@@ -7,8 +7,17 @@ public class Automovil {
     private double cilindrada;
     private int capacidadEstanque = 40;
 
-    //metodos
+    //constructor
+    public Automovil(){
 
+    }
+    //SobreCarga de Constructores
+    public Automovil(String fabricante, String modelo){
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+    }
+
+    //get y set
     public String getFabricante() {
         return fabricante;
     }
@@ -48,7 +57,7 @@ public class Automovil {
     public void setCapacidadEstanque(int capacidadEstanque) {
         this.capacidadEstanque = capacidadEstanque;
     }
-
+    //metodos
     public void verDetalles(){
         //this hace referencia a la misma clase/instancia.
         System.out.println("auto.fabricante = " + this.getFabricante());

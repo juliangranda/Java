@@ -7,7 +7,12 @@ public class EjemploAutomovil {
 
         Automovil mazda = new Automovil("Mazda", "BT-50", "Rojo", 3.0);
         Automovil nissan = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
-
+        Automovil nissan2 = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
+        Automovil auto = new Automovil();
+        //la referencia en la memoria es diferene.
+        System.out.println("son iguales?: " + (nissan == nissan2));
+        //SobreEscribio el metodo equals en la clase padre para que fuera true.
+        System.out.println("son iguales? con equals: " + (nissan.equals(nissan2)));
 
         subaru.verDetalles();
         mazda.verDetalles();

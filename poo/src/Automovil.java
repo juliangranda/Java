@@ -104,4 +104,10 @@ public class Automovil {
         return km / (capacidadEstanque * (porcentajeBencina/100f));
     }
 
+    //SobreEscritura de metodos.
+    @Override
+    public boolean equals(Object obj) {
+        Automovil a = (Automovil) obj;
+        return (this.fabricante.equals(a.getFabricante()) && this.modelo.equals(a.getModelo()));
+    }
 }

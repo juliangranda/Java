@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class EjemploAutomovilStatic {
     public static void main(String[] args) {
         Automovil.setCapacidadEstanqueEstatico(45);
@@ -25,6 +27,7 @@ public class EjemploAutomovilStatic {
         System.out.println("kilómetros por litros = " + subaru.calcularConsumoEstatico(300, 60));
         System.out.println("kilómetros por litros = " + mazda.calcularConsumoEstatico(300, 60));
         System.out.println("kilómetros por litros = " + nissan.calcularConsumoEstatico(300, 60));
-
+        System.out.println("velociad maxima carretera: "+Automovil.VELOCIDAD_MAXIMA_CARRETERA);
+        System.out.println("velocidad maxima ciudad: "+Automovil.VELOCIDAD_MAX_CIUDAD);
     }
 }

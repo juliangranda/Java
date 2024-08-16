@@ -6,12 +6,12 @@ public class EjemploAutomovilStatic {
         Automovil subaru = new Automovil("Subaru", "Impresa");
 
         subaru.setCilindrada(2.0);
-        subaru.setColor("blanco");
+        subaru.setColor(Color.BLANCO);
 
-        Automovil mazda = new Automovil("Mazda", "BT-50", "Rojo", 3.0);
-        Automovil nissan = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
-        Automovil nissan2 = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
-        Automovil.setColorPatente("verde");
+        Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, 3.0);
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, 3.0, 50);
+        Automovil nissan2 = new Automovil("Nissan", "Navara", Color.GRIS, 3.0, 50);
+        Automovil.setColorPatente(Color.AZUL);
 
         Automovil auto = new Automovil();
 

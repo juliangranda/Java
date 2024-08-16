@@ -5,13 +5,13 @@ public class EjemploAutomovil {
         Automovil subaru = new Automovil("Subaru", "Impresa");
 
         subaru.setCilindrada(2.0);
-        subaru.setColor(Automovil.COLOR_BLANCO);
+        subaru.setColor(Color.BLANCO);
 
-        Automovil mazda = new Automovil("Mazda", "BT-50", Automovil.COLOR_ROJO, 3.0);
-        Automovil nissan = new Automovil("Nissan", "Navara", Automovil.COLOR_GRIS, 3.0, 50);
-        Automovil nissan2 = new Automovil("Nissan", "Navara", Automovil.COLOR_GRIS, 3.0, 50);
-        nissan2.setColor(Automovil.COLOR_AMARILLO);
-        Automovil.setColorPatente(Automovil.COLOR_AZUL);
+        Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, 3.0);
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, 3.0, 50);
+        Automovil nissan2 = new Automovil("Nissan", "Navara", Color.GRIS, 3.0, 50);
+        nissan2.setColor(Color.AMARILLO);
+        Automovil.setColorPatente(Color.AZUL);
         Automovil auto = new Automovil();
         Date fecha = new Date();
 

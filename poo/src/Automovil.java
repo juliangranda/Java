@@ -7,13 +7,26 @@ public class Automovil {
     double cilindrada;
 
     //metodos
-    public void detalles(){
+    public void verDetalles(){
         //this hace referencia a la misma clase/instancia.
         System.out.println("auto.fabricante = " + this.fabricante);
         System.out.println("auto.modelo = " + this.modelo);
         System.out.println("auto.color = " + this.color);
         System.out.println("auto.cilindrada = " + this.cilindrada);
         System.out.println();
+    }
+
+    public String acelerar(int rpm){
+        return "el auto " + this.fabricante + " acelerando a " + rpm + "rpm";
+    }
+    public String frenar(){
+
+        return this.fabricante + " " + this.modelo + " frenando!";
+    }
+    public String acelerarFrenar(int rpm) {
+        String acelerar = this.acelerar(rpm);
+        String frenar = this.frenar();
+        return acelerar + "\n" + frenar;
     }
 
 }

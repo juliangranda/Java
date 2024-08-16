@@ -12,7 +12,10 @@ public class EjemploAutomovil {
         mazda.cilindrada = 3.0;
         mazda.color = "Rojo";
 
-        subaru.detalles();
-        mazda.detalles();
+        subaru.verDetalles();
+        mazda.verDetalles();
+        System.out.println(subaru.acelerar(50));
+        System.out.println(subaru.frenar());
+        System.out.println(mazda.acelerarFrenar(4000));
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class EjemploAutomovil {
     public static void main(String[] args) {
         Automovil subaru = new Automovil("Subaru", "Impresa");
@@ -9,6 +11,10 @@ public class EjemploAutomovil {
         Automovil nissan = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
         Automovil nissan2 = new Automovil("Nissan", "Navara", "Gris Oscuro", 3.0, 50);
         Automovil auto = new Automovil();
+        Date fecha = new Date();
+
+        System.out.println(auto.equals(new String()));
+
         //la referencia en la memoria es diferene.
         System.out.println("son iguales?: " + (nissan == nissan2));
         //SobreEscribio el metodo equals en la clase padre para que fuera true.
@@ -17,6 +23,8 @@ public class EjemploAutomovil {
         subaru.verDetalles();
         mazda.verDetalles();
         nissan.verDetalles();
+        System.out.println(auto.equals(nissan));
+
         System.out.println(subaru.acelerar(50));
         System.out.println(subaru.frenar());
         System.out.println(mazda.acelerarFrenar(4000));

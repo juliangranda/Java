@@ -51,10 +51,10 @@ public class Automovil {
 
     public void verDetalles(){
         //this hace referencia a la misma clase/instancia.
-        System.out.println("auto.fabricante = " + this.fabricante);
-        System.out.println("auto.modelo = " + this.modelo);
-        System.out.println("auto.color = " + this.color);
-        System.out.println("auto.cilindrada = " + this.cilindrada);
+        System.out.println("auto.fabricante = " + this.getFabricante());
+        System.out.println("auto.modelo = " + this.getModelo());
+        System.out.println("auto.color = " + this.getColor());
+        System.out.println("auto.cilindrada = " + this.getCilindrada());
         System.out.println();
     }
 

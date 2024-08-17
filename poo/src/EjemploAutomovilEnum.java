@@ -8,6 +8,8 @@ public class EjemploAutomovilEnum {
         subaru.setTipo(TipoAutomovil.HATCHBACK);
 
         Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, 3.0);
+        mazda.setTipo(TipoAutomovil.PICKUP);
+        System.out.println("mazda.getFabricante() = " + mazda.getFabricante());
 
         TipoAutomovil tipo = subaru.getTipo();
         System.out.println("tipoSubaru.getNombre() = " + tipo.getNombre());

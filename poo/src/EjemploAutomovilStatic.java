@@ -12,6 +12,7 @@ public class EjemploAutomovilStatic {
 
         Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, new Motor(3.0, TipoMotor.DIESEL));
         mazda.setTipo(TipoAutomovil.PICKUP);
+        //mazda.setEstanque(new Estanque());
         Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, new Motor(4.0, TipoMotor.DIESEL), new Estanque(50));
         nissan.setTipo(TipoAutomovil.PICKUP);
         Automovil nissan2 = new Automovil("Nissan", "Navara", Color.GRIS, new Motor(3.5,TipoMotor.BENCINA), new Estanque(50));

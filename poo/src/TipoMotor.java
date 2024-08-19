@@ -1,3 +1,4 @@
 public enum TipoMotor {
-    DIESEL, BENCINA
+    DIESEL,
+    BENCINA
 }

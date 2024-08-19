@@ -2,7 +2,7 @@ public class Motor {
     private double cilindrada;
     private String tipoMotor;
 
-    public Motor() {
+    public Motor(double cilindrada, TipoMotor diesel) {
     }
 
     public Motor(double cilindrada, String tipoMotor) {

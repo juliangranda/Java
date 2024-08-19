@@ -34,7 +34,7 @@ public class EjemploAutomovilEnum {
             case STATION_WAGON ->
                     System.out.println("Es un automovil más grande, con maleta grande...");
         }
-
+        //retorna un array que contine las constantes del enum. TipoAutomovil.values();
         TipoAutomovil[] tipos = TipoAutomovil.values();
         for(TipoAutomovil ta: tipos){
             System.out.print(ta + " => " + ta.name() + ", " +

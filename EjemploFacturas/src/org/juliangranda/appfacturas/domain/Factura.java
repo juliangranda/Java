@@ -1,5 +1,6 @@
 package org.juliangranda.appfacturas.domain;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Factura {
@@ -80,6 +81,29 @@ public class Factura {
                 .append(this.descripcion)
                 .append("\n")
                 .append("\n#\tNombre\t$\tCant.\tTotal\n");
+
+        SimpleDateFormat df = new SimpleDateFormat("dd 'de' MMMM, yyyy");
+        sb.append("Fecha Emision: ")
+                .append(df.format(this.fecha))
+                .append("\n");
+
+        for(ItemFactura item: this.items){
+            if(item == null){
+                continue;
+            }
+            sb.append(item.getProducto().getCodigo())
+                    .append("\t")
+                    .append(item.getProducto().getNombre())
+                    .append("\t")
+                    .append(item.getProducto().getPrecio())
+                    .append("\t")
+                    .append(item.getCantidad())
+                    .append("\t")
+                    .append(item.calcularImporte())
+                    .append("\n");
+        }
+        sb.append("\nGran total: ")
+                .append(calcularTotal());
         return sb.toString();
     }
 }

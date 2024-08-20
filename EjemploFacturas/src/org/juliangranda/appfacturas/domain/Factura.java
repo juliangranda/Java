@@ -57,4 +57,29 @@ public class Factura {
             this.items[indiceItems++] = item;
         }
     }
+    
+    public float calcularTotal(){
+        float total = 0.0f;
+        for(ItemFactura item: this.items){
+            if(item == null){
+                continue;
+            }
+            total += item.calcularImporte();
+        }
+        return total;
+    }
+
+    public String generarDetalle(){
+        StringBuilder sb = new StringBuilder("Factura N°: "+folio);
+        sb.append(folio)
+                .append("\nCliente: ")
+                .append(this.cliente.getNombre())
+                .append("\t NIF: ")
+                .append(cliente.getNif())
+                .append("\nDescripcion: ")
+                .append(this.descripcion)
+                .append("\n")
+                .append("\n#\tNombre\t$\tCant.\tTotal\n");
+        return sb.toString();
+    }
 }

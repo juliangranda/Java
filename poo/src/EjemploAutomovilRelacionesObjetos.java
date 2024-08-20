@@ -1,11 +1,6 @@
 public class EjemploAutomovilRelacionesObjetos {
     public static void main(String[] args) {
         Rueda[] ruedasSub = new Rueda[5];
-        ruedasSub[0] = new Rueda("yukohama",16,7.5);
-        ruedasSub[1] = new Rueda("yukohama",16,7.5);
-        ruedasSub[2] = new Rueda("yukohama",16,7.5);
-        ruedasSub[3] = new Rueda("yukohama",16,7.5);
-        ruedasSub[4] = new Rueda("yukohama",16,7.5);
 
         Persona conductorSubaru = new Persona("luci", "martinez");
         Automovil subaru = new Automovil("Subaru", "Impresa");
@@ -15,27 +10,36 @@ public class EjemploAutomovilRelacionesObjetos {
         subaru.setColor(Color.BLANCO);
         subaru.setTipo(TipoAutomovil.HATCHBACK);
         subaru.setConductor(conductorSubaru);
-        subaru.setRuedas(ruedasSub);
+        //subaru.setRuedas(ruedasSub);
+        for(int i = 0; i < ruedasSub.length; i++){
+            subaru.addRueda(new Rueda("Yokohama", 16, 7.5));
+        }
 
-        Rueda[] ruedasMaz = {new Rueda("michelin", 18, 10.5),
-                new Rueda("michelin", 18, 10.5),
-                new Rueda("michelin", 18, 10.5),
-                new Rueda("michelin", 18, 10.5),
-                new Rueda("michelin", 18, 10.5)
-        };
 
+        Rueda[] ruedasMaz = new Rueda[5];
         Persona pato = new Persona("Pato", "Rodriguez");
         Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO, new Motor(3.0, TipoMotor.DIESEL));
         mazda.setTipo(TipoAutomovil.PICKUP);
         mazda.setEstanque(new Estanque());
         mazda.setConductor(pato);
-        mazda.setRuedas(ruedasMaz);
+        //mazda.setRuedas(ruedasMaz);
+        for(int i = 0; i < ruedasMaz.length; i++){
+            mazda.addRueda(new Rueda("Yokohama", 16, 7.5));
+        }
 
-        Rueda[] ruedasNissan = {new Rueda("pirelli", 20, 11.5),
-                new Rueda("pirelli", 20, 11.5),
-                new Rueda("pirelli", 20, 11.5),
-                new Rueda("pirelli", 20, 11.5),
-                new Rueda("pirelli", 20, 11.5)};
+        Persona bea = new Persona("bea", "gonzalez");
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS,
+                new Motor(4.0, TipoMotor.DIESEL), new Estanque(50));
+        nissan.setConductor(bea);
+        nissan.setTipo(TipoAutomovil.PICKUP);
+
+        //metodos encadenados.
+        nissan.addRueda(new Rueda("pirelli", 20, 11.5))
+                .addRueda(new Rueda("pirelli", 20, 11.5))
+                .addRueda(new Rueda("pirelli", 20, 11.5))
+                .addRueda(new Rueda("pirelli", 20, 11.5))
+                .addRueda(new Rueda("pirelli", 20, 11.5));
+
 
         Rueda[] ruedasNissan2 = {new Rueda("pirelli", 20, 11.5),
                 new Rueda("pirelli", 20, 11.5),
@@ -43,16 +47,12 @@ public class EjemploAutomovilRelacionesObjetos {
                 new Rueda("pirelli", 20, 11.5),
                 new Rueda("pirelli", 20, 11.5)};
 
-        Persona bea = new Persona("bea", "gonzalez");
-        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS,
-                new Motor(4.0, TipoMotor.DIESEL), new Estanque(50),
-                bea, ruedasNissan);
-        nissan.setTipo(TipoAutomovil.PICKUP);
+
 
         Persona lalo = new Persona("lalo", "mena");
         Automovil nissan2 = new Automovil("Nissan", "Navara", Color.GRIS,
                 new Motor(3.5,TipoMotor.BENCINA), new Estanque(50),
-        lalo, ruedasNissan);
+        lalo, ruedasNissan2);
 
         nissan2.setTipo(TipoAutomovil.PICKUP);
         Automovil.setColorPatente(Color.AZUL);

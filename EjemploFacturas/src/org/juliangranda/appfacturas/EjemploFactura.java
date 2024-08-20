@@ -13,16 +13,15 @@ public class EjemploFactura {
         cliente.setNombre("julian");
         Scanner s = new Scanner(System.in);
         System.out.println("Ingrese la descripcion de la factura: ");
-        String desc = s.nextLine();
-        Factura factura = new Factura(desc,cliente);
+        Factura factura = new Factura(s.nextLine(),cliente);
 
         Producto producto;
 
         System.out.println();
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             producto = new Producto();
-            System.out.print("Ingrese producto n"+ producto.getCodigo()+ ": ");
+            System.out.print("Ingrese producto n°"+ producto.getCodigo()+ ": ");
             producto.setNombre(s.nextLine());
             System.out.print("Ingrese el precio: ");
             producto.setPrecio(s.nextFloat());

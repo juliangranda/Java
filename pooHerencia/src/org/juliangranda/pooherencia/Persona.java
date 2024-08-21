@@ -7,10 +7,17 @@ public class Persona {
     private String email;
 
     public Persona(){
-
-    }
-    public Persona(String nombre){
         System.out.println("Persona: inicializando constructor");
+    }
+
+    public Persona(String nombre, String apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+    //sobreCarga de constructores
+    public Persona(String nombre, String apellido,int edad){
+        this(nombre,apellido);
+        this.edad = edad;
     }
 
     public String getNombre() {

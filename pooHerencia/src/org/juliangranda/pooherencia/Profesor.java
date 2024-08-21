@@ -2,6 +2,9 @@ package org.juliangranda.pooherencia;
 
 public class Profesor extends Persona{
     private String asignatura;
+    public Profesor(){
+        System.out.println("Profesor: inicilizando constructor ");
+    }
 
     public String getAsignatura() {
         return asignatura;

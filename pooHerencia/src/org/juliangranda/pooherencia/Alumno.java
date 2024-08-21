@@ -6,6 +6,10 @@ public class Alumno extends Persona{
     private double notaCastellana;
     private double notaHistoria;
 
+    public Alumno(){
+        System.out.println("Alumno: Inicilizando constructor ");
+    }
+
     public String getInstitucion() {
         return institucion;
     }

@@ -6,6 +6,13 @@ public class Persona {
     private int edad;
     private String email;
 
+    public Persona(){
+
+    }
+    public Persona(String nombre){
+        System.out.println("Persona: inicializando constructor");
+    }
+
     public String getNombre() {
         return nombre;
     }

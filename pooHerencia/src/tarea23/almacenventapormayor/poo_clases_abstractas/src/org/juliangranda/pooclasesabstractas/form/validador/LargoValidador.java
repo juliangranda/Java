@@ -41,8 +41,8 @@ public class LargoValidador extends Validador{
         return (largo >= min && largo <= max);
     }
 
-//    @Override
-//    public String getMensajeFormateado(String campo){
-//        return String.format(this.mensaje, campo, this.min, this.max);
-//    }
+
+    public String getMensajeFormateado(String campo){
+        return String.format(this.mensaje, campo, this.min, this.max);
+    }
 }

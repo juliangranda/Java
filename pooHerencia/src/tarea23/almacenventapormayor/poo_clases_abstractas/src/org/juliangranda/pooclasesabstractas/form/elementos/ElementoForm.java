@@ -35,14 +35,14 @@ public abstract class ElementoForm {
             this.valor = valor;
         }
 
-        public String getNombre() {
-            return nombre;
-        }
-
-    public boolean esValido(){
+        public boolean esValido(){
             for(Validador v: validadores){
-                if (!v.esValido(this.valor)) {
-                    this.errores.add(v.getMensaje());
+                if(!v.esValido(this.valor)){
+                    if(v instanceof LargoValidador) {
+                        this.errores.add(((LargoValidador) v).getMensajeFormateado(nombre));
+                    }else{
+                        this.errores.add(String.format(v.getMensaje(), nombre));
+                    }
                 }
             }
             return this.errores.isEmpty();

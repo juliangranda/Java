@@ -67,7 +67,8 @@ public class EjemploForm {
 
         elementos.forEach(e -> {
             if(!e.esValido()){
-                e.getErrores().forEach(err -> System.out.println(e.getNombre() + ": "+ err));
+                //System.out::println: se conoce como metodo de referencia
+                e.getErrores().forEach(System.out::println);
             }
         });
 

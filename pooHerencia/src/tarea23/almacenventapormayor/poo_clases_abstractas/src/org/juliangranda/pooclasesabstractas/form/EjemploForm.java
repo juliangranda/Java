@@ -23,19 +23,29 @@ public class EjemploForm {
                 .addOpcion(new Opcion("4", "TypeScript"))
                 .addOpcion(new Opcion("5", "PHP"));
 
+        //Clases anonimas
+        ElementoForm saludar = new ElementoForm("saludo"){
+            @Override
+            public String dibujarHtml() {
+                return "<input disabled name='"+this.nombre+"' value=\"" +this.valor+ "\">";
+            }
+        };
+
+        saludar.setValor("Hola que tal este campo está deshabilitado!");
         username.setValor("john.doe");
         password.setValor("a1b2c3");
         email.setValor("john.doe@correo.com");
         edad.setValor("28");
         experiencia.setValor("... más de 10 años de experiencia ...");
-        java.setSelected(true);
+        //java.setSelected(true);
 
         List<ElementoForm> elementos = Arrays.asList(username,
                 password,
                 email,
                 edad,
                 experiencia,
-                lenguaje
+                lenguaje,
+                saludar
                 );
 
         elementos.forEach(e -> {

@@ -50,6 +50,7 @@ public class EjemploForm {
         edad.setValor("28");
         experiencia.setValor("... más de 10 años de experiencia ...");
         //java.setSelected(true);
+        
 
         List<ElementoForm> elementos = Arrays.asList(username,
                 password,

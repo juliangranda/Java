@@ -1,6 +1,7 @@
 package org.juliangranda.pooclasesabstractas.form.elementos;
 
 import org.juliangranda.pooclasesabstractas.form.validador.*;
+import org.juliangranda.pooclasesabstractas.form.validador.mensaje.MensajeFormateable;
 
 import java.util.*;
 
@@ -38,8 +39,8 @@ public abstract class ElementoForm {
         public boolean esValido(){
             for(Validador v: validadores){
                 if(!v.esValido(this.valor)){
-                    if(v instanceof LargoValidador) {
-                        this.errores.add(((LargoValidador) v).getMensajeFormateado(nombre));
+                    if(v instanceof MensajeFormateable) {
+                        this.errores.add(((MensajeFormateable) v).getMensajeFormateado(nombre));
                     }else{
                         this.errores.add(String.format(v.getMensaje(), nombre));
                     }

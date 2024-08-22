@@ -1,6 +1,8 @@
 package org.juliangranda.pooclasesabstractas.form.validador;
 
-public class LargoValidador extends Validador{
+import org.juliangranda.pooclasesabstractas.form.validador.mensaje.MensajeFormateable;
+
+public class LargoValidador extends Validador implements MensajeFormateable {
     protected String mensaje = "el campo %s debe tener mínimo %d caracteres y máximo %d caracteres";
     private int min;
     private int max = Integer.MAX_VALUE;

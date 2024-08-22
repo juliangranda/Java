@@ -1,23 +1,48 @@
 package org.juliangranda.pooclasesabstractas.form.elementos;
 
-    public abstract class ElementoForm {
+import org.juliangranda.pooclasesabstractas.form.validador.*;
+
+import java.util.*;
+
+public abstract class ElementoForm {
 
         protected String valor;
         protected String nombre;
 
+        private List<Validador> validadores;
+        private List<String> errores;
+
         public ElementoForm() {
+            this.validadores = new ArrayList<>();
+            this.errores = new ArrayList<>();
         }
 
         public ElementoForm(String nombre) {
-            this(); //Inicializar las listas.
+            this();
             this.nombre = nombre;
+        }
+
+        public ElementoForm addValidador(Validador validador){
+            this.validadores.add(validador);
+            return this;
+        }
+
+        public List<String> getErrores() {
+            return errores;
         }
 
         public void setValor(String valor) {
             this.valor = valor;
         }
 
-        //Clase abstracta
-        public abstract String dibujarHtml();
+        public boolean esValido(){
+            for(Validador v: validadores){
+                if (!v.esValido(this.valor)) {
+                    this.errores.add(v.getMensaje());
+                }
+            }
+            return this.errores.isEmpty();
+        }
 
+        abstract public String dibujarHtml();
 }

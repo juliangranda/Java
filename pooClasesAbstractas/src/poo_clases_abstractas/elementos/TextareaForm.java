@@ -1,6 +1,8 @@
-package org.juliangranda.pooclasesabstractas.form.elementos;
+package poo_clases_abstractas.elementos;
 
-public class TextareaForm extends ElementoForm{
+import poo_clases_abstractas.elementos.ElementoForm;
+
+public class TextareaForm extends ElementoForm {
     private int filas;
     private int columnas;
 
@@ -37,3 +39,4 @@ public class TextareaForm extends ElementoForm{
                 + this.valor + "</textarea>";
     }
 }
+

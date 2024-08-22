@@ -1,4 +1,4 @@
-package org.juliangranda.pooclasesabstractas.form.elementos.select;
+package poo_clases_abstractas.elementos.select;
 
 public class Opcion {
     private String valor;

@@ -1,4 +1,4 @@
-package org.juliangranda.pooclasesabstractas.form.validador;
+package poo_clases_abstractas.validador;
 
 public class EmailValidador extends Validador{
 

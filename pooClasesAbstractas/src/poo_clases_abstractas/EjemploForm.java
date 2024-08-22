@@ -1,10 +1,11 @@
-package org.juliangranda.pooclasesabstractas.form;
+package poo_clases_abstractas;
 
-import org.juliangranda.pooclasesabstractas.form.elementos.*;
-import org.juliangranda.pooclasesabstractas.form.elementos.select.Opcion;
-import org.juliangranda.pooclasesabstractas.form.validador.*;
+import poo_clases_abstractas.elementos.*;
+import poo_clases_abstractas.elementos.select.Opcion;
+import poo_clases_abstractas.validador.*;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class EjemploForm {
     public static void main(String[] args) {
@@ -50,7 +51,7 @@ public class EjemploForm {
         edad.setValor("28");
         experiencia.setValor("... más de 10 años de experiencia ...");
         //java.setSelected(true);
-        
+
 
         List<ElementoForm> elementos = Arrays.asList(username,
                 password,
@@ -59,7 +60,7 @@ public class EjemploForm {
                 experiencia,
                 lenguaje,
                 saludar
-                );
+        );
 
         elementos.forEach(e -> {
             System.out.println(e.dibujarHtml());

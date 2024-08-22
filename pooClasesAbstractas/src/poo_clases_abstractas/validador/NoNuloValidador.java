@@ -1,5 +1,4 @@
-package org.juliangranda.pooclasesabstractas.form.validador;
-
+package poo_clases_abstractas.validador;
 public class NoNuloValidador extends Validador{
 
     protected String mensaje = "el campo %s no puede ser nulo";
@@ -18,5 +17,3 @@ public class NoNuloValidador extends Validador{
         return (valor != null);
     }
 }
-
-

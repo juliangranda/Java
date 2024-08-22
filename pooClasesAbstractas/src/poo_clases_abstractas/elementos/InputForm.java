@@ -1,6 +1,6 @@
-package org.juliangranda.pooclasesabstractas.form.elementos;
+package poo_clases_abstractas.elementos;
 
-public class InputForm extends ElementoForm{
+public class InputForm extends ElementoForm {
 
     private String tipo = "text";
 
@@ -28,3 +28,4 @@ public class InputForm extends ElementoForm{
                 + "\" value=\"" + this.valor + "\">";
     }
 }
+

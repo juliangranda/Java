@@ -35,7 +35,11 @@ public abstract class ElementoForm {
             this.valor = valor;
         }
 
-        public boolean esValido(){
+        public String getNombre() {
+            return nombre;
+        }
+
+    public boolean esValido(){
             for(Validador v: validadores){
                 if (!v.esValido(this.valor)) {
                     this.errores.add(v.getMensaje());

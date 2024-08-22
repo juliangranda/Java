@@ -2,6 +2,7 @@ package org.juliangranda.pooclasesabstractas.form;
 
 import org.juliangranda.pooclasesabstractas.form.elementos.*;
 import org.juliangranda.pooclasesabstractas.form.elementos.select.Opcion;
+import org.juliangranda.pooclasesabstractas.form.validador.*;
 
 import java.util.*;
 
@@ -9,13 +10,24 @@ public class EjemploForm {
     public static void main(String[] args) {
 
         InputForm username = new InputForm("username");
+        username.addValidador(new RequeridoValidador());
+
         InputForm password = new InputForm("clave", "password");
+        password.addValidador(new RequeridoValidador())
+                .addValidador(new LargoValidador(6, 12));
+
         InputForm email = new InputForm("email", "email");
+        email.addValidador(new RequeridoValidador())
+                .addValidador(new EmailValidador());
+
         InputForm edad = new InputForm("edad", "number");
+        edad.addValidador(new NumeroValidador());
 
         TextareaForm experiencia = new TextareaForm("exp", 5, 9);
 
         SelectForm lenguaje = new SelectForm("lenguaje");
+        lenguaje.addValidador(new NoNuloValidador());
+
         Opcion java = new Opcion("1","Java");
         lenguaje.addOpcion(java)
                 .addOpcion(new Opcion("2", "Python").setSelected())
@@ -51,6 +63,12 @@ public class EjemploForm {
         elementos.forEach(e -> {
             System.out.println(e.dibujarHtml());
             System.out.println("<br>");
+        });
+
+        elementos.forEach(e -> {
+            if(!e.esValido()){
+                e.getErrores().forEach(err -> System.out.println(e.getNombre() + ": "+ err));
+            }
         });
 
     }

@@ -27,8 +27,21 @@ public class EjemploForm {
         password.setValor("a1b2c3");
         email.setValor("john.doe@correo.com");
         edad.setValor("28");
-
+        experiencia.setValor("... más de 10 años de experiencia ...");
         java.setSelected(true);
+
+        List<ElementoForm> elementos = Arrays.asList(username,
+                password,
+                email,
+                edad,
+                experiencia,
+                lenguaje
+                );
+
+        elementos.forEach(e -> {
+            System.out.println(e.dibujarHtml());
+            System.out.println("<br>");
+        });
 
     }
 }

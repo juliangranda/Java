@@ -5,19 +5,23 @@ import org.juliangranda.poointerfaces.imprenta.modelo.*;
 public class EjemploImprenta {
     public static void main(String[] args) {
 
-        Curriculum cv = new Curriculum("Julian","Ingeniero Mecatronico","Resumen laboral....");
-        cv.addExperiencias("Java");
-        cv.addExperiencias("iot");
-        cv.addExperiencias("Angular");
+        Curriculum cv = new Curriculum(new Persona("Jhon","Doe"),
+                "Ingeniero Mecatronico","Resumen laboral....")
+                .addExperiencias("Java")
+                .addExperiencias("iot")
+                .addExperiencias("Angular");
 
-        Informe informe = new Informe("Martin Fowler", "James","Estudio sobre microservicios");
-
-        Libro libro = new Libro("Erich Gamma", "Patrones de diseños: Elem. Reusables POO", Genero.PROGRAMACION);
+        Libro libro = new Libro(new Persona("Erich","Gamma"),
+                "Patrones de diseños: Elem. Reusables POO", Genero.PROGRAMACION);
         libro.addPagina(new Pagina("Patron Singleton"))
                 .addPagina(new Pagina("Patron Observador"))
                 .addPagina(new Pagina("Patron Factory"))
                 .addPagina(new Pagina("Patron Composite"))
                 .addPagina(new Pagina("Patron Facade"));
+
+        Informe informe = new Informe(new Persona("Martin","Fowler"),
+                new Persona("James","Gosling"),
+                "Estudio sobre microservicios");
 
         imprimir(cv);
         imprimir(informe);

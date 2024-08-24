@@ -2,6 +2,9 @@ package org.juliangranda.poointerfaces.imprenta;
 
 import org.juliangranda.poointerfaces.imprenta.modelo.*;
 
+//metodo estatico de la interface.
+import static org.juliangranda.poointerfaces.imprenta.modelo.Imprimible.*;
+
 public class EjemploImprenta {
     public static void main(String[] args) {
 
@@ -26,9 +29,18 @@ public class EjemploImprenta {
         imprimir(cv);
         imprimir(informe);
         imprimir(libro);
+
+        //Clase anonimas
+        Imprimible objImp = new Imprimible(){
+            @Override
+            public String imprimir() {
+                return "Hola que tal, imprimiendo un objeto generico de una clase anonima";
+            }
+        };
+        imprimir(objImp);
+
+        System.out.println(TEXTO_DEFECTO);
     }
 
-    public static void imprimir(Imprimible imprimible){
-        System.out.println(imprimible.imprimir());
-    }
+
 }

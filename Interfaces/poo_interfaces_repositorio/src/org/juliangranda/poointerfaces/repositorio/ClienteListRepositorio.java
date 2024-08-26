@@ -6,8 +6,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class ClienteListRepositorio implements CrudRepositorio,
-        OrdenableRepositorio, PaginableRepositorio {
+public class ClienteListRepositorio implements OrdenablePaginableRepositorio{
 
     private List<Cliente> dataSource;
 
@@ -80,5 +79,10 @@ public class ClienteListRepositorio implements CrudRepositorio,
                     resultado = a.getApellido().compareTo(b.getApellido());
         }
         return resultado;
+    }
+
+    @Override
+    public int total() {
+        return this.dataSource.size();
     }
 }

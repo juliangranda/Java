@@ -8,10 +8,10 @@ import java.util.*;
 public class EjemploGenericos {
     public static void main(String[] args) {
 
-        List<Cliente> cliente = new ArrayList<>();
-        cliente.add(new Cliente("julian","gomez"));
+        List<Cliente> clientes = new ArrayList<>();
+        clientes.add(new Cliente("julian","gomez"));
 
-        Cliente julian = cliente.iterator().next();
+        Cliente julian = clientes.iterator().next();
         Cliente[] clientesArreglo = {new Cliente("Luci","martinez"),
                                     new Cliente("julian","gomez")};
         Integer[] enterosArreglo = {1,2,3};
@@ -35,7 +35,12 @@ public class EjemploGenericos {
                 "luci","bea","jhon"}, enterosArreglo);
         nombres.forEach(System.out::println);
 
-        List<ClientePremium> clientesPremiumList = fromArrayToList(new ClientePremium[]{new ClientePremium("paco", "fernandezz")});
+        List<ClientePremium> clientesPremiumList = fromArrayToList(
+                new ClientePremium[]{new ClientePremium("paco", "fernandezz")});
+
+        imprimirClientes(clientes);
+        imprimirClientes(clientesLista);
+        imprimirClientes(clientesPremiumList);
 
     }
 
@@ -64,6 +69,14 @@ public class EjemploGenericos {
             System.out.println(elemento);
         }
         return Arrays.asList(c);
+    }
+
+    //comodines - wildcard Generics
+    //permite que pasar a cualquier tipo de lista de tipo Cliente es decir
+    // su descendencia, las clases hijas que heredan de la clase padre (Cliente).
+    //añadiendo en el generico "?" y extends + Clase padre -> ( <? extends Clase ).
+    public static void imprimirClientes(List<? extends Cliente> clientes){
+        clientes.forEach(System.out::println);
     }
 
 

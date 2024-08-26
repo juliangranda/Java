@@ -1,6 +1,7 @@
 package org.juliangranda.generics.src;
 
 import org.juliangranda.poointerfaces.modelo.Cliente;
+import org.juliangranda.poointerfaces.modelo.ClientePremium;
 
 import java.util.*;
 
@@ -34,9 +35,26 @@ public class EjemploGenericos {
                 "luci","bea","jhon"}, enterosArreglo);
         nombres.forEach(System.out::println);
 
+        List<ClientePremium> clientesPremiumList = fromArrayToList(new ClientePremium[]{new ClientePremium("paco", "fernandezz")});
+
     }
 
     public static <T> List<T> fromArrayToList(T[] c){
+        //Array.asList: permite recibir un arreglo o convertirlo a uno.
+        return Arrays.asList(c);
+    }
+
+    //<T extends Number> con extends especificamos el tipo de parametro
+    // para un Generic(bounded Generic).
+    public static <T extends Number> List<T> fromArrayToList(T[] c){
+        //Array.asList: permite recibir un arreglo o convertirlo a uno.
+        return Arrays.asList(c);
+    }
+
+    //El metodo trabaja con cualquier tipo que sea de tipo Cliente y
+    //Subclases que heredan de esta clase,
+    //ademas hacer uso de ("&") nos dice que: Cliente implemeneta una interfaz "Comparable".
+    public static <T extends Cliente & Comparable<T>> List<T> fromArrayToList(T[] c){
         //Array.asList: permite recibir un arreglo o convertirlo a uno.
         return Arrays.asList(c);
     }
@@ -47,4 +65,6 @@ public class EjemploGenericos {
         }
         return Arrays.asList(c);
     }
+
+
 }

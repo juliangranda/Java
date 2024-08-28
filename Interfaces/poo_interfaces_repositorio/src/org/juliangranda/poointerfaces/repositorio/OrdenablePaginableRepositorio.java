@@ -1,5 +1,5 @@
 package org.juliangranda.poointerfaces.repositorio;
 
-public interface OrdenablePaginableRepositorio extends OrdenableRepositorio,
-                    PaginableRepositorio, CrudRepositorio, ContableRepositorio{
+public interface OrdenablePaginableRepositorio<T> extends OrdenableRepositorio<T>,
+                    PaginableRepositorio<T>, CrudRepositorio<T>, ContableRepositorio{
 }

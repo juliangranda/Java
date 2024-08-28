@@ -3,21 +3,11 @@ package org.juliangranda.poointerfaces.repositorio;
 import org.juliangranda.poointerfaces.modelo.Cliente;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class ClienteListRepositorio implements OrdenablePaginableRepositorio{
+public class ClienteListRepositorio extends AbstractClienteListRepositorio<Cliente>{
 
-    private List<Cliente> dataSource;
 
-    public ClienteListRepositorio() {
-        this.dataSource = new ArrayList<>();
-    }
-
-    @Override
-    public List<Cliente> listar() {
-        return dataSource;
-    }
 
     @Override
     public Cliente porID(Integer id) {
@@ -32,20 +22,10 @@ public class ClienteListRepositorio implements OrdenablePaginableRepositorio{
     }
 
     @Override
-    public void crear(Cliente cliente) {
-        this.dataSource.add(cliente);
-    }
-
-    @Override
     public void editar(Cliente cliente) {
         Cliente c = this.porID(cliente.getId());
         c.setNombre(cliente.getNombre());
         c.setApellido(cliente.getApellido());
-    }
-
-    @Override
-    public void eliminar(Integer id) {
-        this.dataSource.remove(this.porID(id));
     }
 
     @Override
@@ -63,11 +43,6 @@ public class ClienteListRepositorio implements OrdenablePaginableRepositorio{
         return listaOrdenada;
     }
 
-    @Override
-    public List<Cliente> listar(int desde, int hasta) {
-        return dataSource.subList(desde, hasta);
-    }
-
     public static int ordenar(String campo, Cliente a, Cliente b){
         int resultado = 0;
         switch (campo){
@@ -81,8 +56,4 @@ public class ClienteListRepositorio implements OrdenablePaginableRepositorio{
         return resultado;
     }
 
-    @Override
-    public int total() {
-        return this.dataSource.size();
-    }
 }

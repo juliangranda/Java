@@ -8,7 +8,7 @@ import java.util.List;
 public class EjemploRepositorio {
     public static void main(String[] args) {
 
-        OrdenablePaginableRepositorio repo = new ClienteListRepositorio();
+        OrdenablePaginableRepositorio<Cliente> repo = new ClienteListRepositorio();
         repo.crear(new Cliente("jana","perez"));
         repo.crear(new Cliente("Bea","Gonzalez"));
         repo.crear(new Cliente("luci","martinez"));

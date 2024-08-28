@@ -1,39 +1,45 @@
 package org.juliangranda.genericsclass;
 
 public class EjemploGenericos {
+
+    //Metodo Generico
+    public static <T> void imprimirCamion(Camion<T> camion){
+        for(T a: camion){
+            if(a instanceof Animal){
+                System.out.println(((Animal)a).getNombre() + "Tipo: " + ((Animal)a).getTipo());
+            }
+            else if(a instanceof Automovil){
+                System.out.println( ((Automovil)a).getMarca());
+            } else if (a instanceof Maquinaria) {
+                System.out.println((((Maquinaria)a).getTipo()));
+            }
+
+        }
+    }
     public static void main(String[] args) {
 
-        Camion transporteCaballos = new Camion(5);
+        Camion<Animal> transporteCaballos = new Camion<>(5);
         transporteCaballos.add(new Animal("Peregrino", "Caballo"));
         transporteCaballos.add(new Animal("grillo", "Caballo"));
         transporteCaballos.add(new Animal("Tunquen", "Caballo"));
         transporteCaballos.add(new Animal("Topocalma", "Caballo"));
         transporteCaballos.add(new Animal("Longotoma", "Caballo"));
 
-        for(Object o: transporteCaballos){
-            Animal a = (Animal) o;
-            System.out.println(a.getNombre());
-        }
+        imprimirCamion(transporteCaballos);
 
-        Camion transMaquinas = new Camion(3);
+        Camion<Maquinaria> transMaquinas = new Camion<>(3);
         transMaquinas.add(new Maquinaria("Bulldozer"));
         transMaquinas.add(new Maquinaria("Grúa Horquilla"));
         transMaquinas.add(new Maquinaria("Perforadora"));
 
-        for(Object o: transMaquinas){
-            Maquinaria m = (Maquinaria) o;
-            System.out.println(m.getTipo());
-        }
+        imprimirCamion(transMaquinas);
 
-        Camion transAuto = new Camion(3);
+        Camion<Automovil> transAuto = new Camion<>(3);
         transAuto.add(new Automovil("Toyota"));
         transAuto.add(new Automovil("Mitsubishi"));
         transAuto.add(new Automovil("Chevrolet"));
 
-        for(Object o: transAuto){
-            Automovil a = (Automovil) o;
-            System.out.println(a.getMarca());
-        };
+        imprimirCamion(transAuto);
 
     }
 }

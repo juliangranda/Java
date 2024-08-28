@@ -8,22 +8,9 @@ import java.util.List;
 public class ClienteListRepositorio extends AbstractClienteListRepositorio<Cliente>{
 
 
-
-    @Override
-    public Cliente porID(Integer id) {
-        Cliente resultado = null;
-        for(Cliente cli: dataSource){
-            if(cli.getId() != null && cli.getId().equals(id)){
-                resultado = cli;
-                break;
-            }
-        }
-        return resultado;
-    }
-
     @Override
     public void editar(Cliente cliente) {
-        Cliente c = this.porID(cliente.getId());
+        Cliente c = this.porId(cliente.getId());
         c.setNombre(cliente.getNombre());
         c.setApellido(cliente.getApellido());
     }

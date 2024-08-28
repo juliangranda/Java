@@ -1,9 +1,11 @@
 package org.juliangranda.poointerfaces.repositorio;
 
+import org.juliangranda.poointerfaces.modelo.BaseEntity;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class AbstractClienteListRepositorio<T> implements OrdenablePaginableRepositorio<T>{
+public abstract class AbstractClienteListRepositorio<T extends BaseEntity> implements OrdenablePaginableRepositorio<T>{
 
     protected List<T> dataSource;
 
@@ -16,10 +18,10 @@ public abstract class AbstractClienteListRepositorio<T> implements OrdenablePagi
         return dataSource;
     }
 
-    /*@Override
-    public Cliente porID(Integer id) {
-        Cliente resultado = null;
-        for(Cliente cli: dataSource){
+    @Override
+    public T porId(Integer id) {
+        T resultado = null;
+        for(T cli: dataSource){
             if(cli.getId() != null && cli.getId().equals(id)){
                 resultado = cli;
                 break;
@@ -27,7 +29,7 @@ public abstract class AbstractClienteListRepositorio<T> implements OrdenablePagi
         }
         return resultado;
     }
-*/
+
     @Override
     public void crear(T t) {
         this.dataSource.add(t);
@@ -35,7 +37,7 @@ public abstract class AbstractClienteListRepositorio<T> implements OrdenablePagi
 
     @Override
     public void eliminar(Integer id) {
-        this.dataSource.remove(this.porID(id));
+        this.dataSource.remove(this.porId(id));
     }
 
     @Override

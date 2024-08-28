@@ -31,7 +31,7 @@ public class EjemploRepositorio {
         Cliente beaActualizar = new Cliente("Bea", "Mena");
         beaActualizar.setId(2);
         repo.editar(beaActualizar);
-        Cliente bea = repo.porID(2);
+        Cliente bea = repo.porId(2);
         System.out.println(bea);
         System.out.println(" ============= ");
         repo.listar("nombre", Direccion.ASC).forEach(System.out::println);

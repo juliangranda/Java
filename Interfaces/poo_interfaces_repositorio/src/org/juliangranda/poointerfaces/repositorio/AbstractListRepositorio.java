@@ -1,15 +1,16 @@
 package org.juliangranda.poointerfaces.repositorio;
 
 import org.juliangranda.poointerfaces.modelo.BaseEntity;
+import org.juliangranda.poointerfaces.modelo.Producto;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class AbstractClienteListRepositorio<T extends BaseEntity> implements OrdenablePaginableRepositorio<T>{
+public abstract class AbstractListRepositorio<T extends BaseEntity> implements OrdenablePaginableRepositorio<T>{
 
     protected List<T> dataSource;
 
-    public AbstractClienteListRepositorio() {
+    public AbstractListRepositorio() {
         this.dataSource = new ArrayList<>();
     }
 
@@ -49,4 +50,5 @@ public abstract class AbstractClienteListRepositorio<T extends BaseEntity> imple
     public int total() {
         return this.dataSource.size();
     }
+
 }

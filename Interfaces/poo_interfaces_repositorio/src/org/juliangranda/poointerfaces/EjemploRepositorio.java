@@ -2,6 +2,7 @@ package org.juliangranda.poointerfaces;
 
 import org.juliangranda.poointerfaces.modelo.*;
 import org.juliangranda.poointerfaces.repositorio.*;
+import org.juliangranda.poointerfaces.repositorio.lista.ClienteListRepositorio;
 
 import java.util.List;
 

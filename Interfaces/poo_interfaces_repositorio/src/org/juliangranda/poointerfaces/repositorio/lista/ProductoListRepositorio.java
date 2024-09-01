@@ -4,6 +4,7 @@ import org.juliangranda.poointerfaces.modelo.Cliente;
 import org.juliangranda.poointerfaces.modelo.Producto;
 import org.juliangranda.poointerfaces.repositorio.AbstractListRepositorio;
 import org.juliangranda.poointerfaces.repositorio.Direccion;
+import org.juliangranda.poointerfaces.repositorio.excepciones.LecturaAccesoDatoException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
 public class ProductoListRepositorio extends AbstractListRepositorio<Producto> {
 
     @Override
-    public void editar(Producto producto) {
+    public void editar(Producto producto) throws LecturaAccesoDatoException {
         Producto p = porId(producto.getId());
         p.setDescripcion(producto.getDescripcion());
         p.setPrecio(producto.getPrecio());

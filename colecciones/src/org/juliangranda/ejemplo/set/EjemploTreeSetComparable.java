@@ -2,6 +2,7 @@ package org.juliangranda.ejemplo.set;
 
 import org.juliangranda.ejemplo.set.modelo.Alumno;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -13,8 +14,8 @@ public class EjemploTreeSetComparable {
         // Comparable en la clase(Alumno).
 
         //compareTo para dar un orden ascendente segun el nombre,nota u otro.
-        Set<Alumno> sa = new TreeSet<>((a, b) -> b.getNota().compareTo(a.getNota()));
-
+        //Set<Alumno> sa = new TreeSet<>((a, b) -> b.getNota().compareTo(a.getNota()));
+        Set<Alumno> sa = new TreeSet<>(comparing(Alumno::getNota));
         sa.add(new Alumno("Pato", 5));
         sa.add(new Alumno("Cata", 6));
         sa.add(new Alumno("Luci", 4));

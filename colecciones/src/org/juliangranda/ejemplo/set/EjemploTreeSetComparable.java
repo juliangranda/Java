@@ -1,8 +1,7 @@
 package org.juliangranda.ejemplo.set;
 
-import org.juliangranda.ejemplo.set.modelo.Alumno;
+import org.juliangranda.ejemplo.modelo.Alumno;
 
-import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 

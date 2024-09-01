@@ -1,4 +1,4 @@
-package org.juliangranda.ejemplo.set.modelo;
+package org.juliangranda.ejemplo.modelo;
 
 
 import java.util.Objects;

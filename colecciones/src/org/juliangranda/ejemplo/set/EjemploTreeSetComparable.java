@@ -9,7 +9,8 @@ import static java.util.Comparator.comparing;
 
 public class EjemploTreeSetComparable {
     public static void main(String[] args) {
-        //para TreeSet tiene que ser un objeto que utilice la interfaz Comparable en la clase(Alumno).
+        // para TreeSet tiene que ser un objeto que utilice la interfaz
+        // Comparable en la clase(Alumno).
 
         //compareTo para dar un orden ascendente segun el nombre,nota u otro.
         Set<Alumno> sa = new TreeSet<>((a, b) -> b.getNota().compareTo(a.getNota()));

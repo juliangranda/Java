@@ -46,6 +46,7 @@ public class EjemploRepositorioProducto {
             repo.listar().forEach(System.out::println);
             System.out.println("===== total ===== ");
             System.out.println("Total registros: " + repo.total());
+
         } catch (LecturaAccesoDatoException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();

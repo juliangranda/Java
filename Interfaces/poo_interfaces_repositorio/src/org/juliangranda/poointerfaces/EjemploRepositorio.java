@@ -5,8 +5,10 @@ import org.juliangranda.poointerfaces.repositorio.*;
 import org.juliangranda.poointerfaces.repositorio.excepciones.AccesoDatoException;
 import org.juliangranda.poointerfaces.repositorio.excepciones.EscrituraAccesoDatoException;
 import org.juliangranda.poointerfaces.repositorio.excepciones.LecturaAccesoDatoException;
+import org.juliangranda.poointerfaces.repositorio.excepciones.RegistroDuplicadoAccesoDatoException;
 import org.juliangranda.poointerfaces.repositorio.lista.ClienteListRepositorio;
 
+import java.util.DuplicateFormatFlagsException;
 import java.util.List;
 
 public class EjemploRepositorio {
@@ -18,8 +20,11 @@ public class EjemploRepositorio {
             repo.crear(new Cliente("jana", "perez"));
             repo.crear(new Cliente("Bea", "Gonzalez"));
             repo.crear(new Cliente("luci", "martinez"));
-            repo.crear(new Cliente("andres", "guzman"));
-            repo.crear(null);
+            Cliente andres = new Cliente("andres", "guzman");
+            repo.crear(andres);
+            repo.crear(andres);
+
+            //repo.crear(null);
 
             List<Cliente> clientes = repo.listar();
             clientes.forEach(System.out::println);
@@ -38,15 +43,17 @@ public class EjemploRepositorio {
             Cliente beaActualizar = new Cliente("Bea", "Mena");
             beaActualizar.setId(2);
             repo.editar(beaActualizar);
-            Cliente bea = repo.porId(10);
+            Cliente bea = repo.porId(2);
             System.out.println(bea);
             System.out.println(" ============= ");
             repo.listar("nombre", Direccion.ASC).forEach(System.out::println);
             System.out.println("===== eliminar ======");
-            repo.eliminar(0);
+            repo.eliminar(2);
             repo.listar().forEach(System.out::println);
             System.out.println("----------total-----------");
             System.out.println("Total registros: " + repo.total());
+        }catch(DuplicateFormatFlagsException e){
+            System.out.println("Registro Duplicado: "+ e.getMessage());
         }catch (LecturaAccesoDatoException e){
             System.out.println("Lectura: " + e.getMessage());
             e.printStackTrace();
@@ -54,8 +61,7 @@ public class EjemploRepositorio {
         }catch (EscrituraAccesoDatoException e){
             System.out.println("Escritura: " + e.getMessage());
             e.printStackTrace();
-        }
-        catch(AccesoDatoException e){
+        }catch(AccesoDatoException e){
             System.out.println("Generica: " + e.getMessage());
             e.printStackTrace();
         }

@@ -19,6 +19,27 @@ public class EjemploHashSetUnicidad {
         sa.add(new Alumno("Lucas", 3));
         System.out.println(sa);
 
+        /*System.out.println("Utilizando un for clásico");
+        for(int i = 0 ; i<sa.size(); i++){
+            Alumno a = sa.get(i);
+            System.out.println(a.getNombre());
+        }*/
+
+        System.out.println("Iterando usando un foreach");
+        for(Alumno a: sa){
+            System.out.println(a.getNombre());
+        }
+
+        System.out.println("Iterando usando while y iterator");
+        Iterator<Alumno> it = sa.iterator();
+        //condicion del while: mientras exista/tenga un siguiente elemento.
+        while(it.hasNext()){
+            Alumno a = it.next();
+            System.out.println(a.getNombre());
+        }
+
+        System.out.println("Iterando usando Stream forEach");
+        sa.forEach(System.out::println);
 
     }
 }

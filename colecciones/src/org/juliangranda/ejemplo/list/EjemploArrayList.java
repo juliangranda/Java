@@ -1,9 +1,8 @@
-package org.juliangranda.ejemplo.set;
+package org.juliangranda.ejemplo.list;
 
 import org.juliangranda.ejemplo.modelo.Alumno;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import static java.util.Comparator.comparing;

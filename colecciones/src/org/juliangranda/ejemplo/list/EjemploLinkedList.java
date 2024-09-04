@@ -1,4 +1,4 @@
-package org.juliangranda.ejemplo.set;
+package org.juliangranda.ejemplo.list;
 
 import org.juliangranda.ejemplo.modelo.Alumno;
 

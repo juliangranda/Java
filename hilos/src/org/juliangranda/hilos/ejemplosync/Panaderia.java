@@ -1,6 +1,4 @@
-package org.juliangranda.hilos.ejemplo.sync;
-
-import java.util.concurrent.SynchronousQueue;
+package org.juliangranda.hilos.ejemplosync;
 
 public class Panaderia {
     private String pan;

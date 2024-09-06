@@ -11,6 +11,8 @@ public class EjemploAgendarTareaTimerPeriodo {
 
         //toolkit cada que entramos a una tarea emite un sonido es un plus.
         Toolkit toolkit = Toolkit.getDefaultToolkit();
+        //AtomicInteger se utiliza cuando es necesario un contador dentro de un metodo es
+        //una alternativa a la forma clasica de trabajar con contadores.
         AtomicInteger contadorAtomic = new AtomicInteger(3);
 
         //timer: se utiliza para programar/agendar tareas.

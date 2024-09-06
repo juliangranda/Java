@@ -5,9 +5,16 @@ import org.juliangranda.hilos.ejemplo.runnable.ViajeTarea;
 public class EjemploInterfaceRunnableJava8 {
     public static void main(String[] args) throws InterruptedException {
 
-        //instancia de un thread
-        //es un thread usando java8 con funcion lambda para ser desacoplado.
-        //esta forma solo se recomienda si se va a usar solo en una parte de la aplicacion.
+        /*
+        *   sleep: depende de un tiempo, ademas toca calcular el tiempo que demora el thread en terminar.
+            sleep es una pausa en el main
+            sleep es estatico(static) está asociado a la clase o main.
+            sleep al ser estatico se ejecuta por encima del thread por lo que resulta necesario calcular el tiempo de este.
+
+            join: Espera a que terminen los demas thread, al terminar permite continuar con el resto del main/codigo.
+            join se ejecuta con la instancia del Thread, esdecir, comienza y termina con el Thread.
+        * */
+        
         Thread main = Thread.currentThread();
         Runnable viaje = () -> {
             for (int i = 0; i < 10; i++) {

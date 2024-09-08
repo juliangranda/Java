@@ -7,7 +7,8 @@ public class Calculadora {
         return lambda.operacion(a, b);
     }
 
-    public double computarBiFunction(double a, double b, BiFunction<Double,Double,Double> lambda){
+    public double computarBiFunction(double a, double b,
+                                     BiFunction<Double,Double,Double> lambda){
         return lambda.apply(a,b);
     }
 }

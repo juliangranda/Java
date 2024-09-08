@@ -4,9 +4,12 @@ public class FormateadorLambda {
     public static void main(String[] args) {
 
         //Clase Anonima - Interfaces
+
+        //Tipo interfaz variable = parametro -> {cuerpo de funcion}
         Formatear fraseIn = frase -> {
             return frase.replace(",","")
-                    .replace(" ","").replace(".","")
+                    .replace(" ","")
+                    .replace(".","")
                     .toUpperCase();
         };
 

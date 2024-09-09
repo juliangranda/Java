@@ -32,7 +32,8 @@ public class EjemploStreamMap {
 
 
         //Convertir el Stream a una Lista
-        List<String> lista = nombres.collect(Collectors.toList());
+        //List<String> lista = nombres.collect(Collectors.toList());
+        List<String> lista = nombres.toList();
         lista.forEach(System.out::println);
 
         //Steam no se ejecuta hasta que se invoca un metodo final( forEach ) u otro.

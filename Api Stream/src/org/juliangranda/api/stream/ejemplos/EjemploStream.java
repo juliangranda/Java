@@ -13,14 +13,15 @@ public class EjemploStream {
         //creacion del steam
         //Stream<String> nombres = Stream.of("Pato","Paco","Pepa","Pepe");
 
-        //los tranformadores se encargan de realizar operaciones en el steram.
+        //los tranformadores se encargan de realizar operaciones en el stream.
         //nombres.forEach(System.out::println);
 
 //        String[] arr = { "Pato","Paco","Pepa","Pepe" };
 //        Stream<String> nombres = Arrays.stream(arr);
 //        nombres.forEach(System.out::println);
 
-        /*Stream<String> nombres = Stream.<String>builder().add("Pato")
+        /*Stream<String> nombres = Stream.<String>builder()
+                .add("Pato")
                 .add("Paco")
                 .add("Pepa")
                 .add("Pepe")
@@ -28,6 +29,7 @@ public class EjemploStream {
 
         nombres.forEach(System.out::println);*/
 
+        //usando Api Collections.
         List<String> lista = new ArrayList<>();
         lista.add("Pato");
         lista.add("Paco");

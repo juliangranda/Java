@@ -22,6 +22,7 @@ public class EjemploStreamMap {
 //        después de cada transformation u operación en éste,
 //        ademas el peek() debe de ir después de dicha operación.
 
+//          map() se usa para aplicar una operacion  especifica al Stream.
 
         Stream<String> nombres = Stream
                 .of("Pato","Paco","Pepa","Pepe")

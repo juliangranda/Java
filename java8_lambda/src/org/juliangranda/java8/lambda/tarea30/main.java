@@ -31,6 +31,6 @@ public class main {
         };
         fraseContador.contadorPalabra("Yo ni te conozco, ni te he visto, ni se tu nombre, ni te hablaré, ni me interesas.")
                 .forEach( (key,value) -> System.out.println("la palabra key: "+key +" -se repite: "+value));
-        
+
     }
 }

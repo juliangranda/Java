@@ -1,8 +1,8 @@
 package org.juliangranda.api.stream.ejemplos;
 
-import java.util.ArrayList;
+import org.juliangranda.api.stream.ejemplos.models.Usuario;
+
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class EjemploStreamMap {
@@ -24,17 +24,22 @@ public class EjemploStreamMap {
 
 //          map() se usa para aplicar una operacion  especifica al Stream.
 
-        Stream<String> nombres = Stream
-                .of("Pato","Paco","Pepa","Pepe")
-                .map(String::toUpperCase)
+        Stream<Usuario> nombres = Stream
+                .of("Pato Guzman","Paco Gonzalez","Pepa Gutierrez ","Pepe Mena")
+                                            //posicion 0 el nombre, posicion 1 el apellido.
+                .map(nombre -> new Usuario(nombre.split(" ")[0],nombre.split(" ")[1]))
                 .peek(System.out::println)
-                .map(String::toLowerCase)
+                .map(usuario -> {
+                    String nombre = usuario.getNombre().toUpperCase();
+                    usuario.setNombre(nombre);
+                    return usuario;
+                })
                 ;
 
 
         //Convertir el Stream a una Lista
         //List<String> lista = nombres.collect(Collectors.toList());
-        List<String> lista = nombres.toList();
+        List<Usuario> lista = nombres.toList();
         lista.forEach(System.out::println);
 
         //Steam no se ejecuta hasta que se invoca un metodo final( forEach ) u otro.

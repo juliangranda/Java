@@ -20,8 +20,8 @@ public class EjemploStreamFilterSingle2 {
                                             //posicion 0 el nombre, posicion 1 el apellido.
                 .map(nombre -> new Usuario(nombre.split(" ")[0],nombre.split(" ")[1]))
                 .peek(System.out::println)
-                .filter( u -> u.getId().equals(2))
-                .findFirst().get()
+                .filter( u -> u.getId().equals(6))
+                .findFirst().orElseGet(() -> new Usuario("jhon","doe"))
                 ;
 
         System.out.println(usuario);

@@ -4,7 +4,7 @@ import org.juliangranda.api.stream.ejemplos.models.Usuario;
 
 import java.util.stream.Stream;
 
-public class EjemploStreamFilteCount {
+public class EjemploStreamFilterCount {
     public static void main(String[] args) {
 
         //count: no recibe argumento y retorna la cantidad de elementos en el stream.

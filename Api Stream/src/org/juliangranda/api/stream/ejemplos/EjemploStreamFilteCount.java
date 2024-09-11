@@ -2,30 +2,22 @@ package org.juliangranda.api.stream.ejemplos;
 
 import org.juliangranda.api.stream.ejemplos.models.Usuario;
 
-import java.util.Optional;
 import java.util.stream.Stream;
 
-public class EjemploStreamFilterSingle2 {
+public class EjemploStreamFilteCount {
     public static void main(String[] args) {
 
-        //filter: se encarga de filtrar en un Steam o en el flujo de datos.
-
-        //Obtener un solo objeto.
-
-        //Find: convertir nuestro flujo de datos a un solo objeto. el primer objeto en este caso.
-        //obtener uno solo(objeto-usuario)
-
-        Usuario usuario = Stream
+        //count: no recibe argumento y retorna la cantidad de elementos en el stream.
+        //retorna un tipo long no int.
+        long count = Stream
                 .of("Pato Guzman","Paco Gonzalez","Pepa Gutierrez ","Pepe Mena","Pepe Garcia")
                                             //posicion 0 el nombre, posicion 1 el apellido.
                 .map(nombre -> new Usuario(nombre.split(" ")[0],nombre.split(" ")[1]))
                 .peek(System.out::println)
-                .filter( u -> u.getId().equals(2))
-                .findFirst().get()
-                ;
+                .count()
+                 ;
 
-        System.out.println(usuario);
-
-
+        System.out.println(count);
+         
     }
 }

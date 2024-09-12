@@ -16,6 +16,7 @@ public class EjemploStreamDistinctUsuarioSum {
                         "Pepe Garcia","Pato Guzman","Pato Guzman")
                 .map(nombre -> new Usuario(nombre.split(" ")[0],nombre.split(" ")[1]))
                 .distinct()
+                //convierte un map String a Int y retorna un IntStream.
                 .mapToInt(u -> u.toString().length()) // u.getId()
                 .peek(System.out::println);
                 ;

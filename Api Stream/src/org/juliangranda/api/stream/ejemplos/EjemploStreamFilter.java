@@ -13,18 +13,18 @@ public class EjemploStreamFilter {
                 .of("Pato Guzman","Paco Gonzalez","Pepa Gutierrez ","Pepe Mena","Pepe Garcia")
                 //posicion 0 el nombre, posicion 1 el apellido.
                 .map(nombre -> new Usuario(nombre.split(" ")[0],nombre.split(" ")[1]))
-                .filter( u -> u.getNombre().equals("Pepe"))
-                .peek(System.out::println)
-                .map(usuario -> {
-                    String nombre = usuario.getNombre().toUpperCase();
-                    usuario.setNombre(nombre);
-                    return usuario;
+                //flatMap: devuelve o retorna varias salidas por cada elemento,devuelve un stream separado.
+                .flatMap( u -> {
+                    if(u.getNombre().equalsIgnoreCase("Pepe")){
+                        return Stream.of(u);
+                    }
+                    return Stream.empty();
                 })
+                .peek(System.out::println)
                 ;
 
-
-        List<Usuario> lista = nombres.toList();
-        lista.forEach(System.out::println);
+        //nombres.forEach(System.out::println);
+        System.out.println(nombres.count());
 
 
     }

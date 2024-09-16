@@ -17,6 +17,7 @@ public class ListadeProductos {
 
         double importes = listaproductos.stream()
                 .map(p -> (p.getCantidad()* p.getPrecio()) )
+                .peek(System.out::println)
                 .reduce(0d, Double::sum);
         System.out.println("importes = " + importes);
 

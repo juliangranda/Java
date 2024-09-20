@@ -1,14 +1,17 @@
 package org.juliangranda.anotaciones.ejemplo.models;
 
+import org.juliangranda.anotaciones.ejemplo.Init;
 import org.juliangranda.anotaciones.ejemplo.JsonAtributo;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Producto {
     //atributos configurados en la anotacion
     //al añadir un valor del atributo en una anotacion es por defecto
     //en caso de que este vacio el atributo.
-    @JsonAtributo(capitalizar = true)
+    @JsonAtributo()
     private String nombre;
     @JsonAtributo(nombre = "costo")
     private Long precio;
@@ -16,6 +19,14 @@ public class Producto {
 
     private LocalDate fecha;
 
+    @Init
+    private void init(){
+        this.nombre = Arrays.stream(nombre.split(" "))
+                .map(palabra -> palabra.substring(0,1).toUpperCase()
+                        + palabra.substring(1).toLowerCase())
+                .collect(Collectors.joining(" "));
+
+    }
     public String getNombre() {
         return nombre;
     }

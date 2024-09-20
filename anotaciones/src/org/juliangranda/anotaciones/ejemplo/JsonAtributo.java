@@ -19,5 +19,5 @@ import java.lang.annotation.*;
 public @interface JsonAtributo {
     //atributos de la configuracion para la anotacion
     String nombre() default "";
-
+    boolean capitalizar() default  false;
 }

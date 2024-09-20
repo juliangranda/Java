@@ -6,9 +6,11 @@ import java.time.LocalDate;
 
 public class Producto {
     //atributos configurados en la anotacion
-    @JsonAtributo
+    //al añadir un valor del atributo en una anotacion es por defecto
+    //en caso de que este vacio el atributo.
+    @JsonAtributo()
     private String nombre;
-    @JsonAtributo
+    @JsonAtributo(nombre = "costo")
     private Long precio;
 
 

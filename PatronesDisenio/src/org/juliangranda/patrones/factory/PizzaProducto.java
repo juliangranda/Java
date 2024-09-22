@@ -24,10 +24,14 @@ public abstract class PizzaProducto {
     }
 
     abstract public void cocinar();
-    abstract void cortar();
+    abstract public void cortar();
 
     public void empaquetar(){
         System.out.println("Poniendo la pizza en una caja de empaque");
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     @Override

@@ -9,4 +9,9 @@ public class Archivo extends Componente{
     public String mostrar(int nivel) {
         return "\t".repeat(nivel) + nombre;
     }
+
+    @Override
+    public boolean buscar(String nombre) {
+        return this.nombre.equalsIgnoreCase(nombre);
+    }
 }

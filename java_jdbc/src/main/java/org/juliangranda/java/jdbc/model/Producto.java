@@ -73,6 +73,6 @@ public class Producto {
                 " | " +
                 fechaRegistro +
                 " | " +
-                categoria.getId();
+                categoria.getNombre();
     }
 }

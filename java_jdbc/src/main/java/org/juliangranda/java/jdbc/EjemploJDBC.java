@@ -25,8 +25,8 @@ public class EjemploJDBC {
 
             System.out.println("========== Insertar nuevo producto ==============");
             Producto producto = new Producto();
-            producto.setNombre("Teclado Razer mecanico");
-            producto.setPrecio(550);
+            producto.setNombre("Teclado Razer2 mecanico");
+            producto.setPrecio(600);
             producto.setFechaRegistro(new Date());
             Categoria categoria = new Categoria();
             categoria.setId(3L);

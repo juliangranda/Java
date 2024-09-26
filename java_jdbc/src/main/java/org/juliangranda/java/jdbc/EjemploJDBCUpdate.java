@@ -26,11 +26,11 @@ public class EjemploJDBCUpdate {
 
             System.out.println("========== Editar nuevo producto ==============");
             Producto producto = new Producto();
-            producto.setId(5L);
+            producto.setId(6L);
             producto.setNombre("Teclado Corsair k95 mecanico");
             producto.setPrecio(700);
             Categoria categoria = new Categoria();
-            categoria.setId(2L);
+            categoria.setId(1L);
             producto.setCategoria(categoria);
             repositorio.guardar(producto);
             System.out.println("Producto Actualizado con exito");

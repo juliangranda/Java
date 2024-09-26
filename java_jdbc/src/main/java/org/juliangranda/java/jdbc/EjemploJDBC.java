@@ -2,6 +2,7 @@ package org.juliangranda.java.jdbc;
 
 import java.sql.*;
 
+//https://mvnrepository.com/   importante para dependencias
 public class EjemploJDBC {
     public static void main(String[] args) {
 

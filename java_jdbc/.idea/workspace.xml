@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ea1846-e3f8-43c6-b894-423576a09f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Api Stream/Api Stream.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PatronesDisenio/PatronesDisenio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../anotaciones/anotaciones.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../claseOptional/claseOptional.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java8DateTime/java8DateTime.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java8_lambda/java8_lambda.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../manejo_de_archivo/manejo_de_archivo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../recursividad/recursividad.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +32,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EjemploJDBC.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",

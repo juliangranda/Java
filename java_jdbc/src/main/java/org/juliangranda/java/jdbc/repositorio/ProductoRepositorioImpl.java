@@ -79,12 +79,12 @@ public class ProductoRepositorioImpl implements Repositorio<Producto> {
 
     @Override
     public void eliminar(Long id) {
-        try(PreparedStatement stmt = getConnection().prepareStatement("SELECT * FROM productos WHERE id=?")){
+        try(PreparedStatement stmt = getConnection().prepareStatement("DELETE FROM productos WHERE id=?")){
             stmt.setLong(1,id);
             stmt.executeUpdate();
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 

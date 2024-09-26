@@ -5,11 +5,12 @@ import org.juliangranda.java.jdbc.repositorio.ProductoRepositorioImpl;
 import org.juliangranda.java.jdbc.repositorio.Repositorio;
 import org.juliangranda.java.jdbc.util.ConexionBaseDatos;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Date;
 
 //https://mvnrepository.com/   importante para dependencias
-public class EjemploJDBC {
+public class EjemploJDBCUpdate {
     public static void main(String[] args) {
 
 
@@ -22,13 +23,13 @@ public class EjemploJDBC {
             System.out.println("==========obtener por id==============");
             System.out.println(repositorio.porId(1L));
 
-            System.out.println("========== Insertar nuevo producto ==============");
+            System.out.println("========== Editar nuevo producto ==============");
             Producto producto = new Producto();
-            producto.setNombre("Teclado mecanico");
-            producto.setPrecio(500);
-            producto.setFechaRegistro(new Date());
+            producto.setId(3L);
+            producto.setNombre("Teclado Razer mecanico");
+            producto.setPrecio(700);
             repositorio.guardar(producto);
-            System.out.println("Producto guardado con exito");
+            System.out.println("Producto Actualizado con exito");
 
             repositorio.listar().forEach(System.out::println);
 

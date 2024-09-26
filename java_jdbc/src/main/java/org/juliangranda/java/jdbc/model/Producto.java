@@ -8,6 +8,7 @@ public class Producto {
     private int precio;
     private Date fechaRegistro;
 
+
     public Producto() {
 
     }
@@ -49,5 +50,17 @@ public class Producto {
 
     public void setFechaRegistro(Date fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
+    }
+
+    @Override
+    public String toString() {
+        return
+                id +
+                " | " +
+                nombre +
+                " | " +
+                precio +
+                " | " +
+                fechaRegistro;
     }
 }

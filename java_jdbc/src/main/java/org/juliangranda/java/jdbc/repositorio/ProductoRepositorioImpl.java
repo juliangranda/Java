@@ -3,16 +3,13 @@ package org.juliangranda.java.jdbc.repositorio;
 import org.juliangranda.java.jdbc.model.Producto;
 import org.juliangranda.java.jdbc.util.ConexionBaseDatos;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductoRepositorioImpl implements Repositorio<Producto> {
 
-    private Connection getConnetion() throws SQLException {
+    private Connection getConnection() throws SQLException {
         return ConexionBaseDatos.getInstance();
     }
 
@@ -20,14 +17,10 @@ public class ProductoRepositorioImpl implements Repositorio<Producto> {
     public List<Producto> listar() {
         List<Producto> productos = new ArrayList<>();
 
-        try(Statement stmt = getConnetion().createStatement();
+        try(Statement stmt = getConnection().createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM productos")){
             while(rs.next()){
-                Producto p = new Producto();
-                p.setId(rs.getLong("id"));
-                p.setNombre(rs.getString("nombre"));
-                p.setPrecio(rs.getInt("precio"));
-                p.setFechaRegistro(rs.getDate("fecha_registro"));
+                Producto p = crearProducto(rs);
                 productos.add(p);
             }
 
@@ -37,9 +30,32 @@ public class ProductoRepositorioImpl implements Repositorio<Producto> {
         return productos;
     }
 
+    //try: solo puede usar argumentos de tipo recurso(Statement).
     @Override
     public Producto porId(Long id) {
-        return null;
+        Producto producto = null;
+        try(PreparedStatement stmt = getConnection()
+                .prepareStatement("SELECT * FROM productos WHERE id = ? ")){
+            stmt.setLong(1, id);
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()){
+                producto = crearProducto(rs);
+            }
+            rs.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return producto;
+    }
+
+    private static Producto crearProducto(ResultSet rs) throws SQLException {
+        Producto p = new Producto();
+        p.setId(rs.getLong("id"));
+        p.setNombre(rs.getString("nombre"));
+        p.setPrecio(rs.getInt("precio"));
+        p.setFechaRegistro(rs.getDate("fecha_registro"));
+        return p;
     }
 
     @Override

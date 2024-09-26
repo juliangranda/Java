@@ -1,5 +1,6 @@
 package org.juliangranda.java.jdbc;
 
+import org.juliangranda.java.jdbc.model.Categoria;
 import org.juliangranda.java.jdbc.model.Producto;
 import org.juliangranda.java.jdbc.repositorio.ProductoRepositorioImpl;
 import org.juliangranda.java.jdbc.repositorio.Repositorio;
@@ -24,9 +25,12 @@ public class EjemploJDBC {
 
             System.out.println("========== Insertar nuevo producto ==============");
             Producto producto = new Producto();
-            producto.setNombre("Teclado mecanico");
-            producto.setPrecio(500);
+            producto.setNombre("Teclado Razer mecanico");
+            producto.setPrecio(550);
             producto.setFechaRegistro(new Date());
+            Categoria categoria = new Categoria();
+            categoria.setId(3L);
+            producto.setCategoria(categoria);
             repositorio.guardar(producto);
             System.out.println("Producto guardado con exito");
 

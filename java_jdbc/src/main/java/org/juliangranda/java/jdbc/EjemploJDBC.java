@@ -1,5 +1,8 @@
 package org.juliangranda.java.jdbc;
 
+import org.juliangranda.java.jdbc.model.Producto;
+import org.juliangranda.java.jdbc.repositorio.ProductoRepositorioImpl;
+import org.juliangranda.java.jdbc.repositorio.Repositorio;
 import org.juliangranda.java.jdbc.util.ConexionBaseDatos;
 
 import java.sql.*;
@@ -9,19 +12,10 @@ public class EjemploJDBC {
     public static void main(String[] args) {
 
 
-        try(Connection conn = ConexionBaseDatos.getInstance();
-            Statement stmt = conn.createStatement();
-            ResultSet resultado = stmt.executeQuery("SELECT * FROM productos");) {
+        try(Connection conn = ConexionBaseDatos.getInstance()) {
 
-            while(resultado.next()){
-                System.out.print(resultado.getInt("id"));
-                System.out.print(" | ");
-                System.out.print(resultado.getInt("precio"));
-                System.out.print(" | ");
-                System.out.print(resultado.getString("fecha_registro"));
-                System.out.print(" | ");
-                System.out.println(resultado.getString("nombre"));
-            }
+            Repositorio<Producto> repositorio = new ProductoRepositorioImpl();
+            repositorio.listar().forEach(p -> System.out.println(p.getNombre()));
 
         } catch (SQLException e) {
             e.printStackTrace();

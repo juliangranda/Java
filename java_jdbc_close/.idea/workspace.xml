@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ea1846-e3f8-43c6-b894-423576a09f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/model/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/model/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_close/src/main/java/org/juliangranda/java/jdbc/util/ConexionBaseDatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/model/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/model/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/util/ConexionBaseDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/cursos/java/Java",
+    "last_opened_file_path": "C:/cursos/java/Java/java_jdbc_close",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -65,14 +65,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\cursos\java\Java" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.juliangranda.java.jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjemploJDBCUpdate">
+  <component name="RunManager" selected="Application.EjemploJDBC">
     <configuration name="EjemploJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.juliangranda.java.jdbc.EjemploJDBC" />
       <module name="java_jdbc" />
@@ -127,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EjemploJDBCUpdate" />
         <item itemvalue="Application.EjemploJDBC" />
+        <item itemvalue="Application.EjemploJDBCUpdate" />
         <item itemvalue="Application.EjemploJDBCDelete" />
         <item itemvalue="Application.Main" />
       </list>

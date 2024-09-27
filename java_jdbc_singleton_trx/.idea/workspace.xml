@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ea1846-e3f8-43c6-b894-423576a09f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCTrx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/model/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/model/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/util/ConexionBaseDatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_jdbc_pool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc_pool/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCTrx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCTrx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +38,7 @@
   "keyToString": {
     "Application.EjemploJDBC.executor": "Run",
     "Application.EjemploJDBCDelete.executor": "Run",
+    "Application.EjemploJDBCTrx.executor": "Run",
     "Application.EjemploJDBCUpdate.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,7 +62,7 @@
       <recent name="org.juliangranda.java.jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjemploJDBCUpdate">
+  <component name="RunManager" selected="Application.EjemploJDBCTrx">
     <configuration name="EjemploJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.juliangranda.java.jdbc.EjemploJDBC" />
       <module name="java_jdbc" />
@@ -92,6 +78,19 @@
     </configuration>
     <configuration name="EjemploJDBCDelete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.juliangranda.java.jdbc.EjemploJDBCDelete" />
+      <module name="java_jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.juliangranda.java.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EjemploJDBCTrx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.juliangranda.java.jdbc.EjemploJDBCTrx" />
       <module name="java_jdbc" />
       <extension name="coverage">
         <pattern>
@@ -131,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjemploJDBCTrx" />
         <item itemvalue="Application.EjemploJDBCUpdate" />
         <item itemvalue="Application.EjemploJDBC" />
         <item itemvalue="Application.EjemploJDBCDelete" />

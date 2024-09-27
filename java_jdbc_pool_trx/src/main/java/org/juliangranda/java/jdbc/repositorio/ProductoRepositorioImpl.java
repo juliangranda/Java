@@ -10,10 +10,10 @@ import java.util.List;
 
 public class ProductoRepositorioImpl implements Repositorio<Producto> {
 
-    private Connection Conn;
+    private Connection conn;
 
     public ProductoRepositorioImpl(Connection conn) {
-        Conn = conn;
+        this.conn = conn;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class ProductoRepositorioImpl implements Repositorio<Producto> {
     @Override
     public Producto porId(Long id) throws SQLException {
         Producto producto = null;
-        try(;
+        try(
                 PreparedStatement stmt = conn
                 .prepareStatement("SELECT p.*, c.nombre as categoria FROM productos as p " +
                         "inner join categorias as c ON (p.categoria_id = c.id) WHERE p.id = ? ")){

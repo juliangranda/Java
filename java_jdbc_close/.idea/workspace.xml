@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ea1846-e3f8-43c6-b894-423576a09f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/tarea37/mantenedorusuarios/MantenedorUsuariosJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/tarea37/mantenedorusuarios/modelo/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/tarea37/mantenedorusuarios/repositorio/IRepositorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/tarea37/mantenedorusuarios/repositorio/UsuarioRepositorioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/tarea37/mantenedorusuarios/util/ConexionBaseDatos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/juliangranda/java/jdbc/tarea37/out/production/tarea37/org/juliangranda/java/jdbc/tarea37/mantenedorusuarios/mantenedorU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/model/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/model/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool/src/main/java/org/juliangranda/java/jdbc/util/ConexionBaseDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/cursos/java/Java/java_jdbc_close",
+    "last_opened_file_path": "C:/cursos/java/Java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -57,6 +68,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\cursos\java\Java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.juliangranda.java.jdbc" />
     </key>

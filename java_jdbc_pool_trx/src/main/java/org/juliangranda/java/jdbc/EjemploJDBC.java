@@ -5,6 +5,8 @@ import org.juliangranda.java.jdbc.model.Producto;
 import org.juliangranda.java.jdbc.repositorio.CategoriaRepositorioImpl;
 import org.juliangranda.java.jdbc.repositorio.ProductoRepositorioImpl;
 import org.juliangranda.java.jdbc.repositorio.Repositorio;
+import org.juliangranda.java.jdbc.service.CatalogoServicio;
+import org.juliangranda.java.jdbc.service.Service;
 import org.juliangranda.java.jdbc.util.ConexionBaseDatos;
 
 import java.sql.Connection;
@@ -14,42 +16,19 @@ import java.util.Date;
 public class EjemploJDBC {
     public static void main(String[] args) throws SQLException {
 
-        try(Connection conn = ConexionBaseDatos.getConnection();) {
-            if (conn.getAutoCommit()){
-                conn.setAutoCommit(false);
-            }
-            try {
-                Repositorio<Categoria> repositorioCategoria = new CategoriaRepositorioImpl(conn);
-                System.out.println("============ Insertar nueva categoria: ============");
-                Categoria categoria = new Categoria();
-                categoria.setNombre("Electrohogar");
-                Categoria nuevacategoria = repositorioCategoria.guardar(categoria);
-                System.out.println("Categoria guardado con exito: " + nuevacategoria.getId());
+        Service servicio = new CatalogoServicio();
+        System.out.println("============= listar =============");
+        servicio.listar().forEach(System.out::println);
+        Categoria categoria = new Categoria();
+        categoria.setNombre("Iluminación");
 
-                Repositorio<Producto> repositorio = new ProductoRepositorioImpl(conn);
-                System.out.println("==========listar==============");
-                repositorio.listar().forEach(System.out::println);
-
-                System.out.println("==========obtener por id==============");
-                System.out.println(repositorio.porId(1L));
-
-                System.out.println("========== Insertar nuevo producto ==============");
-                Producto producto = new Producto();
-                producto.setNombre("Refrigerador samsung");
-                producto.setPrecio(9900);
-                producto.setFechaRegistro(new Date());
-                producto.setSku("abcdefg123");
-
-                producto.setCategoria(nuevacategoria);
-                repositorio.guardar(producto);
-                System.out.println("Producto guardado con exito: " + producto.getId());
-
-                repositorio.listar().forEach(System.out::println);
-                conn.commit();
-            } catch (SQLException e) {
-                conn.rollback();
-                throw new RuntimeException(e);
-            }
-        }
+        Producto producto = new Producto();
+        producto.setNombre("Lámpara led escritorio");
+        producto.setPrecio(990);
+        producto.setFechaRegistro(new Date());
+        producto.setSku("abcdefgh12");
+        servicio.guardarProductoConCategoria(producto, categoria);
+        System.out.println("Producto guardado con éxito: " + producto.getId());
+        servicio.listar().forEach(System.out::println);
     }
 }

@@ -1,10 +1,16 @@
 package org.juliangranda.junit5.ejemplo.models;
 
 import java.math.BigDecimal;
+import java.util.Locale;
 
 public class Cuenta {
     private String persona;
     private BigDecimal saldo;
+
+    public Cuenta(String persona,BigDecimal saldo) {
+        this.persona = persona.toUpperCase();
+        this.saldo = saldo;
+    }
 
     public String getPersona() {
         return persona;

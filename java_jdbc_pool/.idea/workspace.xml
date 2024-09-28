@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ea1846-e3f8-43c6-b894-423576a09f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/EjemploJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/EjemploJDBCUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/model/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/model/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/repositorio/ProductoRepositorioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/repositorio/Repositorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/util/ConexionBaseDatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_jdbc_singleton_trx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc_singleton_trx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/repositorio/CategoriaRepositorioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/repositorio/CategoriaRepositorioImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +42,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/cursos/java/Java",
+    "last_opened_file_path": "C:/cursos/java/Java/java_jdbc_singleton_trx",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -144,5 +129,16 @@
       <updated>1727368699344</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

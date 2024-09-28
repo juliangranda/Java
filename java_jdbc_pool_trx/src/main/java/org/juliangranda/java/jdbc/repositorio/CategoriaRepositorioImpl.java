@@ -27,7 +27,7 @@ public class CategoriaRepositorioImpl implements Repositorio{
     }
 
     @Override
-    public Object porId(Long id) throws SQLException {
+    public Categoria porId(Long id) throws SQLException {
         Categoria categoria = null;
         try(PreparedStatement stmt = conn.prepareStatement("SELECT * FROM categorias as c WHERE c.id=?")){
             stmt.setLong(1, id);
@@ -41,13 +41,38 @@ public class CategoriaRepositorioImpl implements Repositorio{
     }
 
     @Override
-    public Object guardar(Object o) throws SQLException {
-        return null;
+    public Object guardar(Object categoria) throws SQLException {
+        String sql = null;
+        if(((Categoria)categoria).getId() != null && ((Categoria) categoria).getId() > 0){
+            sql = "UPDATE categorias SET nombres=? WHERE id=?";
+        }else{
+            sql = "INSERT INTO categorias(nombre) VALUES(?)";
+        }
+        try(PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
+            stmt.setString(1, ((Categoria) categoria).getNombre());
+            if(((Categoria) categoria).getId() != null && ((Categoria) categoria).getId() > 0){
+                stmt.setLong(2,((Categoria) categoria).getId());
+            }
+            stmt.executeUpdate();
+
+            if(((Categoria) categoria).getId() == null){
+                try(ResultSet rs = stmt.getGeneratedKeys()){
+                    if(rs.next()){
+                        ((Categoria) categoria).setId(rs.getLong(1));
+                    }
+                }
+            }
+        }
+
+        return categoria;
     }
 
     @Override
     public void eliminar(Long id) throws SQLException {
-
+        try(PreparedStatement stmt = conn.prepareStatement("SELECT * FROM categorias WHERE id=?")){
+            stmt.setLong(1,id);
+            stmt.executeUpdate();
+        }
     }
 
     private static Categoria crearCategoria(ResultSet rs) throws SQLException {

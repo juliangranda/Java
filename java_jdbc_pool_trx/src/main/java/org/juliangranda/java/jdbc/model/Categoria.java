@@ -1,7 +1,6 @@
 package org.juliangranda.java.jdbc.model;
 
 public class Categoria {
-
     private Long id;
     private String nombre;
 

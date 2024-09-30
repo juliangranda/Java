@@ -1,28 +1,36 @@
 package org.juliangranda.junit5.ejemplo.models;
 
 import org.juliangranda.junit5.ejemplo.exceptions.DineroInsuficienteException;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CuentaTest {
+    Cuenta cuenta;
+
+    @BeforeEach
+    void initMetodoTest(){
+        this.cuenta = new Cuenta("Andres",new BigDecimal("1000.123456"));
+        System.out.println("Iniciando el metodo");
+
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("finalizando el metodo de prueba");
+    }
 
     //la anotacion @Test nos permite ejecutar una prueba/test del metodo, es obligatoria.
     //click derecho + generate nos permite crear nuestro metodos para test con @Test.
 
     //BigDecimal es como un double de mayor tamaño y con una precision superior.
     //se puede usar en bancos o temas relacionados con cuentas o negocios.
-
     @Test
     @DisplayName("probando el nombre de la cuenta corriente")
     void testNombreCuenta(){
-        Cuenta cuenta = new Cuenta("Andres",new BigDecimal("1000.123456"));
         //cuenta.setPersona("Andres");
-
         //validando algo
         String esperado = "Andres";
         String real = cuenta.getPersona();
@@ -36,7 +44,7 @@ class CuentaTest {
     @Test
     @DisplayName("probando el saldo de la cuenta corriente, que no sea null, mayor que cero, valor esperado")
     void testSaldoCuenta(){
-        Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         assertNotNull(cuenta.getSaldo());
         //doubleValue = convierte un BigDecimal a un double.
         assertEquals(1000.12345, cuenta.getSaldo().doubleValue());
@@ -48,7 +56,7 @@ class CuentaTest {
     @Test
     @DisplayName("tessteando referencias que sean iguales con el metodo equals")
     void testReferenciaCuenta() {
-        Cuenta cuenta = new Cuenta("John Doe", new BigDecimal("8900.9997"));
+        cuenta = new Cuenta("John Doe", new BigDecimal("8900.9997"));
         Cuenta cuenta2 = new Cuenta("John Doe", new BigDecimal("8900.9997"));
         //assertNotEquals(cuenta,cuenta2);
         //Equals se hizo sobreescritura de equals en Clase Cuenta.
@@ -57,7 +65,7 @@ class CuentaTest {
 
     @Test
     void testDebitoCuenta() {
-        Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         cuenta.debito(new BigDecimal(100));
         assertNotNull(cuenta.getSaldo());
         assertEquals(900, cuenta.getSaldo().intValue());
@@ -66,7 +74,7 @@ class CuentaTest {
 
     @Test
     void testCreditoCuenta() {
-        Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         cuenta.credito(new BigDecimal(100));
         assertNotNull(cuenta.getSaldo());
         assertEquals(1100, cuenta.getSaldo().intValue());
@@ -75,7 +83,7 @@ class CuentaTest {
 
     @Test
     void testDineroSuficienteExceptionCuenta() {
-        Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         Exception exception = assertThrows(DineroInsuficienteException.class, () -> {
            cuenta.debito(new BigDecimal(1500));
         });
@@ -100,10 +108,10 @@ class CuentaTest {
     // falta por terminar de implementar y quiere adelantar otras cosas.
     //DisplayName = permite una descripción más específica del Test a realizar.
     @Test
-    @Disabled
+    //@Disabled
     @DisplayName("Probando relaciones entre las cuentas y el banco con assertAll")
     void testRelacionBancoCuentas() {
-        fail(); //para forzar el error.
+        //fail(); //para forzar el error.
         Cuenta cuenta1 = new Cuenta("Jhon Doe", new BigDecimal("2500"));
         Cuenta cuenta2 = new Cuenta("Andres", new BigDecimal("1500.8989"));
 

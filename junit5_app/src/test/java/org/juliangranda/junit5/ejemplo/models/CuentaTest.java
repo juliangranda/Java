@@ -7,12 +7,16 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CuentaTest {
     Cuenta cuenta;
 
+    //beforeEach,AfterEach,AfterAll,BeforeAll se pueden crear con generate o Alt + Insert.
+    //salen como: setUpMethod ,TearDownMethod ,AfterClass Method y BeforeClass Method.
+    //segun el orden dado de izq a der para cada anotación que hace parte del ciclo de vida.
     @BeforeEach
     void initMetodoTest(){
-        this.cuenta = new Cuenta("Andres",new BigDecimal("1000.123456"));
+        this.cuenta = new Cuenta("Andres",new BigDecimal("1000.12345"));
         System.out.println("Iniciando el metodo");
 
     }
@@ -22,6 +26,15 @@ class CuentaTest {
         System.out.println("finalizando el metodo de prueba");
     }
 
+    @BeforeAll
+    static void beforeAll() {
+        System.out.println("Inicializando el test");
+    }
+
+    @AfterAll
+    static void afterAll() {
+        System.out.println("finalizando el test");
+    }
     //la anotacion @Test nos permite ejecutar una prueba/test del metodo, es obligatoria.
     //click derecho + generate nos permite crear nuestro metodos para test con @Test.
 
@@ -44,7 +57,6 @@ class CuentaTest {
     @Test
     @DisplayName("probando el saldo de la cuenta corriente, que no sea null, mayor que cero, valor esperado")
     void testSaldoCuenta(){
-        cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         assertNotNull(cuenta.getSaldo());
         //doubleValue = convierte un BigDecimal a un double.
         assertEquals(1000.12345, cuenta.getSaldo().doubleValue());

@@ -37,5 +37,12 @@ class CuentaTest {
 
     }
 
-
+    @Test
+    void testReferenciaCuenta() {
+        Cuenta cuenta = new Cuenta("John Doe", new BigDecimal("8900.9997"));
+        Cuenta cuenta2 = new Cuenta("John Doe", new BigDecimal("8900.9997"));
+        //assertNotEquals(cuenta,cuenta2);
+        //Equals se hizo sobreescritura de equals en Clase Cuenta.
+        assertEquals(cuenta,cuenta2);
+    }
 }

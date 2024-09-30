@@ -11,6 +11,9 @@ class CuentaTest {
     //la anotacion @Test nos permite ejecutar una prueba/test del metodo, es obligatoria.
     //click derecho + generate nos permite crear nuestro metodos para test con @Test.
 
+    //BigDecimal es como un double de mayor tamaño y con una precision superior.
+    //se puede usar en bancos o temas relacionados con cuentas o negocios.
+
     @Test
     void testNombreCuenta(){
         Cuenta cuenta = new Cuenta("Andres",new BigDecimal("1000.123456"));
@@ -22,7 +25,17 @@ class CuentaTest {
         //Assertions.assertEquals(esperado,real);
         assertEquals(esperado,real);
         assertTrue(real.equals("Andres"));
+    }
+
+    @Test
+    void testSaldoCuenta(){
+        Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        //doubleValue = convierte un BigDecimal a un double.
+        assertEquals(1000.12345, cuenta.getSaldo().doubleValue());
+        assertFalse(cuenta.getSaldo().compareTo(BigDecimal.ZERO) < 0);
+        assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
 
     }
+
 
 }

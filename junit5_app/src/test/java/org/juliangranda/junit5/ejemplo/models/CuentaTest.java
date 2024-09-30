@@ -1,6 +1,8 @@
 package org.juliangranda.junit5.ejemplo.models;
 
 import org.juliangranda.junit5.ejemplo.exceptions.DineroInsuficienteException;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -16,6 +18,7 @@ class CuentaTest {
     //se puede usar en bancos o temas relacionados con cuentas o negocios.
 
     @Test
+    @DisplayName("probando el nombre de la cuenta corriente")
     void testNombreCuenta(){
         Cuenta cuenta = new Cuenta("Andres",new BigDecimal("1000.123456"));
         //cuenta.setPersona("Andres");
@@ -31,6 +34,7 @@ class CuentaTest {
     }
 
     @Test
+    @DisplayName("probando el saldo de la cuenta corriente, que no sea null, mayor que cero, valor esperado")
     void testSaldoCuenta(){
         Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         assertNotNull(cuenta.getSaldo());
@@ -42,6 +46,7 @@ class CuentaTest {
     }
 
     @Test
+    @DisplayName("tessteando referencias que sean iguales con el metodo equals")
     void testReferenciaCuenta() {
         Cuenta cuenta = new Cuenta("John Doe", new BigDecimal("8900.9997"));
         Cuenta cuenta2 = new Cuenta("John Doe", new BigDecimal("8900.9997"));
@@ -91,8 +96,14 @@ class CuentaTest {
         assertEquals("3000", cuenta1.getSaldo().toPlainString());
     }
 
+    // Disabled = en pausa o deshabilitado el test por estar estando o
+    // falta por terminar de implementar y quiere adelantar otras cosas.
+    //DisplayName = permite una descripción más específica del Test a realizar.
     @Test
+    @Disabled
+    @DisplayName("Probando relaciones entre las cuentas y el banco con assertAll")
     void testRelacionBancoCuentas() {
+        fail(); //para forzar el error.
         Cuenta cuenta1 = new Cuenta("Jhon Doe", new BigDecimal("2500"));
         Cuenta cuenta2 = new Cuenta("Andres", new BigDecimal("1500.8989"));
 

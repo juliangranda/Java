@@ -23,10 +23,11 @@ class CuentaTest {
         //validando algo
         String esperado = "Andres";
         String real = cuenta.getPersona();
-        assertNotNull(real);
+        assertNotNull(real, () -> "La cuenta no puede ser nula");
         //Assertions.assertEquals(esperado,real);
-        assertEquals(esperado,real);
-        assertTrue(real.equals("Andres"));
+        assertEquals(esperado,real, () -> "el nombre de la cuenta no es el que se esperaba: se esperaba "+ esperado +
+                " sin embargo fue " + real);
+        assertTrue(real.equals("Andres"), () -> "nombre cuenta esperada debe ser igual a la real");
     }
 
     @Test
@@ -105,9 +106,12 @@ class CuentaTest {
         //assertAll permite la ejecución de varios asserts al mismo tiempo además permite ver
         //todos los fallos sin la necesidad de parar la ejecución cuando se presenta un solo fallo,
         //es decir, cuando solo se utiliza un assert.
-        assertAll(() -> assertEquals("1000.8989", cuenta2.getSaldo().toPlainString()),
-                () -> assertEquals("3000", cuenta1.getSaldo().toPlainString()),
-                () -> assertEquals(2, banco.getCuentas().size()),
+        assertAll(() -> assertEquals("1000.8989", cuenta2.getSaldo().toPlainString(),
+                        () -> "el valor del saldo de la cuenta 2 no es el esperado"),
+                () -> assertEquals("3000", cuenta1.getSaldo().toPlainString(),
+                        "el valor del saldo de la cuenta 1 no es el esperado"),
+                () -> assertEquals(2, banco.getCuentas().size(),
+                        "el banco no tiene las cuentas esperadas"),
                 () -> assertEquals("Banco del Estado", cuenta1.getBanco().getNombre()),
                 () -> assertEquals("Andres", banco.getCuentas().stream()
                         .filter((c) -> c.getPersona().equals("Andres"))

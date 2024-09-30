@@ -1,5 +1,7 @@
 package org.juliangranda.junit5.ejemplo.models;
 
+import org.juliangranda.junit5.ejemplo.exceptions.DineroInsuficienteException;
+
 import java.math.BigDecimal;
 import java.util.Locale;
 import java.util.Objects;
@@ -30,7 +32,11 @@ public class Cuenta {
     }
 
     public void debito(BigDecimal monto){
-        this.saldo = this.saldo.subtract(monto);
+        BigDecimal nuevoSaldo = this.saldo.subtract(monto);
+        if(nuevoSaldo.compareTo(BigDecimal.ZERO) < 0){
+            throw new DineroInsuficienteException("Dinero Insuficiente");
+        }
+        this.saldo = nuevoSaldo;
     }
 
     public void credito(BigDecimal monto){

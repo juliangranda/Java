@@ -104,7 +104,7 @@ class CuentaTest {
         banco.transferir(cuenta2, cuenta1, new BigDecimal(500));
         //assertAll permite la ejecución de varios asserts al mismo tiempo además permite ver
         //todos los fallos sin la necesidad de parar la ejecución cuando se presenta un solo fallo,
-        //decir, cuando solo se utiliza un assert.
+        //es decir, cuando solo se utiliza un assert.
         assertAll(() -> assertEquals("1000.8989", cuenta2.getSaldo().toPlainString()),
                 () -> assertEquals("3000", cuenta1.getSaldo().toPlainString()),
                 () -> assertEquals(2, banco.getCuentas().size()),

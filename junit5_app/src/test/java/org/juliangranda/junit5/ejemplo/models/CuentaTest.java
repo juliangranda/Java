@@ -96,7 +96,7 @@ class CuentaTest {
         assertEquals("3000", cuenta1.getSaldo().toPlainString());
     }
 
-    // Disabled = en pausa o deshabilitado el test por estar estando o
+    // Disabled = en pausa o deshabilitado el test por estar estancado o
     // falta por terminar de implementar y quiere adelantar otras cosas.
     //DisplayName = permite una descripción más específica del Test a realizar.
     @Test

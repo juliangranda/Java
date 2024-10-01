@@ -10,6 +10,9 @@ import java.util.Properties;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.*;
+
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CuentaTest {
@@ -322,7 +325,7 @@ class CuentaTest {
     }
 
     //@RepetedTest(cantidadVEces) : repite un Test una cantidad de veces un Test.
-    //ademas actua como una clase anidada y se utiliza cuando hay cierta
+    //Además, actua como una clase anidada y se utiliza cuando hay cierta
     // aleatoriedad como cuando se usa Random o cambio que varía cuando se ejecuta.
     @DisplayName("Probando debito cuenta Repetir")
     @RepeatedTest(value = 5, name = "{displayName} Repeticion numero {currentRepetition} de {totalRepetition}")
@@ -336,5 +339,18 @@ class CuentaTest {
         assertEquals(900, cuenta.getSaldo().intValue());
         assertEquals("900.12345",cuenta.getSaldo().toPlainString());
     }
+
+    @ParameterizedTest(name = "numero {index} ejecutando con valor {0} - {argumentsWithNames}")
+    @ValueSource(strings = {"100", "200", "300", "500", "700", "1000.12345"})
+    void testDebitoCuentaValueSource(String monto) {
+        cuenta.debito(new BigDecimal(monto));
+        assertNotNull(cuenta.getSaldo());
+        assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
+    }
+
+
+
+
+
 
 }

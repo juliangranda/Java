@@ -50,6 +50,7 @@ class CuentaTest {
     //BigDecimal es como un double de mayor tamaño y con una precision superior.
     //se puede usar en bancos o temas relacionados con cuentas o negocios.
 
+    @Tag("cuenta")
     @Nested
     @DisplayName("probando atributos de la cuenta corriente")
     class CuentaTestNombreSaldo {
@@ -93,6 +94,7 @@ class CuentaTest {
     @Nested
     class CuentaOperacionesTest {
 
+        @Tag("cuenta")
         @Test
         void testDebitoCuenta() {
             cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
@@ -102,6 +104,7 @@ class CuentaTest {
             assertEquals("900.12345", cuenta.getSaldo().toPlainString());
         }
 
+        @Tag("cuenta")
         @Test
         void testCreditoCuenta() {
             cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
@@ -111,6 +114,8 @@ class CuentaTest {
             assertEquals("1100.12345", cuenta.getSaldo().toPlainString());
         }
 
+        @Tag("cuenta")
+        @Tag("banco")
         @Test
         void testTranferirDineroCuenta() {
             Cuenta cuenta1 = new Cuenta("Jhon Doe", new BigDecimal("2500"));
@@ -129,6 +134,7 @@ class CuentaTest {
     //DisplayName = permite una descripción más específica del Test a realizar.
 
     @Test
+    @Tag("error")
     void testDineroSuficienteExceptionCuenta() {
         cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         Exception exception = assertThrows(DineroInsuficienteException.class, () -> {
@@ -140,6 +146,8 @@ class CuentaTest {
     }
 
     @Test
+    @Tag("cuenta")
+    @Tag("banco")
     //@Disabled
     @DisplayName("Probando relaciones entre las cuentas y el banco con assertAll")
     void testRelacionBancoCuentas() {
@@ -342,6 +350,7 @@ class CuentaTest {
         assertEquals("900.12345", cuenta.getSaldo().toPlainString());
     }
 
+    @Tag("param")
     @Nested
     class PruebasParametrizadasTest {
         @ParameterizedTest(name = "numero {index} ejecutando con valor {0} - {argumentsWithNames}")
@@ -398,13 +407,15 @@ class CuentaTest {
             assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
         }
 
-        @ParameterizedTest(name = "numero {index} ejecutando con valor {0} - {argumentsWithNames}")
-        @MethodSource("montoList")
-        void testDebitoCuentaMethodSource(String monto) {
-            cuenta.debito(new BigDecimal(monto));
-            assertNotNull(cuenta.getSaldo());
-            assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
-        }
+    }
+
+    @Tag("param")
+    @ParameterizedTest(name = "numero {index} ejecutando con valor {0} - {argumentsWithNames}")
+    @MethodSource("montoList")
+    void testDebitoCuentaMethodSource(String monto) {
+        cuenta.debito(new BigDecimal(monto));
+        assertNotNull(cuenta.getSaldo());
+        assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
     }
 
     static List<String> montoList() {

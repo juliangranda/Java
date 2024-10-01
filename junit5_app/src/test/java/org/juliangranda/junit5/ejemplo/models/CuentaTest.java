@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CuentaTest {
@@ -259,6 +260,35 @@ class CuentaTest {
     @Test
     @DisabledIfEnvironmentVariable(named = "ENVIRONMENT",matches = "prod")
     void testEnvProdDisabled() {
+    }
+
+    //Assumptions
+    @Test
+    @DisplayName("test Saldo CuentaDev")
+    void testSaldoCuentaDev(){
+        boolean esDev = "dev".equals(System.getProperty("ENV"));
+        assumeTrue(esDev);
+        assertNotNull(cuenta.getSaldo());
+        //doubleValue = convierte un BigDecimal a un double.
+        assertEquals(1000.12345, cuenta.getSaldo().doubleValue());
+        assertFalse(cuenta.getSaldo().compareTo(BigDecimal.ZERO) < 0);
+        assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
+    }
+
+    //assumingThat: en caso de que no se cumpla, va a deshabilitar una parte del
+    //codigo en específico (expresion lambda) de lo contrario se ejecuta.
+    @Test
+    @DisplayName("test Saldo CuentaDev 2")
+    void testSaldoCuentaDev2(){
+        boolean esDev = "dev".equals(System.getProperty("ENV"));
+        assumingThat(esDev, () -> {
+            assertNotNull(cuenta.getSaldo());
+            //doubleValue = convierte un BigDecimal a un double.
+            assertEquals(1000.12345, cuenta.getSaldo().doubleValue());
+        });
+        assertFalse(cuenta.getSaldo().compareTo(BigDecimal.ZERO) < 0);
+        assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
+
     }
 
 }

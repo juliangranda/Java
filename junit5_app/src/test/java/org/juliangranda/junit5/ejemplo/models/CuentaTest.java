@@ -321,4 +321,20 @@ class CuentaTest {
 
     }
 
+    //@RepetedTest(cantidadVEces) : repite un Test una cantidad de veces un Test.
+    //ademas actua como una clase anidada y se utiliza cuando hay cierta
+    // aleatoriedad como cuando se usa Random o cambio que varía cuando se ejecuta.
+    @DisplayName("Probando debito cuenta Repetir")
+    @RepeatedTest(value = 5, name = "{displayName} Repeticion numero {currentRepetition} de {totalRepetition}")
+    void testDebitoCuentaRepetir(RepetitionInfo info) {
+        if (info.getCurrentRepetition() == 3){
+            System.out.println("estamos en la repeticion " + info.getCurrentRepetition());
+        }
+        cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        cuenta.debito(new BigDecimal(100));
+        assertNotNull(cuenta.getSaldo());
+        assertEquals(900, cuenta.getSaldo().intValue());
+        assertEquals("900.12345",cuenta.getSaldo().toPlainString());
+    }
+
 }

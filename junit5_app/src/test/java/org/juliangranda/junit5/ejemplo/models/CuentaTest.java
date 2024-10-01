@@ -2,12 +2,14 @@ package org.juliangranda.junit5.ejemplo.models;
 
 import org.juliangranda.junit5.ejemplo.exceptions.DineroInsuficienteException;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.*;
 
 import java.math.BigDecimal;
+import java.util.Properties;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-// @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CuentaTest {
     Cuenta cuenta;
 
@@ -151,5 +153,82 @@ class CuentaTest {
                 () -> assertTrue(banco.getCuentas().stream()
                         .anyMatch(c -> c.getPersona().equals("Jhon Doe"))));
 
+    }
+
+    //EnabledOnOs test para sistema operativo
+    @Test
+    @EnabledOnOs(OS.WINDOWS)
+    void testSoloWindows() {
+    }
+
+    @Test
+    @EnabledOnOs({OS.LINUX,OS.MAC})
+    void testSoloLinuxMac() {
+    }
+
+    //deshabilitar sistema operativo windows
+    @Test
+    @DisabledOnOs(OS.WINDOWS)
+    void testNoWindows() {
+    }
+
+    //test para la version de JDK de Java
+    @Test
+    @EnabledOnJre(JRE.JAVA_8)
+    void soloJdk8() {
+    }
+
+    @Test
+    @EnabledOnJre(JRE.JAVA_15)
+    void soloJDK15() {
+    }
+
+    //deshabilitar JDK java15
+    @Test
+    @DisabledOnJre(JRE.JAVA_15)
+    void testNoJDK15() {
+    }
+
+    //test de información de propiedades del sistema
+    @Test
+    void imprimirSystemProperties() {
+        Properties properties = System.getProperties();
+        properties.forEach((k,v)-> System.out.println(k + ":" + v));
+    }
+
+    //test de version de java en específico
+    @Test
+    @EnabledIfSystemProperty(named = "java.version",matches = "17.0.12")
+    void testJavaVersion() {
+    }
+
+    //test para varias version de java del mismo jdk
+    @Test
+    @EnabledIfSystemProperty(named = "java.version",matches = ".*17.*")
+    void testJavaVersion2() {
+    }
+
+    //test para sistema/arquitectura de por x64
+    @Test
+    @DisabledIfSystemProperty(named = "os.arch" , matches = ".*32.*")
+    void testSolo64() {
+    }
+
+    @Test
+    @EnabledIfSystemProperty(named = "os.arch" , matches = ".*32.*")
+    void testNO64() {
+    }
+
+    //test de usuario del pc
+    @Test
+    @EnabledIfSystemProperty(named = "user.name", matches = "julia")
+    void testUsername() {
+    }
+
+    //la palabra de Env (entorno) se configura yendo a Edit Configurations y donde se
+    //encuentra -ea se pone sin comillas para definir la palabra de entorno " -ea -DENV=dev "
+    @Test
+    @EnabledIfSystemProperty(named = "ENV", matches = "dev")
+    void testDev() {
     }
 }

@@ -20,13 +20,21 @@ import org.junit.jupiter.params.provider.*;
 class CuentaTest {
     Cuenta cuenta;
 
+    private TestInfo testInfo;
+    private TestReporter testReporter;
+
     //beforeEach,AfterEach,AfterAll,BeforeAll se pueden crear con generate o Alt + Insert.
     //salen como: setUpMethod ,TearDownMethod ,AfterClass Method y BeforeClass Method.
     //segun el orden dado de izq a der para cada anotación que hace parte del ciclo de vida.
     @BeforeEach
-    void initMetodoTest() {
+    void initMetodoTest(TestInfo testInfo,TestReporter testReporter) {
+
         this.cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        this.testInfo = testInfo;
+        this.testReporter = testReporter;
         System.out.println("Iniciando el metodo");
+        testReporter.publishEntry(" ejecutando: " + testInfo.getDisplayName() + " " + testInfo.getTestMethod().orElse(null).getName()
+                + " con las etiquetas " + testInfo.getTags());
 
     }
 
@@ -59,6 +67,10 @@ class CuentaTest {
         void testNombreCuenta() {
             //cuenta.setPersona("Andres");
             //validando algo
+            System.out.println(testInfo.getTags().toString());
+            if(testInfo.getTags().contains("cuenta")){
+                testReporter.publishEntry("hacer algo con la etiqueta cuenta");
+            }
             String esperado = "Andres";
             String real = cuenta.getPersona();
             assertNotNull(real, () -> "La cuenta no puede ser nula");

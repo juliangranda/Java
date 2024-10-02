@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import static org.mockito.Mockito.*;
 
+import java.security.Provider;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -35,10 +36,8 @@ class ExamenServiceImplTest {
     @Test
     void findExamenPorNombre() {
 
-        List<Examen> datos = Arrays.asList(new Examen(5L, "Matemáticas"),new Examen(6L, "Lenguaje"),
-                new Examen(7L, "Historia"));
         //when es un metodo estatico de Mockito
-        when(repository.findAll()).thenReturn(datos);
+        when(repository.findAll()).thenReturn(Datos.EXAMENES);
         Optional<Examen> examen = service.findExamenPorNombre("Matemáticas");
 
         assertTrue(examen.isPresent());
@@ -48,13 +47,22 @@ class ExamenServiceImplTest {
 
     @Test
     void findExamenPorNombreListaVacia() {
-        repository = mock(ExamenRepository.class);
-        service = new ExamenServiceImpl(repository);
         List<Examen> datos = Collections.emptyList();
 
         when(repository.findAll()).thenReturn(datos);
         Optional<Examen> examen = service.findExamenPorNombre("Matemáticas");
 
         assertFalse(examen.isPresent());
+    }
+
+    @Test
+    void testPreguntasExamen() {
+        when(repository.findAll()).thenReturn(Datos.EXAMENES);
+        when(preguntaRepository.findPreguntasPorExamenId(anyLong())).thenReturn(Datos.PREGUNTAS);
+        Examen examen = service.findExamenPorNombreConPreguntas("Matemáticas");
+        assertEquals(5, examen.getPreguntas().size());
+        assertTrue(examen.getPreguntas().contains("aritmetica"));
+
+
     }
 }

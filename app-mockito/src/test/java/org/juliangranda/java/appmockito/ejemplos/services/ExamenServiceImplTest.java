@@ -3,6 +3,8 @@ package org.juliangranda.java.appmockito.ejemplos.services;
 import org.juliangranda.java.appmockito.ejemplos.models.Examen;
 import org.juliangranda.java.appmockito.ejemplos.repositories.ExamenRepository;
 import org.juliangranda.java.appmockito.ejemplos.repositories.ExamenRepositoryOtro;
+import org.juliangranda.java.appmockito.ejemplos.repositories.PreguntaRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import static org.mockito.Mockito.*;
@@ -16,15 +18,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ExamenServiceImplTest {
 
-    @Test
-    void findExamenPorNombre() {
+    ExamenRepository repository;
+    ExamenService service;
+    PreguntaRepository preguntaRepository;
+
+
+    @BeforeEach
+    void setUp() {
         //Uso de framework Mockito
         //Solo se pueden hacer Mock de modificador de acceso publico.
-        ExamenRepository repository = mock(ExamenRepository.class);
-        ExamenService service = new ExamenServiceImpl(repository);
+        repository = mock(ExamenRepository.class);
+        preguntaRepository = mock(PreguntaRepository.class);
+        service = new ExamenServiceImpl(repository, preguntaRepository);
+    }
+
+    @Test
+    void findExamenPorNombre() {
+
         List<Examen> datos = Arrays.asList(new Examen(5L, "Matemáticas"),new Examen(6L, "Lenguaje"),
                 new Examen(7L, "Historia"));
-
         //when es un metodo estatico de Mockito
         when(repository.findAll()).thenReturn(datos);
         Optional<Examen> examen = service.findExamenPorNombre("Matemáticas");
@@ -36,15 +48,13 @@ class ExamenServiceImplTest {
 
     @Test
     void findExamenPorNombreListaVacia() {
-        ExamenRepository repository = mock(ExamenRepository.class);
-        ExamenService service = new ExamenServiceImpl(repository);
+        repository = mock(ExamenRepository.class);
+        service = new ExamenServiceImpl(repository);
         List<Examen> datos = Collections.emptyList();
 
         when(repository.findAll()).thenReturn(datos);
         Optional<Examen> examen = service.findExamenPorNombre("Matemáticas");
 
-        assertTrue(examen.isPresent());
-        assertEquals(5,examen.orElseThrow().getId());
-        assertEquals("Matemáticas", examen.get().getNombre());
+        assertFalse(examen.isPresent());
     }
 }

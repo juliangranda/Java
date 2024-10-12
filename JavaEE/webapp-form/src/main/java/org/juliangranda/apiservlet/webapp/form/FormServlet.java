@@ -8,6 +8,8 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 // "/registro/ debe de coincidir con el nombre del formulario en index.html
 @WebServlet("/registro")
@@ -19,6 +21,10 @@ public class FormServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String email = req.getParameter("email");
+        String pais = req.getParameter("pais");
+        String[] lenguajes = req.getParameterValues("lenguajes");
+        String[] roles = req.getParameterValues("roles");
+
         try (PrintWriter out = resp.getWriter()) {
 
             out.println("<!DOCTYPE html>");
@@ -34,6 +40,15 @@ public class FormServlet extends HttpServlet {
             out.println(             "<li>Username: " + username + "</li>");
             out.println(             "<li>Password: " + password + "</li>");
             out.println(             "<li>Email: " + email + "</li>");
+            out.println(             "<li>Pais: " + pais + "</li>");
+            out.println(             "<li>Lenguajes: <ul>");
+            Arrays.asList(lenguajes).forEach(lenguaje -> {
+                out.println("                   <li>" + lenguaje + "</li>");
+            });
+            out.println(             "</ul></li>");
+            Arrays.asList(roles).forEach(rol -> {
+                out.println("                   <li>" + rol + "</li>");
+            });
             out.println(        "</ul>");
             out.println("    </body>");
             out.println("</html>");

@@ -22,7 +22,7 @@ public class ParametroGetServlet extends HttpServlet {
         out.println("<html>");
         out.println("    <head>");
         out.println("        <meta charset=\"UTF-8\">");
-        out.println("        <title>parametros Get de la url</title>");
+        out.println("        <title>parametros Get de Tarea1 webapp</title>");
         out.println("    </head>");
         out.println("    <body>");
         out.println("    <h1>parametros Get de la url</h1>");

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// "/registro/ debe de coincidir con el nombre del formulario en index.html
+// "/registro/ debe de coincidir con el nombre del formulario en index.jsp
 @WebServlet("/registro")
 public class FormServlet extends HttpServlet {
     @Override
@@ -35,7 +35,7 @@ public class FormServlet extends HttpServlet {
 
         List<String> errores = new ArrayList<>();
 
-        if(username == null || username.isBlank()){
+        if (username == null || username.isBlank()) {
             errores.add("el username es requerido");
         }
         if (password == null || password.isBlank()) {
@@ -57,19 +57,19 @@ public class FormServlet extends HttpServlet {
         if (idioma == null) {
             errores.add("debe seleccionar un idioma");
         }
-        try (PrintWriter out = resp.getWriter()) {
+        if (errores.isEmpty()) {
+            try (PrintWriter out = resp.getWriter()) {
 
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("    <head>");
-            out.println("        <meta charset=\"UTF-8\">");
-            out.println("        <title>Resultado Form</title>");
-            out.println("    </head>");
-            out.println("    <body>");
-            out.println("    <h1>Resultado Form</h1>");
+                out.println("<!DOCTYPE html>");
+                out.println("<html>");
+                out.println("    <head>");
+                out.println("        <meta charset=\"UTF-8\">");
+                out.println("        <title>Resultado Form</title>");
+                out.println("    </head>");
+                out.println("    <body>");
+                out.println("    <h1>Resultado Form</h1>");
 
-            out.println(        "<ul>");
-            if(errores.isEmpty()) {
+                out.println("<ul>");
                 out.println("<li>Username: " + username + "</li>");
                 out.println("<li>Password: " + password + "</li>");
                 out.println("<li>Email: " + email + "</li>");
@@ -88,15 +88,18 @@ public class FormServlet extends HttpServlet {
                 out.println("            <li>Idioma: " + idioma + "</li>");
                 out.println("            <li>Habilitar:" + habilitar + "</li>");
                 out.println("            <li>Secreto:" + secreto + "</li>");
-            }else{
-                errores.forEach(error ->{
+                out.println("</ul>");
+                out.println("    </body>");
+                out.println("</html>");
+            }
+        } else {
+                /*errores.forEach(error ->{
                     out.println("<li>" + error + "</li>");
                 });
-                out.println("<p><a href=\"/webapp-form/index.html\">volver</a>");
-            }
-            out.println(        "</ul>");
-            out.println("    </body>");
-            out.println("</html>");
+                out.println("<p><a href=\"/webapp-form/index.jsp\">volver</a>");*/
+            //parametros los envia el usuario.los atributos se envian entre servlet o un servlet a un jsp.
+            req.setAttribute("errores", errores);
+            getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
         }
 
     }

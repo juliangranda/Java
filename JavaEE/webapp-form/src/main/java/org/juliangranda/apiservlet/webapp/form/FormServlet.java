@@ -10,8 +10,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 import java.util.List;
 
 // "/registro/ debe de coincidir con el nombre del formulario en index.jsp
@@ -33,29 +32,29 @@ public class FormServlet extends HttpServlet {
                 req.getParameter("habilitar").equals("on");
         String secreto = req.getParameter("secreto");
 
-        List<String> errores = new ArrayList<>();
+        Map<String,String> errores = new HashMap<>();
 
         if (username == null || username.isBlank()) {
-            errores.add("el username es requerido");
+            errores.put("username","el username es requerido");
         }
         if (password == null || password.isBlank()) {
-            errores.add("el password no puede ser vacio");
+            errores.put("password","el password no puede ser vacio");
         }
         if (email == null || !email.contains("@")) {
-            errores.add("el email es requerido y debe tener un formato de correo");
+            errores.put("email","el email es requerido y debe tener un formato de correo");
         }
         //la forma con equals es lo mismo que decir .isBlank
         if (pais == null || pais.equals("") || pais.equals(" ")) {
-            errores.add("el pais es requerido");
+            errores.put("pais","el pais es requerido");
         }
         if (lenguajes == null || lenguajes.length == 0) {
-            errores.add("debe seleccionar al menos un tema");
+            errores.put("lenguajes","debe seleccionar al menos un tema");
         }
         if (roles == null || roles.length == 0) {
-            errores.add("debe seleccionar almenos un role");
+            errores.put("roles","debe seleccionar almenos un role");
         }
         if (idioma == null) {
-            errores.add("debe seleccionar un idioma");
+            errores.put("idioma","debe seleccionar un idioma");
         }
         if (errores.isEmpty()) {
             try (PrintWriter out = resp.getWriter()) {

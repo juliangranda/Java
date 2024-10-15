@@ -1,4 +1,4 @@
-package org.juliangranda.apiservlet.webapp.headers;
+package org.juliangranda.apiservlet.webapp.headers.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

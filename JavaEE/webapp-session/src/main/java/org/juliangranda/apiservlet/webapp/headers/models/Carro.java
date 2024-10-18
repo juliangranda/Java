@@ -11,26 +11,24 @@ public class Carro {
         this.items = new ArrayList<>();
     }
 
-    public void addItem(ItemCarro itemCarro){
-        if(items.contains(itemCarro)){
+    public void addItemCarro(ItemCarro itemCarro) {
+        if (items.contains(itemCarro)) {
             Optional<ItemCarro> optionalItemCarro = items.stream()
                     .filter(i -> i.equals(itemCarro))
                     .findAny();
-            if(optionalItemCarro.isPresent()){
+            if (optionalItemCarro.isPresent()) {
                 ItemCarro i = optionalItemCarro.get();
                 i.setCantidad(i.getCantidad()+1);
             }
-        }else{
+        } else {
             this.items.add(itemCarro);
         }
     }
-
     public List<ItemCarro> getItems() {
         return items;
     }
 
-    public int getTotal(){
-        //convertir un tipo stream de ItemCarro a un IntStream.
+    public int getTotal() {
         return items.stream().mapToInt(ItemCarro::getImporte).sum();
     }
 }

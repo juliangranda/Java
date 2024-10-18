@@ -32,7 +32,7 @@ public class AgregarCarroServlet extends HttpServlet {
             }else{
                 carro = (Carro) session.getAttribute("carro");
             }
-            carro.addItem(item);
+            carro.addItemCarro(item);
         }
         resp.sendRedirect(req.getContextPath() + "/ver-carro");
     }

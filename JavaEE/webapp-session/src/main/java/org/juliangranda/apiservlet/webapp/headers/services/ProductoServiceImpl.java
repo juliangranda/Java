@@ -25,4 +25,9 @@ public class ProductoServiceImpl implements ProductoService{
         }).findFirst();
 
     }
+
+    @Override
+    public Optional<Producto> porId(Long id) {
+        return listar().stream().filter(p -> p.getId().equals(id)).findAny();
+    }
 }

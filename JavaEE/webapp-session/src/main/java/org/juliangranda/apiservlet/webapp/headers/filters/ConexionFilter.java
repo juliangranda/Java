@@ -3,6 +3,7 @@ package org.juliangranda.apiservlet.webapp.headers.filters;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletResponse;
+import org.juliangranda.apiservlet.webapp.headers.services.ServiceJdbcException;
 import org.juliangranda.apiservlet.webapp.headers.util.ConexionBaseDatos;
 
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class ConexionFilter implements Filter {
                 //doFilter es cuando se devuelve la llamada a un doPost o doGet
                 chain.doFilter(request, response);
                 conn.commit();
-            }catch (SQLException e){
+            }catch (SQLException | ServiceJdbcException e){
                 conn.rollback();
                 ((HttpServletResponse)response).sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
                 throw  new RuntimeException(e);

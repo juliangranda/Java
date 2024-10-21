@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ea1846-e3f8-43c6-b894-423576a09f54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/repositorio/CategoriaRepositorioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc_pool_trx/src/main/java/org/juliangranda/java/jdbc/repositorio/CategoriaRepositorioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaEE/webapp-session/src/main/java/org/juliangranda/apiservlet/webapp/headers/filters/ConexionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaEE/webapp-session/src/main/java/org/juliangranda/apiservlet/webapp/headers/util/ConexionBaseDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_jdbc/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/cursos/java/Java/java_jdbc_singleton_trx",
+    "last_opened_file_path": "C:/cursos/java/Java/java_jdbc_pool",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",

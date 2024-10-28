@@ -14,7 +14,7 @@ import java.util.Optional;
 //falta la parte de actualizar-carro es complemento opcional
 //@WebFilter({"/ver-carro","/agregar-carro","actualizar-carro"})
 //@WebFilter({"/ver-carro","/agregar-carro"})
-@WebFilter({"/carro/*"})
+@WebFilter({"/carro/*", "/productos/form/*", "/productos/eliminar/*"})
 public class LoginFiltro implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {

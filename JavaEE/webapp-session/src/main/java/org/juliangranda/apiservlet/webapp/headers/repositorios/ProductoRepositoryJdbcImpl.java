@@ -1,5 +1,6 @@
 package org.juliangranda.apiservlet.webapp.headers.repositorios;
 
+import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 import org.juliangranda.apiservlet.webapp.headers.models.Producto;
 
 import java.sql.*;
@@ -62,7 +63,12 @@ public class ProductoRepositoryJdbcImpl implements Repository<Producto>{
         p.setId(rs.getLong("id"));
         p.setNombre(rs.getString("nombre"));
         p.setPrecio(rs.getInt("precio"));
-        p.setTipo(rs.getString("categoria"));
+        p.setSku(rs.getString("sku"));
+        p.setFechaRegistro(rs.getDate("fecha_registro").toLocalDate());
+        Categoria c = new Categoria();
+        c.setId(rs.getLong("categoria_id"));
+        c.setNombre(rs.getString("categoria"));
+        p.setCategoria(c);
         return p;
     }
 }

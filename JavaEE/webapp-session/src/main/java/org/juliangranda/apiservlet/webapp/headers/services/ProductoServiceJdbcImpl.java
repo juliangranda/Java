@@ -1,7 +1,10 @@
 package org.juliangranda.apiservlet.webapp.headers.services;
 
+import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 import org.juliangranda.apiservlet.webapp.headers.models.Producto;
+import org.juliangranda.apiservlet.webapp.headers.repositorios.CategoriaRepositoryImpl;
 import org.juliangranda.apiservlet.webapp.headers.repositorios.ProductoRepositoryJdbcImpl;
+import org.juliangranda.apiservlet.webapp.headers.repositorios.Repository;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -9,10 +12,12 @@ import java.util.List;
 import java.util.Optional;
 
 public class ProductoServiceJdbcImpl implements ProductoService{
-    private ProductoRepositoryJdbcImpl repositoryJdbc;
+    private Repository<Producto> repositoryJdbc;
+    private Repository<Categoria> repositoryCategoriaJdbc;
 
     public ProductoServiceJdbcImpl(Connection connection) {
         this.repositoryJdbc = new ProductoRepositoryJdbcImpl(connection);
+        this.repositoryCategoriaJdbc = new CategoriaRepositoryImpl(connection);
     }
 
     @Override
@@ -33,6 +38,42 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public Optional<Producto> porId(Long id) {
         try {
             return Optional.ofNullable(repositoryJdbc.porId(id));
+        } catch (SQLException throwables) {
+            throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
+        }
+    }
+
+    @Override
+    public void guardar(Producto producto) {
+        try {
+            repositoryJdbc.guardar(producto);
+        } catch (SQLException throwables) {
+            throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
+        }
+    }
+
+    @Override
+    public void eliminar(Long id) {
+        try {
+            repositoryJdbc.eliminar(id);
+        } catch (SQLException throwables) {
+            throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
+        }
+    }
+
+    @Override
+    public List<Categoria> listarCategoria() {
+        try {
+            return repositoryCategoriaJdbc.listar();
+        } catch (SQLException throwables) {
+            throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
+        }
+    }
+
+    @Override
+    public Optional<Categoria> porIdCategoria(Long id) {
+        try {
+            return Optional.ofNullable(repositoryCategoriaJdbc.porId(id));
         } catch (SQLException throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
         }

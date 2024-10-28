@@ -104,7 +104,7 @@ public class ProductoFormServlet extends HttpServlet {
         }
         Producto producto = new Producto();
         producto.setId(id);
-        producto.setSku(nombre);
+        producto.setNombre(nombre);
         producto.setSku(sku);
         producto.setPrecio(precio);
         producto.setFechaRegistro(fecha);

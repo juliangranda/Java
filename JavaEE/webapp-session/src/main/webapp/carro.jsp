@@ -1,16 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" import="org.juliangranda.apiservlet.webapp.headers.models.*"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Carro de Compras</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
-<div class="container">
-<h1>Carro de Compras</h1>
+<jsp:include page="layout/header.jsp" />
+
+<h3>${title}</h3>
+
 <c:choose>
 <c:when test="${sessionScope.carro == null || sessionScope.carro.items.isEmpty()}">
 <div class="alert alert-warning">Lo sentimos no hay productos en el carro de compras!</div>
@@ -44,10 +37,8 @@
 </c:otherwise>
 </c:choose>
 <div class="my-2">
-    <a class="btn btn-sm btn-secondary" href="${pageContext.request.contextPath}/index.html">volver</a>
-    <a class="btn btn-sm btn-success"href="${pageContext.request.contextPath}/productos">seguir comprando</a>
+    <a class="btn btn-secondary" href="${pageContext.request.contextPath}/index.jsp">volver</a>
+    <a class="btn btn-success"href="${pageContext.request.contextPath}/productos">seguir comprando</a>
 </div>
 
-</div>
-</body>
-</html>
+<jsp:include page="layout/footer.jsp" />

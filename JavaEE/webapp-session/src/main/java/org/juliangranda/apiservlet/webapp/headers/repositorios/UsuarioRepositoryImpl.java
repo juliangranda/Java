@@ -1,15 +1,14 @@
 package org.juliangranda.apiservlet.webapp.headers.repositorios;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.juliangranda.apiservlet.webapp.headers.configs.MysqlConn;
-import org.juliangranda.apiservlet.webapp.headers.configs.Repositorio;
+import org.juliangranda.apiservlet.webapp.headers.configs.Repository;
 import org.juliangranda.apiservlet.webapp.headers.models.Usuario;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repositorio
+@Repository
 public class UsuarioRepositoryImpl implements UsuarioRepository{
 
     //inject via atributo

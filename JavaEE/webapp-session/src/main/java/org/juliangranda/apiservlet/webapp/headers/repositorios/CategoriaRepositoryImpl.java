@@ -2,14 +2,14 @@ package org.juliangranda.apiservlet.webapp.headers.repositorios;
 
 import jakarta.inject.Inject;
 import org.juliangranda.apiservlet.webapp.headers.configs.MysqlConn;
-import org.juliangranda.apiservlet.webapp.headers.configs.Repositorio;
+import org.juliangranda.apiservlet.webapp.headers.configs.Repository;
 import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repositorio
-public class CategoriaRepositoryImpl implements Repository{
+@Repository
+public class CategoriaRepositoryImpl implements CrudRepository {
 
     private Connection conn;
 

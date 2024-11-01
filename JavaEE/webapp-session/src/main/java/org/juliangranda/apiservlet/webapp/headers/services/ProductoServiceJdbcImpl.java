@@ -2,11 +2,10 @@ package org.juliangranda.apiservlet.webapp.headers.services;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import jakarta.inject.Named;
 import org.juliangranda.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
 import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 import org.juliangranda.apiservlet.webapp.headers.models.Producto;
-import org.juliangranda.apiservlet.webapp.headers.repositorios.Repository;
+import org.juliangranda.apiservlet.webapp.headers.repositorios.CrudRepository;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +14,10 @@ import java.util.Optional;
 @ProductoServicePrincipal
 public class ProductoServiceJdbcImpl implements ProductoService{
     @Inject
-    private Repository<Producto> repositoryJdbc;
+    private CrudRepository<Producto> repositoryJdbc;
 
     @Inject
-    private Repository<Categoria> repositoryCategoriaJdbc;
+    private CrudRepository<Categoria> repositoryCategoriaJdbc;
 
     @Override
     public List<Producto> listar() {

@@ -1,5 +1,7 @@
 package org.juliangranda.apiservlet.webapp.headers.services;
 
+import jakarta.enterprise.inject.Alternative;
+import jakarta.inject.Named;
 import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 import org.juliangranda.apiservlet.webapp.headers.models.Producto;
 
@@ -7,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+@Alternative
 public class ProductoServiceImpl implements ProductoService{
 
     @Override

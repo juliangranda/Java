@@ -2,9 +2,8 @@ package org.juliangranda.apiservlet.webapp.headers.repositorios;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import jakarta.inject.Named;
+import org.juliangranda.apiservlet.webapp.headers.configs.MysqlConn;
 import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +15,7 @@ public class CategoriaRepositoryImpl implements Repository{
 
     //inject via contructor
     @Inject
-    public CategoriaRepositoryImpl(@Named("conn") Connection conn) {
+    public CategoriaRepositoryImpl(@MysqlConn Connection conn) {
         this.conn = conn;
     }
 

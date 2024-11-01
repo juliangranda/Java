@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.juliangranda.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
 import org.juliangranda.apiservlet.webapp.headers.models.Producto;
 import org.juliangranda.apiservlet.webapp.headers.services.ProductoService;
 import org.juliangranda.apiservlet.webapp.headers.services.ProductoServiceJdbcImpl;
@@ -19,6 +20,7 @@ import java.util.Optional;
 public class ProductoEliminarServlet extends HttpServlet {
 
     @Inject
+    @ProductoServicePrincipal
     private ProductoService service;
 
     @Override

@@ -1,5 +1,7 @@
 package org.juliangranda.apiservlet.webapp.headers.filters;
 
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletResponse;
@@ -13,26 +15,31 @@ import java.sql.SQLException;
 
 @WebFilter("/*")
 public class ConexionFilter implements Filter {
+
+    @Inject
+    @Named("conn")
+    private Connection conn;
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-        try(Connection conn = ConexionBaseDatosDS.getConnection()) {
+        try(Connection connRequest = this.conn) {
 
-            if (conn.getAutoCommit()) {
-                conn.setAutoCommit(false);
+            if (connRequest.getAutoCommit()) {
+                connRequest.setAutoCommit(false);
             }
             try {
                 //guardar la conexion de la base de datos.
-                request.setAttribute("conn",conn);
+                request.setAttribute("conn",connRequest);
                 //doFilter es cuando se devuelve la llamada a un doPost o doGet
                 chain.doFilter(request, response);
-                conn.commit();
+                connRequest.commit();
             }catch (SQLException | ServiceJdbcException e){
-                conn.rollback();
+                connRequest.rollback();
                 ((HttpServletResponse)response).sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
                 throw  new RuntimeException(e);
             }
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }

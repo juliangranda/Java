@@ -1,16 +1,22 @@
 package org.juliangranda.apiservlet.webapp.headers.repositorios;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@ApplicationScoped
 public class CategoriaRepositoryImpl implements Repository{
 
     private Connection conn;
 
-    public CategoriaRepositoryImpl(Connection conn) {
+    //inject via contructor
+    @Inject
+    public CategoriaRepositoryImpl(@Named("conn") Connection conn) {
         this.conn = conn;
     }
 

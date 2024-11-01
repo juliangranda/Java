@@ -30,7 +30,7 @@ public class ConexionFilter implements Filter {
             }
             try {
                 //guardar la conexion de la base de datos.
-                request.setAttribute("conn",connRequest);
+                //request.setAttribute("conn",connRequest);
                 //doFilter es cuando se devuelve la llamada a un doPost o doGet
                 chain.doFilter(request, response);
                 connRequest.commit();

@@ -1,5 +1,8 @@
 package org.juliangranda.apiservlet.webapp.headers.repositorios;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import org.juliangranda.apiservlet.webapp.headers.models.Categoria;
 import org.juliangranda.apiservlet.webapp.headers.models.Producto;
 
@@ -8,13 +11,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@ApplicationScoped
 public class ProductoRepositoryJdbcImpl implements Repository<Producto>{
 
+    @Inject
+    @Named("conn")
     private Connection conn;
-
-    public ProductoRepositoryJdbcImpl(Connection conn) {
-        this.conn = conn;
-    }
 
     @Override
     public List<Producto> listar() throws SQLException {

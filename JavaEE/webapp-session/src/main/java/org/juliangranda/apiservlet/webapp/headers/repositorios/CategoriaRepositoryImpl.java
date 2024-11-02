@@ -9,22 +9,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class CategoriaRepositoryImpl implements CrudRepository {
+public class CategoriaRepositoryImpl implements CrudRepository<Categoria> {
 
     private Connection conn;
 
-    //inject via contructor
     @Inject
     public CategoriaRepositoryImpl(@MysqlConn Connection conn) {
         this.conn = conn;
     }
 
     @Override
-    public List listar() throws SQLException {
+    public List<Categoria> listar() throws SQLException {
         List<Categoria> categorias = new ArrayList<>();
         try(Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("select * from categorias")){
-            while(rs.next()){
+            while (rs.next()) {
                 Categoria categoria = getCategoria(rs);
                 categorias.add(categoria);
             }
@@ -34,12 +33,12 @@ public class CategoriaRepositoryImpl implements CrudRepository {
     }
 
     @Override
-    public Object porId(Long id) throws SQLException {
+    public Categoria porId(Long id) throws SQLException {
         Categoria categoria = null;
-        try(PreparedStatement stmt = conn.prepareStatement("select * from categorias as c where c.id=?")){
-            stmt.setLong(1,id);
-            try(ResultSet rs = stmt.executeQuery()){
-                if(rs.next()){
+        try (PreparedStatement stmt = conn.prepareStatement("select * from categorias as c where c.id=?")) {
+            stmt.setLong(1, id);
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
                     categoria = getCategoria(rs);
                 }
             }
@@ -48,7 +47,7 @@ public class CategoriaRepositoryImpl implements CrudRepository {
     }
 
     @Override
-    public void guardar(Object o) throws SQLException {
+    public void guardar(Categoria categoria) throws SQLException {
 
     }
 
@@ -57,7 +56,7 @@ public class CategoriaRepositoryImpl implements CrudRepository {
 
     }
 
-    private static Categoria getCategoria(ResultSet rs) throws SQLException {
+    private Categoria getCategoria(ResultSet rs) throws SQLException {
         Categoria categoria = new Categoria();
         categoria.setNombre(rs.getString("nombre"));
         categoria.setId(rs.getLong("id"));

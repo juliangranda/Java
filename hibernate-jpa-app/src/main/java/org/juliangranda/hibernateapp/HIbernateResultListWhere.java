@@ -5,9 +5,10 @@ import jakarta.persistence.Query;
 import org.juliangranda.hibernateapp.entity.Cliente;
 import org.juliangranda.hibernateapp.util.JpaUtil;
 
+import java.util.List;
 import java.util.Scanner;
 
-public class HIbernateListarWhere {
+public class HIbernateResultListWhere {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
@@ -17,7 +18,8 @@ public class HIbernateListarWhere {
         System.out.println("Ingrese una forma de pago: ");
         String pago = s.next();
         query.setParameter(1, pago);
-        Cliente c = (Cliente) query.getSingleResult();
+        //devuelve una lista con varios clientes/resultados.
+        List<Cliente> c = query.getResultList();
         System.out.println(c);
         em.close();
     }

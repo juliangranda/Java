@@ -10,24 +10,16 @@ import java.util.Scanner;
 public class HIbernatePorId {
     public static void main(String[] args) {
 
-//        Scanner s = new Scanner(System.in);
-//        EntityManager em = JpaUtil.getEntityManager();
-//        Query query = em.createQuery("select c from Cliente c where c.id=?1", Cliente.class);
-//        System.out.println("Ingrese el id: ");
-//        Long pago = s.nextLong();
-//        query.setParameter(1, pago);
-//        Cliente c = (Cliente) query.getSingleResult();
-//        System.out.println(c);
-//        em.close();
-
         Scanner s = new Scanner(System.in);
 
         EntityManager em = JpaUtil.getEntityManager();
         System.out.println("Ingrese el id: ");
         Long id = s.nextLong();
         Cliente cliente = em.find(Cliente.class, id);
-
         System.out.println(cliente);
+
+        Cliente cliente2 = em.find(Cliente.class, id);
+        System.out.println(cliente2);
         em.close();
     }
 }

@@ -12,7 +12,7 @@ public class Cliente {
     private String nombre;
     private String apellido;
 
-    @Column(name="forma-pago")
+    @Column(name="forma_pago")
     private String formaPago;
 
     public Cliente() {

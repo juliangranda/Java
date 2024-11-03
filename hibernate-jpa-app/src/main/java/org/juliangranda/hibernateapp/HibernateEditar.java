@@ -6,31 +6,30 @@ import org.juliangranda.hibernateapp.util.JpaUtil;
 
 import javax.swing.*;
 
-public class HibernateCrear {
+public class HibernateEditar {
     public static void main(String[] args) {
 
         EntityManager em = JpaUtil.getEntityManager();
         try{
-            String nombre = JOptionPane.showInputDialog("Ingrese el nombre:");
-            String apellido = JOptionPane.showInputDialog("Ingrese el apellido:");
-            String pago = JOptionPane.showInputDialog("Ingrese la foma de pago:");
-            em.getTransaction().begin();
+            Long id = Long.valueOf(JOptionPane.showInputDialog("Ingrese el id del cliente a modificar:"));
+            Cliente c = em.find(Cliente.class, id);
 
-            Cliente c = new Cliente();
+            String nombre = JOptionPane.showInputDialog("Ingrese el nombre:", c.getNombre());
+            String apellido = JOptionPane.showInputDialog("Ingrese el apellido:", c.getApellido());
+            String pago = JOptionPane.showInputDialog("Ingrese el pago:", c.getFormaPago());
+            em.getTransaction().begin();
             c.setNombre(nombre);
             c.setApellido(apellido);
             c.setFormaPago(pago);
-            //guarda los datos
-            em.persist(c);
+            //actualiza el dato
+            em.merge(c);
             em.getTransaction().commit();
 
-            System.out.println("el id del cliente registrado es:" + c.getId());
-            c = em.find(Cliente.class, c.getId());
             System.out.println(c);
         }catch (Exception e){
             em.getTransaction().rollback();
             e.printStackTrace();
-        }finally {
+        }finally{
             em.close();
         }
     }

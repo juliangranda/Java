@@ -2,10 +2,7 @@ package org.juliangranda.hibernateapp;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Parameter;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.ParameterExpression;
-import jakarta.persistence.criteria.Root;
+import jakarta.persistence.criteria.*;
 import org.juliangranda.hibernateapp.entity.Cliente;
 import org.juliangranda.hibernateapp.util.JpaUtil;
 
@@ -75,6 +72,17 @@ public class HibernateCriteria {
         from = query.from(Cliente.class);
         //ge = mayor que o igual(>=)a el numero del id / gt = mayor que(>)
         query.select(from).where(criteria.ge(criteria.length(from.get("nombre")), 5L));
+        clientes = em.createQuery(query).getResultList();
+        clientes.forEach(System.out::println);
+
+        System.out.println("====== consulta con los predicados conjuncion and y disyuncion or =======");
+        query = criteria.createQuery(Cliente.class);
+        from = query.from(Cliente.class);
+        Predicate porNombre = criteria.equal(from.get("nombre"),"Andres");
+        Predicate porFormaPago = criteria.equal(from.get("formaPago"),"debito");
+        Predicate p3 = criteria.ge(from.get("id"),4L);
+        //query.select(from).where(criteria.or(porNombre, porFormaPago));
+        query.select(from).where(criteria.and(p3, criteria.or(porNombre, porFormaPago)));
         clientes = em.createQuery(query).getResultList();
         clientes.forEach(System.out::println);
 

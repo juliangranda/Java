@@ -9,6 +9,7 @@ import jakarta.persistence.criteria.Root;
 import org.juliangranda.hibernateapp.entity.Cliente;
 import org.juliangranda.hibernateapp.util.JpaUtil;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class HibernateCriteria {
@@ -51,6 +52,33 @@ public class HibernateCriteria {
         query.select(from).where(criteria.between(from.get("id"),2L,6L));
         clientes = em.createQuery(query).getResultList();
         clientes.forEach(System.out::println);
+
+        System.out.println("========== consulta where in ========");
+        query = criteria.createQuery(Cliente.class);
+        from = query.from(Cliente.class);
+        ParameterExpression<List> listaParam = criteria.parameter(List.class, "nombres");
+        query.select(from).where(from.get("nombre").in(listaParam));
+        clientes = em.createQuery(query)
+                .setParameter("nombres", Arrays.asList("andres", "Jhon", "Lou"))
+                .getResultList();
+        clientes.forEach(System.out::println);
+
+        System.out.println("======== filtrar usando predicados mayor que o mayor igual que");
+        query = criteria.createQuery(Cliente.class);
+        from = query.from(Cliente.class);
+        //le = menor(>) o igual a el numero del id / lt menor que (<=)
+        query.select(from).where(criteria.gt(from.get("id"), 2L));
+        clientes = em.createQuery(query).getResultList();
+        clientes.forEach(System.out::println);
+
+        query = criteria.createQuery(Cliente.class);
+        from = query.from(Cliente.class);
+        //ge = mayor que o igual(>=)a el numero del id / gt = mayor que(>)
+        query.select(from).where(criteria.ge(criteria.length(from.get("nombre")), 5L));
+        clientes = em.createQuery(query).getResultList();
+        clientes.forEach(System.out::println);
+
+
 
         em.close();
 

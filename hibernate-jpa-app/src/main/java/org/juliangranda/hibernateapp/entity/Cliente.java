@@ -20,6 +20,11 @@ public class Cliente {
         //si se genera un constructor con parametros debe de haber un constructor vacio.
     }
 
+    public Cliente(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
     public Cliente(Long id, String nombre, String apellido, String formaPago) {
         this.id = id;
         this.nombre = nombre;

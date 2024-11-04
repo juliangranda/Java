@@ -1,6 +1,7 @@
 package org.juliangranda.hibernateapp;
 
 import jakarta.persistence.EntityManager;
+import org.juliangranda.hibernateapp.dominio.ClienteDto;
 import org.juliangranda.hibernateapp.entity.Cliente;
 import org.juliangranda.hibernateapp.util.JpaUtil;
 
@@ -21,7 +22,7 @@ public class HibernateQL {
                 .getSingleResult();
         System.out.println(cliente);
 
-        System.out.println("consulta solo el nombre por el id");
+        System.out.println("======== consulta solo el nombre por el id ========");
         String nombreCliente = em.createQuery("select c.nombre from Cliente c where c.id=:id", String.class)
                 .setParameter("id",2L)
                 .getSingleResult();
@@ -37,6 +38,7 @@ public class HibernateQL {
         System.out.println("id=" + id + ",nombre="+ nombre + ",apellido=" + apellido);
 
         System.out.println("=========consultas por campos personalizados lista==========");
+        //solo para arreglos -> permite mostrar varios datos al mismo tiempo.
         List<Object[]> registros = em.createQuery("select c.id, c.nombre, c.apellido from Cliente c", Object[].class)
                 .getResultList();
         //for (Object[] reg: registros){
@@ -47,6 +49,27 @@ public class HibernateQL {
             System.out.println("id=" + idCli + ",nombre="+ nombreCli + ",apellido=" + apellidoCli);
         });
         //}
+
+        System.out.println("========== consulta por cliente y forma de pago");
+        registros  = em.createQuery("select c, c.formaPago from Cliente c", Object[].class)
+                        .getResultList();
+        registros.forEach(reg -> {
+            Cliente c = (Cliente) reg[0];
+            String formaPago = (String) reg[1];
+            System.out.println("formaPago=" + formaPago + "," + c);
+        });
+
+        System.out.println("=========== consulta que puebla y envuelve objeto entity de una clase personalizada =====");
+        clientes = em.createQuery("select new Cliente(c.nombre, c.apellido) from Cliente c", Cliente.class)
+                        .getResultList();
+        clientes.forEach(System.out::println);
+
+        //añade el url del package ClienteDto para que reconozca la clase.
+        System.out.println("=========== consulta que puebla y envuelve objeto otro de una clase personalizada =====");
+        List<ClienteDto> clientesDto = em.createQuery("select new org.juliangranda.hibernateapp.dominio.ClienteDto(c.nombre, c.apellido) from Cliente c", ClienteDto.class)
+                .getResultList();
+        clientesDto.forEach(System.out::println);
+
 
         em.close();
     }

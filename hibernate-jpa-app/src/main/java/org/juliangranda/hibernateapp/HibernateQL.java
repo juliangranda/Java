@@ -119,6 +119,17 @@ public class HibernateQL {
                 .setParameter("parametro", "%" + param + "%")
                         .getResultList();
         clientes.forEach(System.out::println);
+
+        System.out.println("====== concultas por rangos - between =====");
+        //clientes = em.createQuery("select c from Cliente c where c.id between 2 and 5", Cliente.class).getResultList();
+        clientes = em.createQuery("select c from Cliente c where c.nombre between 'J' and 'P'", Cliente.class).getResultList();
+        clientes.forEach(System.out::println);
+
+        System.out.println("======= consultas con ordenamiento (asc, desc)- order by");
+        clientes = em.createQuery("select c from Cliente c order by c.nombre asc, c.apellido asc", Cliente.class).getResultList();
+        clientes.forEach(System.out::println);
+
+
         em.close();
     }
 }

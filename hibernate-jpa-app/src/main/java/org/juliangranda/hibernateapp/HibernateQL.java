@@ -6,6 +6,7 @@ import org.juliangranda.hibernateapp.entity.Cliente;
 import org.juliangranda.hibernateapp.util.JpaUtil;
 
 import javax.print.DocFlavor;
+import java.util.Arrays;
 import java.util.List;
 
 public class HibernateQL {
@@ -166,7 +167,28 @@ public class HibernateQL {
         Long count = (Long) estadisticas[3];
         Double avg = (Double) estadisticas[4];
         System.out.println("min=" + min + ", max=" + max + ", sum=" + sum + ", count= " + count + ", avg=" + avg);
-        System.out.println();
+
+        System.out.println("========= consulta con el nombre mas corto y su largo ==========");
+        registros = em.createQuery("select c.nombre, length(c.nombre) from Cliente c where " +
+                        "length(c.nombre) = (select min(length(c.nombre)) from Cliente c)", Object[].class)
+                        .getResultList();
+        registros.forEach(reg -> {
+            String nom = (String) reg[0];
+            Integer largo = (Integer) reg[1];
+            System.out.println("nombre=" + nom + ", largo=" + largo);
+        });
+
+        System.out.println("====== consulta para obtener el ultimo registro =======");
+        Cliente ultimoCliente = em.createQuery("select c from Cliente c where c.id = (select max(c.id) from Cliente c)", Cliente.class)
+                        .getSingleResult();
+        System.out.println(ultimoCliente);
+
+        System.out.println("========= consulta where in =========");
+        clientes = em.createQuery("select c from Cliente c where c.id in :ids", Cliente.class)
+                .setParameter("ids", Arrays.asList(1L, 2L, 10L, 40L))
+                //si el id no existe simplemente lo va a omitir
+                        .getResultList();
+        clientes.forEach(System.out::println);
 
         em.close();
     }

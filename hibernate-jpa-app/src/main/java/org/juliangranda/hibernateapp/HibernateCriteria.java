@@ -19,22 +19,40 @@ public class HibernateCriteria {
         CriteriaBuilder criteria = em.getCriteriaBuilder();
         CriteriaQuery<Cliente> query = criteria.createQuery(Cliente.class);
 
-        //from representa nuestra cosnulta
         Root<Cliente> from = query.from(Cliente.class);
 
-        //listar
         query.select(from);
         List<Cliente> clientes = em.createQuery(query).getResultList();
         clientes.forEach(System.out::println);
 
-        System.out.println("====== listar where equals ==========");
-        //listar todos los clientes que tengan el nombre "andres"
+        System.out.println("========== listar where equals ==========");
+
         query = criteria.createQuery(Cliente.class);
         from = query.from(Cliente.class);
         ParameterExpression<String> nombreParam = criteria.parameter(String.class, "nombre");
+
         query.select(from).where(criteria.equal(from.get("nombre"), nombreParam));
-        clientes = em.createQuery(query).setParameter("nombre","Andres").getResultList();
+        clientes = em.createQuery(query).setParameter("nombre", "Andres").getResultList();
         clientes.forEach(System.out::println);
+
+        System.out.println("========== usando where like para buscar clientes por nombre ==========");
+
+        query = criteria.createQuery(Cliente.class);
+        from = query.from(Cliente.class);
+        ParameterExpression<String> nombreParamLike = criteria.parameter(String.class, "nombreParam");
+        query.select(from).where(criteria.like(criteria.upper(from.get("nombre")), criteria.upper(nombreParamLike)));
+        clientes = em.createQuery(query).setParameter("nombreParam", "%jo%")
+                .getResultList();
+        clientes.forEach(System.out::println);
+
+        System.out.println("=========== ejemplo usando where between para rangos ======");
+        query = criteria.createQuery(Cliente.class);
+        from = query.from(Cliente.class);
+        query.select(from).where(criteria.between(from.get("id"),2L,6L));
+        clientes = em.createQuery(query).getResultList();
+        clientes.forEach(System.out::println);
+
         em.close();
+
     }
 }

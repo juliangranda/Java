@@ -5,6 +5,7 @@ import org.juliangranda.hibernateapp.dominio.ClienteDto;
 import org.juliangranda.hibernateapp.entity.Cliente;
 import org.juliangranda.hibernateapp.util.JpaUtil;
 
+import javax.print.DocFlavor;
 import java.util.List;
 
 public class HibernateQL {
@@ -91,6 +92,33 @@ public class HibernateQL {
                         .getSingleResult();
         System.out.println(totalFormasPago);
 
+        System.out.println("====== consulta con nombre y apellido concatenados ====");
+//        nombres = em.createQuery("select concat(c.nombre, ' ', c.apellido) as nombreCompleto from Cliente c", String.class)
+//                        .getResultList();
+//        nombres.forEach(System.out::println);
+
+        nombres = em.createQuery("select c.nombre || ' ' || c.apellido as nombreCompleto from Cliente c", String.class)
+                .getResultList();
+        nombres.forEach(System.out::println);
+
+        System.out.println("====== consulta con nombre y apellido en mayuscula ====");
+        nombres = em.createQuery("select upper(concat(c.nombre, ' ', c.apellido)) as nombreCompleto from Cliente c", String.class)
+                        .getResultList();
+        nombres.forEach(System.out::println);
+
+        System.out.println("====== consulta con nombre y apellido en minuscula ====");
+        nombres = em.createQuery("select lower(concat(c.nombre, ' ', c.apellido)) as nombreCompleto from Cliente c", String.class)
+                .getResultList();
+        nombres.forEach(System.out::println);
+
+        System.out.println("========= consulta para buscar por nombre ==========");
+        String param = "NA";
+        //es buena practica que se busque los datos en mayuscula
+        clientes = em.createQuery("select c from Cliente c where upper(c.nombre) like upper(:parametro)", Cliente.class)
+                //al usar el "%" busca las letras a la derecha y/o izquierda
+                .setParameter("parametro", "%" + param + "%")
+                        .getResultList();
+        clientes.forEach(System.out::println);
         em.close();
     }
 }

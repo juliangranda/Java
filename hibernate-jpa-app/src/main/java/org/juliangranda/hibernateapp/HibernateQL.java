@@ -129,6 +129,44 @@ public class HibernateQL {
         clientes = em.createQuery("select c from Cliente c order by c.nombre asc, c.apellido asc", Cliente.class).getResultList();
         clientes.forEach(System.out::println);
 
+        System.out.println("======= consulta con total de registros de la tabla ====");
+        Long total = em.createQuery("select count(c) as total from Cliente c", Long.class).getSingleResult();
+        System.out.println(total);
+
+        System.out.println("========= consulta con valor minimo del id ==========");
+        Long minId = em.createQuery("select min(c.id) as minimo from Cliente c", Long.class).getSingleResult();
+        System.out.println(minId);
+
+        System.out.println("========= consulta con valor maximo / ultimo id ==========");
+        Long maxId = em.createQuery("select max(c.id) as maximo from Cliente c", Long.class).getSingleResult();
+        System.out.println(maxId);
+
+        System.out.println("====== consulta con nombre y su largo ========");
+        registros = em.createQuery("select c.nombre, length(c.nombre) from Cliente c", Object[].class).getResultList();
+        registros.forEach(req -> {
+            String nom = (String) req[0];
+            Integer largo = (Integer) req[1];
+            System.out.println("nombre=" + nom + ", largo=" + largo);
+        });
+
+        System.out.println("========= consulta con el nombre mas corto =========");
+        Integer minimoNombre = em.createQuery("select min(length(c.nombre)) from Cliente c", Integer.class).getSingleResult();
+        System.out.println(minimoNombre);
+
+        System.out.println("========= consulta con el nombre mas largo =========");
+        Integer maximoNombre = em.createQuery("select max(length(c.nombre)) from Cliente c", Integer.class).getSingleResult();
+        System.out.println(maximoNombre);
+
+        System.out.println("======= consultas resumen funciones agregaciones count min max avg =======");
+        Object[] estadisticas = em.createQuery("select min(c.id), max(c.id), sum(c.id), count(c.id), avg(length(c.nombre)) from Cliente c", Object[].class)
+                .getSingleResult();
+        Long min = (Long) estadisticas[0];
+        Long max = (Long) estadisticas[1];
+        Long sum = (Long) estadisticas[2];
+        Long count = (Long) estadisticas[3];
+        Double avg = (Double) estadisticas[4];
+        System.out.println("min=" + min + ", max=" + max + ", sum=" + sum + ", count= " + count + ", avg=" + avg);
+        System.out.println();
 
         em.close();
     }

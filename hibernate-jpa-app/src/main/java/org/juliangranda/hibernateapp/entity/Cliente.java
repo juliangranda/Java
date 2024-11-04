@@ -19,10 +19,9 @@ public class Cliente {
     @Column(name="forma_pago")
     private String formaPago;
 
-    @Column(name="creado_en")
-    private LocalDateTime creadoEn;
-    @Column(name="editado_en")
-    private LocalDateTime editadoEn;
+    @Embedded
+    private Auditoria audit = new Auditoria();
+
     public Cliente() {
         //obligatorio:
         //si se genera un constructor con parametros debe de haber un constructor vacio.
@@ -38,18 +37,6 @@ public class Cliente {
         this.nombre = nombre;
         this.apellido = apellido;
         this.formaPago = formaPago;
-    }
-
-    @PrePersist
-    public void prePersist(){
-        System.out.println("inicializar algo justo antes del persist");
-        this.creadoEn = LocalDateTime.now();
-    }
-
-    @PreUpdate
-    public void preUpdate(){
-        System.out.println("inicializar algo justo antes del update");
-        this.editadoEn = LocalDateTime.now();
     }
 
     public Long getId() {
@@ -84,29 +71,13 @@ public class Cliente {
         this.formaPago = formaPago;
     }
 
-    public LocalDateTime getCreadoEn() {
-        return creadoEn;
-    }
-
-    public void setCreadoEn(LocalDateTime creadoEn) {
-        this.creadoEn = creadoEn;
-    }
-
-    public LocalDateTime getEditadoEn() {
-        return editadoEn;
-    }
-
-    public void setEditadoEn(LocalDateTime editadoEn) {
-        this.editadoEn = editadoEn;
-    }
-
     @Override
     public String toString() {
         return  "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", formaPago='" + formaPago + '\'' +
-                ", creadoEn='" + creadoEn + '\'' +
-                ", editadoEn='" + editadoEn + '\'';
+                ", creadoEn='" + audit.getCreadoEn() + '\'' +
+                ", editadoEn='" + audit.getEditadoEn() + '\'';
     }
 }

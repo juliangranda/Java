@@ -13,7 +13,9 @@ public class Factura {
     private Long total;
 
     //muchas facturas, un solo cliente.
+    //@JoinColumn = nombre de la llave foranea(foreingkey)
     @ManyToOne
+    @JoinColumn(name="id_cliente")
     private Cliente cliente;
 
     public Factura() {
@@ -54,5 +56,15 @@ public class Factura {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", descripcion='" + descripcion + '\'' +
+                ", total=" + total +
+                ", cliente=" + cliente +
+                '}';
     }
 }

@@ -12,6 +12,8 @@ public class Factura {
     private String descripcion;
     private Long total;
 
+    //el primero relacionado con la clase(Factura)
+    //el segundo relacionado con el atributo(cliente)
     //muchas facturas, un solo cliente.
     //@JoinColumn = nombre de la llave foranea(foreingkey)
     @ManyToOne

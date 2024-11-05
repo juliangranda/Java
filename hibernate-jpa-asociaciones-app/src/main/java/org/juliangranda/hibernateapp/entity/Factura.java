@@ -66,7 +66,6 @@ public class Factura {
                 "id=" + id +
                 ", descripcion='" + descripcion + '\'' +
                 ", total=" + total +
-                ", cliente=" + cliente +
                 '}';
     }
 }

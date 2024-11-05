@@ -23,6 +23,14 @@ public class HibernateAsociacionesOneToMany {
             em.persist(cliente);
 
             em.getTransaction().commit();
+
+            //eliminar
+            System.out.println(cliente);
+            em.getTransaction().begin();
+            cliente = em.find(Cliente.class, cliente.getId());
+            cliente.getDirecciones().remove(d1);
+            em.getTransaction().commit();
+            System.out.println(cliente);
         }catch (Exception e){
             em.getTransaction().rollback();
             e.printStackTrace();

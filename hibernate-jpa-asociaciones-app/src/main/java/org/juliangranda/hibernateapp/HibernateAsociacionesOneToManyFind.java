@@ -24,6 +24,8 @@ public class HibernateAsociacionesOneToManyFind {
             em.merge(cliente);
 
             em.getTransaction().commit();
+
+            System.out.println(cliente);
         }catch (Exception e){
             em.getTransaction().rollback();
             e.printStackTrace();

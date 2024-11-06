@@ -19,6 +19,9 @@ public class Alumno {
 
     //relacion entre alumno y curso.
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "tbl_alumno_cursos", joinColumns = @JoinColumn(name="alumno_id"),
+    inverseJoinColumns = @JoinColumn(name = "curso_id"),
+    uniqueConstraints = @UniqueConstraint(columnNames = {"alumno_id","curso_id"}))
     private List<Curso> cursos;
 
     public Alumno() {

@@ -17,7 +17,7 @@ public class HibernateAsociacionesOneToOneBidireccionalFind {
 
             ClienteDetalle detalle = new ClienteDetalle(true,8000L);
             cliente.addDetalle(detalle);
-            
+
             em.getTransaction().commit();
 
             System.out.println(cliente);

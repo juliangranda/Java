@@ -18,7 +18,7 @@ public class Factura {
     //el segundo relacionado con el atributo(cliente)
     //muchas facturas, un solo cliente.
     //@JoinColumn = nombre de la llave foranea(foreingkey)
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="id_cliente")
     private Cliente cliente;
 

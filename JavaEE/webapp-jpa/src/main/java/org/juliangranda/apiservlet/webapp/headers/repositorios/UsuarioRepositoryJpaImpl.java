@@ -7,6 +7,7 @@ import org.juliangranda.apiservlet.webapp.headers.models.entities.Usuario;
 
 import java.util.List;
 
+@RepositoryJpa
 @Repository
 public class UsuarioRepositoryJpaImpl implements UsuarioRepository{
     @Inject
@@ -25,7 +26,7 @@ public class UsuarioRepositoryJpaImpl implements UsuarioRepository{
     @Override
     public void guardar(Usuario usuario) throws Exception {
         if(usuario.getId() != null && usuario.getId() > 0){
-            em.merge(usuario)
+            em.merge(usuario);
         }else{
             em.persist(usuario);
         }

@@ -11,7 +11,7 @@ public class JpaUtil {
         return Persistence.createEntityManagerFactory("ejemploJpa");
     }
 
-    public static EntityManager getEntityManager(){
+    public static EntityManager getEntityManager() {
         return entityManagerFactory.createEntityManager();
     }
 }

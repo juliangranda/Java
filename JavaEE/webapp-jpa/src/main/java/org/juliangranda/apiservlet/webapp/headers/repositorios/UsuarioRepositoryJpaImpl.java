@@ -15,19 +15,19 @@ public class UsuarioRepositoryJpaImpl implements UsuarioRepository{
 
     @Override
     public List<Usuario> listar() throws Exception {
-        return em.createQuery("from Usuario",Usuario.class).getResultList();
+        return em.createQuery("from Usuario", Usuario.class).getResultList();
     }
 
     @Override
     public Usuario porId(Long id) throws Exception {
-        return em.find(Usuario.class,id);
+        return em.find(Usuario.class, id);
     }
 
     @Override
     public void guardar(Usuario usuario) throws Exception {
-        if(usuario.getId() != null && usuario.getId() > 0){
+        if (usuario.getId() != null && usuario.getId() > 0) {
             em.merge(usuario);
-        }else{
+        } else {
             em.persist(usuario);
         }
     }

@@ -6,17 +6,16 @@ import org.juliangranda.apiservlet.webapp.headers.configs.Repository;
 import org.juliangranda.apiservlet.webapp.headers.models.entities.Producto;
 
 import java.util.List;
-
 @RepositoryJpa
 @Repository
-public class ProductoRepositoryJpaImpl implements CrudRepository<Producto> {
+public class ProductoRepositoryJpaImpl implements CrudRepository<Producto>{
 
     @Inject
     private EntityManager em;
 
     @Override
     public List<Producto> listar() throws Exception {
-        return em.createQuery("from Producto", Producto.class).getResultList();
+        return em.createQuery("select p from Producto p left outer join fetch p.categoria", Producto.class).getResultList();
     }
 
     @Override
@@ -27,9 +26,9 @@ public class ProductoRepositoryJpaImpl implements CrudRepository<Producto> {
     @Override
     public void guardar(Producto producto) throws Exception {
 
-        if(producto.getId() != null && producto.getId() > 0){
+        if (producto.getId() != null && producto.getId() > 0) {
             em.merge(producto);
-        }else{
+        } else {
             em.persist(producto);
         }
     }

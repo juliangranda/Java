@@ -10,7 +10,6 @@ import java.util.List;
 @RepositoryJpa
 @Repository
 public class CategoriaRepositoryJpaImpl implements CrudRepository<Categoria>{
-
     @Inject
     private EntityManager em;
 
@@ -26,9 +25,9 @@ public class CategoriaRepositoryJpaImpl implements CrudRepository<Categoria>{
 
     @Override
     public void guardar(Categoria categoria) throws Exception {
-        if(categoria.getId() != null && categoria.getId() > 0){
+        if (categoria.getId() != null && categoria.getId() > 0) {
             em.merge(categoria);
-        }else{
+        } else {
             em.persist(categoria);
         }
     }

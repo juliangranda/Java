@@ -1,2 +1,3 @@
 org\juliangranda\webapp\ejb\controllers\EjemploServlet.class
+org\juliangranda\webapp\ejb\service\ServiceEjbLocal.class
 org\juliangranda\webapp\ejb\service\ServiceEjb.class

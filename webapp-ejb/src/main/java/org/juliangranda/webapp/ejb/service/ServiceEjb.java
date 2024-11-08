@@ -1,13 +1,11 @@
 package org.juliangranda.webapp.ejb.service;
 
-import jakarta.ejb.Stateful;
 import jakarta.ejb.Stateless;
-import jakarta.enterprise.context.RequestScoped;
 
 //@RequestScoped
 //@Stateful
 @Stateless
-public class ServiceEjb {
+public class ServiceEjb implements ServiceEjbLocal {
 
     private int contador;
 

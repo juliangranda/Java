@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.juliangranda.webapp.ejb.service.ServiceEjb;
+import org.juliangranda.webapp.ejb.service.ServiceEjbLocal;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -17,21 +18,21 @@ import java.io.IOException;
 public class EjemploServlet extends HttpServlet {
 
 //    @Inject
-//    private ServiceEjb service;
+//    private ServiceEjbLocal service;
 //
 //    @Inject
-//    private ServiceEjb service2;
+//    private ServiceEjbLocal service2;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        ServiceEjb service = null;
-        ServiceEjb service2 = null;
+        ServiceEjbLocal service = null;
+        ServiceEjbLocal service2 = null;
         try {
 
             InitialContext ctx = new InitialContext();
-            service = (ServiceEjb) ctx.lookup("java:global/webapp-ejb/ServiceEjb!org.juliangranda.webapp.ejb.service.ServiceEjb");
-            service2 = (ServiceEjb) ctx.lookup("java:global/webapp-ejb/ServiceEjb!org.juliangranda.webapp.ejb.service.ServiceEjb");
+            service = (ServiceEjbLocal) ctx.lookup("java:global/webapp-ejb/ServiceEjb!org.juliangranda.webapp.ejb.service.ServiceEjbLocal");
+            service2 = (ServiceEjbLocal) ctx.lookup("java:global/webapp-ejb/ServiceEjb!org.juliangranda.webapp.ejb.service.ServiceEjbLocal");
         } catch (NamingException e) {
             throw new RuntimeException(e);
         }

@@ -1,9 +1,13 @@
 package org.juliangranda.webapp.ejb.service;
 
 import jakarta.ejb.Stateless;
+import org.juliangranda.webapp.ejb.models.Producto;
 
-//@RequestScoped
-//@Stateful
+import java.util.ArrayList;
+import java.util.List;
+
+
+// @RequestScoped
 @Stateless
 public class ServiceEjb implements ServiceEjbLocal {
 
@@ -12,7 +16,24 @@ public class ServiceEjb implements ServiceEjbLocal {
     public String saludar(String nombre) {
         System.out.println("imprimiendo dentro del ejb con instancia: " + this);
         contador++;
-        System.out.println("el valor del contador en metodo saludar " + contador);
+        System.out.println("valor del contador en metodo saludar " + contador);
         return "Hola que tal " + nombre;
+    }
+
+    @Override
+    public List<Producto> listar() {
+        List<Producto> productos = new ArrayList<>();
+        productos.add(new Producto("peras"));
+        productos.add(new Producto("manzanas"));
+        productos.add(new Producto("naranjas"));
+        return productos;
+    }
+
+    @Override
+    public Producto crear(Producto producto) {
+        System.out.println("guardando producto ..." + producto);
+        Producto p = new Producto();
+        p.setNombre(producto.getNombre());
+        return p;
     }
 }

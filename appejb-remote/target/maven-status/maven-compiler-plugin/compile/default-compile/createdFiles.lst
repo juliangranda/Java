@@ -1,0 +1,3 @@
+org\juliangranda\webapp\ejb\models\Producto.class
+org\juliangranda\webapp\ejb\service\ServiceEjbRemote.class
+org\juliangranda\webapp\ejb\service\ServiceEjb.class

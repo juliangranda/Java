@@ -15,6 +15,6 @@ public class UsuarioRepositoryImpl implements UsuarioRepository {
 
     @Override
     public List<Usuario> listar() {
-        return em.createQuery("from Usuario",Usuario.class).getResultList();
+        return em.createQuery("select u from Usuario u",Usuario.class).getResultList();
     }
 }

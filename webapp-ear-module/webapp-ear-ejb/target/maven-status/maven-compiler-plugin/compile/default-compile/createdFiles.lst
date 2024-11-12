@@ -1,0 +1,7 @@
+org\juliangranda\webapp\ear\ejb\ProducerResources.class
+org\juliangranda\webapp\ear\entities\Usuario.class
+org\juliangranda\webapp\ear\repositories\UsuarioRepository.class
+org\juliangranda\webapp\ear\services\UsuarioService.class
+org\juliangranda\webapp\ear\services\UsuarioServiceImpl.class
+org\juliangranda\webapp\ear\repositories\UsuarioRepositoryImpl.class
+org\juliangranda\webapp\ear\Main.class

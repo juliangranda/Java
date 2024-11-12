@@ -1,0 +1,13 @@
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd"
+       version="3.0" bean-discovery-mode="annotated">
+</beans>
+<!-- informacion de beans.xml sacada de;
+  https://jakarta.ee/specifications/cdi/3.0/jakarta-cdi-spec-3.0#declaring_selected_alternatives_application
+  seccion 5.1
+  o
+  https://jakarta.ee/specifications/cdi/4.1/jakarta-cdi-spec-4.1
+  seccion 16.1.1.2 Declaring selected alternatives for a bean archive.
+  o usar control + f y escribir beans.xml  .
+  -->

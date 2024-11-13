@@ -1,6 +1,7 @@
 package org.juliangranda.webapp.jsf3.services;
 
 import jakarta.ejb.Local;
+import org.juliangranda.webapp.jsf3.entities.Categoria;
 import org.juliangranda.webapp.jsf3.entities.Producto;
 
 import java.util.List;
@@ -12,4 +13,6 @@ public interface ProductoService {
     Optional<Producto> porId(Long id);
     void guardar(Producto producto);
     void eliminar(Long id);
+    List<Categoria> listarCategorias();
+    Optional<Categoria> porIdCategoria(Long id);
 }

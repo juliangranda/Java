@@ -15,7 +15,7 @@
         <h:form id="crearForm">
             <h:commandButton value="Crear Producto" action="form.xhtml"/>
         </h:form>
-        <h:outputText value="No se existen productos en la base de datos" rendered="#{empty listado}"/>
+        <h:outputText value="No existen producto en la base de datos!" rendered="#{empty listado}"/>
         <h:dataTable value="#{listado}" var="prod" rendered="#{not empty listado}">
             <h:column>
                 <f:facet name="header">

@@ -1,0 +1,7 @@
+org\juliangranda\webapp\jsf3\repositories\CrudRepository.class
+org\juliangranda\webapp\jsf3\repositories\ProductoRepositoryImpl.class
+org\juliangranda\webapp\jsf3\controllers\entities\Producto.class
+org\juliangranda\webapp\jsf3\controllers\ProductoController.class
+org\juliangranda\webapp\jsf3\services\ProductoService.class
+org\juliangranda\webapp\jsf3\services\ProductoServiceImpl.class
+org\juliangranda\webapp\jsf3\controllers\ProducerEntityManager.class

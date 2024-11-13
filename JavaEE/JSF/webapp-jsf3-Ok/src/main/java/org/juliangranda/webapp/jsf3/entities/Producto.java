@@ -66,7 +66,7 @@ public class Producto {
         this.fechaRegistro = fechaRegistro;
     }
 
-    @PrePersist
+    //@PrePersist
     public void prePersist(){
         fechaRegistro = LocalDate.now();
     }

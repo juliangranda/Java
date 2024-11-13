@@ -13,13 +13,15 @@ import java.util.List;
 @Model
 public class ProductoController {
 
+    private Producto producto;
+
     @Inject
     private ProductoService service;
 
     @Produces
     @Model
     public String titulo() {
-        return "Hola mundo JavaServer Face 3.0";
+        return "Hola mundo JavaServer Faces 3.0";
     }
 
     @Produces
@@ -27,5 +29,18 @@ public class ProductoController {
     @Named("listado")
     public List<Producto> findAll() {
         return service.listar();
+    }
+
+    @Produces
+    @Model
+    public Producto producto(){
+        this.producto = new Producto();
+        return producto;
+    }
+
+    public String guardar(){
+        System.out.println(producto);
+        // service.guardar(producto);
+        return "index.xhtml?faces-redirect=true";
     }
 }

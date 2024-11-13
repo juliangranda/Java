@@ -9,12 +9,12 @@ import jakarta.persistence.PersistenceContexts;
 @RequestScoped
 public class ProducerEntityManager {
 
-    @PersistenceContext(name="ejemploJpa")
+    @PersistenceContext(name = "ejemploJpa")
     private EntityManager em;
 
     @Produces
     @RequestScoped
-    private EntityManager beanEntityManager(){
+    private EntityManager beanEntityManager() {
         return em;
     }
 }

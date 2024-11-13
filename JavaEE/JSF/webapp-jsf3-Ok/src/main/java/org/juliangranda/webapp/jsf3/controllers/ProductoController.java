@@ -40,7 +40,7 @@ public class ProductoController {
 
     public String guardar(){
         System.out.println(producto);
-        // service.guardar(producto);
+        service.guardar(producto);
         return "index.xhtml?faces-redirect=true";
     }
 }

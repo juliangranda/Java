@@ -8,10 +8,12 @@
     <title>Formulario Producto</title>
 </h:head>
 <h:body>
-    <h1>
-        <h:outputText value="Formulario Producto"/>
-    </h1>
 
+    <h:panelGrid border="1">
+    <f:facet name="header">
+        <h:outputText value="Formulario Producto"/>
+    </f:facet>
+    <h:link outcome="index" value="volver"/>
     <h:form>
         <h:panelGrid columns="2">
             <h:outputLabel value="Nombre" for="nombre" />
@@ -27,5 +29,7 @@
             <h:inputHidden value="#{producto.id}" />
         </h:panelGrid>
     </h:form>
+
+    </h:panelGrid>
 </h:body>
 </html>

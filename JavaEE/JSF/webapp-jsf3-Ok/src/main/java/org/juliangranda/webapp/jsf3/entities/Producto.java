@@ -1,6 +1,7 @@
 package org.juliangranda.webapp.jsf3.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 import java.time.LocalDate;
 
@@ -11,15 +12,24 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotEmpty(message = "el campo nombre no puede ser vacio")
     private String nombre;
 
+    @NotNull
+    @Min(5)
+    @Max(100000)
     private Integer precio;
+
+    @NotEmpty
+    @Size(min = 4, max = 10)
     private String sku;
 
+    @NotNull
     @Column(name="fecha_registro")
     private LocalDate fechaRegistro;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @NotNull
     private Categoria categoria;
 
     public Producto() {

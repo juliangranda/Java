@@ -12,39 +12,39 @@
                 <h:outputText value="#{titulo}"/>
             </f:facet>
             <h:form id="crearForm">
-                <h:commandButton value="Crear Producto" action="form.xhtml" class="btn btn-primary my-2"/>
+                <h:commandButton value="#{msg['navbar.texto.crear']}" action="form.xhtml" class="btn btn-primary my-2"/>
             </h:form>
-            <h:outputText value="No existen producto en la base de datos!" rendered="#{empty listado}"
+            <h:outputText value="{msg['producto.texto.noexite']}" rendered="#{empty listado}"
                           class="alert alert-warning"/>
             <h:dataTable value="#{listado}" var="prod" rendered="#{not empty listado}"
                          class="table table-hover table-striped">
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Id"/>
+                        <h:outputText value="#{msg['producto.boton.id']}"/>
                     </f:facet>
                     <h:outputText value="#{prod.id}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Nombre"/>
+                        <h:outputText value="#{msg['producto.boton.nombre']}"/>
                     </f:facet>
                     <h:outputText value="#{prod.nombre}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Sku"/>
+                        <h:outputText value="#{msg['producto.boton.sku']}"/>
                     </f:facet>
                     <h:outputText value="#{prod.sku}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Precio"/>
+                        <h:outputText value="#{msg['producto.boton.precio']}"/>
                     </f:facet>
                     <h:outputText value="#{prod.precio}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Fecha"/>
+                        <h:outputText value="#{msg['producto.boton.fechaRegistro']}"/>
                     </f:facet>
                     <h:outputText value="#{prod.fechaRegistro}">
                         <f:convertDateTime type="localDate" pattern="dd/MM/yyyy"/>
@@ -52,13 +52,13 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Categoria"/>
+                        <h:outputText value="#{msg['producto.boton.categoria']}"/>
                     </f:facet>
                     <h:outputText value="#{prod.categoria.nombre}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Editar"/>
+                        <h:outputText value="#{msg['producto.boton.editar']}"/>
                     </f:facet>
                     <h:form id="editarForm">
                         <h:commandLink value="editar" action="#{productoController.editar(prod.id)}"
@@ -67,7 +67,7 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Editar2"/>
+                        <h:outputText value="#{msg['producto.boton.editar']}"/>
                     </f:facet>
                     <h:link value="editar2" outcome="form" class="btn btn-sm btn-info">
                         <f:param name="id" value="#{prod.id}"/>
@@ -75,7 +75,7 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        <h:outputText value="Eliminar"/>
+                        <h:outputText value="#{msg['producto.boton.eliminar']}"/>
                     </f:facet>
                     <h:form id="eliminarForm">
                         <h:commandLink value="eliminar" action="#{productoController.eliminar(prod)}"

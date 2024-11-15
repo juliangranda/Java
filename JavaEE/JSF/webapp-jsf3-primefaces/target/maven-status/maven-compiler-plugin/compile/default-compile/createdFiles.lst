@@ -1,0 +1,12 @@
+org\juliangranda\webapp\jsf3\repositories\CrudRepository.class
+org\juliangranda\webapp\jsf3\repositories\ProductoRepositoryImpl.class
+org\juliangranda\webapp\jsf3\entities\Producto.class
+org\juliangranda\webapp\jsf3\controllers\ProductoController.class
+org\juliangranda\webapp\jsf3\repositories\CategoriaRepository.class
+org\juliangranda\webapp\jsf3\services\ProductoService.class
+org\juliangranda\webapp\jsf3\controllers\LenguajeController.class
+org\juliangranda\webapp\jsf3\ProducerResources.class
+org\juliangranda\webapp\jsf3\ProducerEntityManager.class
+org\juliangranda\webapp\jsf3\converters\CategoriaConverter.class
+org\juliangranda\webapp\jsf3\services\ProductoServiceImpl.class
+org\juliangranda\webapp\jsf3\entities\Categoria.class

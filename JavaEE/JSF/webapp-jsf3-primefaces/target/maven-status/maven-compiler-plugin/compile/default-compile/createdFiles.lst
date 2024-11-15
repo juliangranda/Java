@@ -10,3 +10,4 @@ org\juliangranda\webapp\jsf3\ProducerEntityManager.class
 org\juliangranda\webapp\jsf3\converters\CategoriaConverter.class
 org\juliangranda\webapp\jsf3\services\ProductoServiceImpl.class
 org\juliangranda\webapp\jsf3\entities\Categoria.class
+org\juliangranda\webapp\jsf3\repositories\ProductoRepository.class

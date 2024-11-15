@@ -5,6 +5,7 @@ import jakarta.inject.Inject;
 import org.juliangranda.webapp.jsf3.entities.Categoria;
 import org.juliangranda.webapp.jsf3.entities.Producto;
 import org.juliangranda.webapp.jsf3.repositories.CrudRepository;
+import org.juliangranda.webapp.jsf3.repositories.ProductoRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,7 +14,7 @@ import java.util.Optional;
 public class ProductoServiceImpl implements ProductoService {
 
     @Inject
-    private CrudRepository<Producto> repository;
+    private ProductoRepository repository;
 
     @Inject
     private CrudRepository<Categoria> categoriaRepository;
@@ -46,6 +47,11 @@ public class ProductoServiceImpl implements ProductoService {
     @Override
     public Optional<Categoria> porIdCategoria(Long id) {
         return Optional.ofNullable(categoriaRepository.porId(id));
+    }
+
+    @Override
+    public List<Producto> buscarPorNombre(String nombre) {
+        return repository.buscarPorNombre(nombre);
     }
 
 }

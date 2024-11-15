@@ -8,7 +8,7 @@ import org.juliangranda.webapp.jsf3.entities.Producto;
 import java.util.List;
 
 @RequestScoped
-public class ProductoRepositoryImpl implements CrudRepository<Producto>{
+public class ProductoRepositoryImpl implements ProductoRepository{
 
     @Inject
     private EntityManager em;
@@ -39,5 +39,12 @@ public class ProductoRepositoryImpl implements CrudRepository<Producto>{
     public void eliminar(Long id) {
         Producto producto = porId(id);
         em.remove(producto);
+    }
+
+    @Override
+    public List<Producto> buscarPorNombre(String nombre) {
+        return em.createQuery("select p from Producto p left outer join fetch p.categoria where p.nombre like :nombre", Producto.class)
+                .setParameter("nombre", "%" + nombre + "%")
+                .getResultList();
     }
 }

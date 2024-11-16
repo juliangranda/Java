@@ -39,10 +39,11 @@ public class ProductoController {
     @PostConstruct
     public void init(){
         this.listado = service.listar();
+        producto = new Producto();
     }
 
-    @Produces
-    @Model
+    //@Produces
+    //@Model
     public String titulo() {
         //return "Hola mundo JavaServer Faces 3.0";
         return bundle.getString("producto.texto.titulo");
@@ -73,12 +74,12 @@ public class ProductoController {
         return service.listarCategorias();
     }
 
-    public String editar(Long id){
+    public void editar(Long id){
         this.id = id;
-        return "form.xhtml";
+        producto();
     }
 
-    public String guardar(){
+    public void guardar(){
         System.out.println(producto);
         if (producto.getId() != null && producto.getId() > 0) {
             facesContext.addMessage(null, new FacesMessage(String.format(bundle.getString("producto.mensaje.editar"), producto.getNombre())));
@@ -87,7 +88,7 @@ public class ProductoController {
         }
         service.guardar(producto);
         listado = service.listar();
-        return "index.xhtml";
+        producto = new Producto();
     }
 
     public void eliminar(Producto producto){
@@ -98,6 +99,11 @@ public class ProductoController {
 
     public void buscar(){
         this.listado = service.buscarPorNombre(this.textoBuscar);
+    }
+
+    public void cerrarDialogo(){
+        System.out.println("cerrando la ventana de dialogo");
+        producto = new Producto();
     }
 
     public Long getId() {
@@ -122,5 +128,13 @@ public class ProductoController {
 
     public void setTextoBuscar(String textoBuscar) {
         this.textoBuscar = textoBuscar;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }

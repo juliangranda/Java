@@ -32,7 +32,7 @@ public class CursoRestController {
     public Response porId(@PathParam("id") Long id){
         Optional<Curso> cursoOptional = service.porId(id);
         if(cursoOptional.isPresent()){
-            return Response.ok(cursoOptional.get(), ).build();
+            return Response.ok(cursoOptional.get()).build();
         }
         return Response.status(Response.Status.NOT_FOUND).build();
     }

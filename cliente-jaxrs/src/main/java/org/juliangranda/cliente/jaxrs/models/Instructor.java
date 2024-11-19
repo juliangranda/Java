@@ -1,6 +1,7 @@
 package org.juliangranda.cliente.jaxrs.models;
 
 public class Instructor {
+
     private Long id;
 
     private String nombre;

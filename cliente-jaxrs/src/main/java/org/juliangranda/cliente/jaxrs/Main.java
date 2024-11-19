@@ -8,6 +8,7 @@ import jakarta.ws.rs.core.GenericType;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.juliangranda.cliente.jaxrs.models.Curso;
+import org.juliangranda.cliente.jaxrs.models.Instructor;
 
 import java.util.List;
 
@@ -44,7 +45,11 @@ public class Main {
         cursoNuevo.setNombre("spring cloud");
         cursoNuevo.setDescripcion("spring cloud eureka");
         cursoNuevo.setDuracion(25D);
-        cursoNuevo.setInstructor("andres guzman");
+        Instructor instructor = new Instructor();
+        instructor.setId(2L);
+        instructor.setNombre("pepe");
+        instructor.setApellido("doe");
+        cursoNuevo.setInstructor(instructor);
 
         Entity<Curso> entityHeader = Entity.entity(cursoNuevo, MediaType.APPLICATION_JSON);
         curso = rootUri.request(MediaType.APPLICATION_JSON)
@@ -64,9 +69,7 @@ public class Main {
         listar(rootUri);
 
         System.out.println("======= eliminar ==========");
-        rootUri.path("/"+curso.getId())
-                .request()
-                .delete();
+        rootUri.path("/"+curso.getId()).request().delete();
         listar(rootUri);
 
     }

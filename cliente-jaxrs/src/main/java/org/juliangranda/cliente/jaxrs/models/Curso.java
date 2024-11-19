@@ -10,7 +10,7 @@ public class Curso {
 
     private String descripcion;
 
-    private String instructor;
+    private Instructor instructor;
 
     private Double duracion;
 
@@ -38,11 +38,11 @@ public class Curso {
         this.descripcion = descripcion;
     }
 
-    public String getInstructor() {
+    public Instructor getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(String instructor) {
+    public void setInstructor(Instructor instructor) {
         this.instructor = instructor;
     }
 

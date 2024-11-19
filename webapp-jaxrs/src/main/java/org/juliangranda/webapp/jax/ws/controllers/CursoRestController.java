@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RequestScoped
 @Path("/cursos")
-@Produces(MediaType.APPLICATION_XML) //Devuelve una respuesta en formato XML
+@Produces(MediaType.APPLICATION_JSON) //Devuelve una respuesta en formato XML
 public class CursoRestController {
 
     @Inject
@@ -35,7 +35,7 @@ public class CursoRestController {
     }
 
     @POST
-    @Consumes(MediaType.APPLICATION_XML) //formato en que nos envian el request como parametro
+    @Consumes(MediaType.APPLICATION_JSON) //formato en que nos envian el request como parametro
     public Response crear(Curso curso){
         try {
             Curso nuevoCurso = service.guardar(curso);
@@ -48,7 +48,7 @@ public class CursoRestController {
 
     @PUT
     @Path("/{id}")
-    @Consumes(MediaType.APPLICATION_XML)
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response editar(@PathParam("id") Long id, Curso curso){
         Optional<Curso> cursoOptional = service.porId(id);
         if(cursoOptional.isPresent()){

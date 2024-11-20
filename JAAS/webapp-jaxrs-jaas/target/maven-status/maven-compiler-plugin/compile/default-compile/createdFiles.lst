@@ -1,0 +1,8 @@
+org\juliangranda\webapp\jaxws\controllers\CursoRestController.class
+org\juliangranda\webapp\jaxws\repositories\CursoRepositoryImpl.class
+org\juliangranda\webapp\jaxws\services\CursoServiceImpl.class
+org\juliangranda\webapp\jaxws\models\Instructor.class
+org\juliangranda\webapp\jaxws\repositories\CursoRepository.class
+org\juliangranda\webapp\jaxws\services\CursoService.class
+org\juliangranda\webapp\jaxws\ProducerEntityManager.class
+org\juliangranda\webapp\jaxws\models\Curso.class

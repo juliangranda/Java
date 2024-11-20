@@ -1,0 +1,6 @@
+org\aguzman\webapp\jaxws\repositories\CursoRepositoryImpl.class
+org\aguzman\webapp\jaxws\models\Curso.class
+org\aguzman\webapp\jaxws\repositories\CursoRepository.class
+org\aguzman\webapp\jaxws\ProducerEntityManager.class
+org\aguzman\webapp\jaxws\services\CursoServicioWsImpl.class
+org\aguzman\webapp\jaxws\services\CursoServicioWs.class

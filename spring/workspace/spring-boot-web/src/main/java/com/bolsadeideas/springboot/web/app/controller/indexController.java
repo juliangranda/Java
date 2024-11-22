@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.web.app.controller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -40,8 +41,11 @@ public class indexController {
 	
 	@RequestMapping("/listar")
 	public String listar(Model model) {
-		List<Usuario> usuarios = new ArrayList<>();
-		usuarios.add(new Usuario());
+		List<Usuario> usuarios = Arrays.asList(new Usuario("Julian","Granda","julian@correo.com"),
+				new Usuario("Jhon","Doe","jhon@correo.com"),
+				new Usuario("Jane","Doe","jane@correo.com"),
+				new Usuario("Tornado","Roe","roe@correo.com"));
+
 		model.addAttribute("titulo","Listado de usuarios:");
 		model.addAttribute("usuarios", usuarios);
 		return "listar";

@@ -33,7 +33,7 @@ public class AppConfig {
 		Producto producto2 = new Producto("Bicicleta Bianchi aro 26", 200);
 		
 		ItemFactura linea1 = new ItemFactura(producto1, 2);
-		ItemFactura linea2 = new ItemFactura(producto1, 4);
+		ItemFactura linea2 = new ItemFactura(producto2, 4);
 		
 		return Arrays.asList(linea1,linea2);
 		

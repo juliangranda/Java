@@ -16,7 +16,7 @@ import jakarta.annotation.PreDestroy;
 @RequestScope
 public class Factura implements Serializable{
 
-	private static final long serialVersionUID = 946004357128146951L;
+	//private static final long serialVersionUID = 946004357128146951L;
 
 	@Value("${factura.descripcion}")
 	private String descripcion;

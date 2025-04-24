@@ -15,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.bolsadeideas.springboot.web.app.models.Usuario;
 
 //RequestMapping=ruta base que tienen en comun para todos los controladores.
-
+//el controlador se encarga de manejar las peticiones del usuario.
+//cada controlador va a manejar varios metodos que van a manejar una pagina distinta.
 @Controller
 @RequestMapping("/app") 
 public class indexController {
@@ -29,13 +30,16 @@ public class indexController {
 	@Value("${texto.indexcontroller.listar.titulo}")
 	private String textoListar;
 	
+	//requestmapping o getmapping son exactamente lo mismo.
 	//@RequestMapping(value="/index", method = RequestMethod.GET)
 	@GetMapping({"/index", "/", "", "/home"})
 	public String index(Model model) {
 		model.addAttribute("titulo",textoIndex);
-		return "index";
+		return "index"; 
+		//debe de retormar una plantilla que se llame index.html
 	}
 	
+	//usar model es lo mismo que ModelMap
 	@RequestMapping("/perfil")
 	public String perfil(Model model) {
 		

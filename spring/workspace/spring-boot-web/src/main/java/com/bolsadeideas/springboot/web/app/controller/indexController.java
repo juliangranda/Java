@@ -17,6 +17,9 @@ import com.bolsadeideas.springboot.web.app.models.Usuario;
 //RequestMapping=ruta base que tienen en comun para todos los controladores.
 //el controlador se encarga de manejar las peticiones del usuario.
 //cada controlador va a manejar varios metodos que van a manejar una pagina distinta.
+//requestmapping:es la ruta de primer nivel para la url,es decir, primero va
+//  /app/otra pagina o url de otros metodos.
+
 @Controller
 @RequestMapping("/app") 
 public class indexController {

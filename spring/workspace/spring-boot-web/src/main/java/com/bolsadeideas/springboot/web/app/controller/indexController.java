@@ -24,6 +24,7 @@ import com.bolsadeideas.springboot.web.app.models.Usuario;
 @RequestMapping("/app") 
 public class indexController {
 
+	//@value usa la informacion que se encuentra en el aplicacion properties.
 	@Value("${texto.indexcontroller.index.titulo}")
 	private String textoIndex;
 	

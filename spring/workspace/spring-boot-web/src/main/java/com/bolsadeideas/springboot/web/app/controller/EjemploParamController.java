@@ -24,12 +24,14 @@ public class EjemploParamController {
 		return "params/ver";
 	}
 	
+	//recibir varios parametros al mismo tiempo.
 	@GetMapping("/mix-params")
 	public String param(@RequestParam String saludo, @RequestParam Integer numero, Model model) {
 		model.addAttribute("resultado", "el saludo enviado es : '" + saludo + "' y el numero es '" + numero + "'");
 		return "params/ver";
 	}
 	
+	//otra forma de recibir parametros
 	@GetMapping("/mix-params-request")
 	public String param(HttpServletRequest request, Model model) {
 		String saludo = request.getParameter("saludo");

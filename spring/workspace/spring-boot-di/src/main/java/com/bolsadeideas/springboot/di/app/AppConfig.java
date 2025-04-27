@@ -3,6 +3,7 @@ package com.bolsadeideas.springboot.di.app;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -40,6 +41,7 @@ public class AppConfig {
 	}
 	
 	@Bean("itemsFacturaOficina")
+	//@Qualifier("itemsFacturaOficina") o usar primary cualquiera de los dos.
 	@Primary
 	public List<ItemFactura> registrarItemsOficina(){
 		Producto producto1 = new Producto("Monitor LG LCD 24", 250);

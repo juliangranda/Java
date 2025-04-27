@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
@@ -17,10 +16,11 @@ import jakarta.annotation.PreDestroy;
 public class Factura implements Serializable{
 
 	//private static final long serialVersionUID = 946004357128146951L;
-
+	//autowired para desacoplar y @value en application.properties
 	@Value("${factura.descripcion}")
 	private String descripcion;
 	
+	//factura tiene una relacion con cliente por lo tanto es atributo tambien.
 	@Autowired
 	private Cliente cliente;
 	
@@ -36,6 +36,7 @@ public class Factura implements Serializable{
 	@PreDestroy
 	public void destruir() {
 		System.out.println("Factura destruida: ".concat(descripcion));
+		System.out.println();
 	}
 
 	public String getDescripcion() {

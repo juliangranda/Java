@@ -2,6 +2,7 @@ package com.bolsadeideas.springboot.di.app.models.domain;
 
 public class ItemFactura {
 
+	//item factura tiene una relacion con un producto.
 	private Producto producto;
 	private Integer cantidad;
 	

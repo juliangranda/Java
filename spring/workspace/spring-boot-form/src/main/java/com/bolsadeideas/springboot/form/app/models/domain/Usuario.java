@@ -8,7 +8,7 @@ public class Usuario {
 
 	private String identificador;
 	
-	@NotEmpty
+	@NotEmpty(message = "el nombre no puede ser vacio")
 	private String nombre;
 	
 	@NotEmpty
@@ -22,7 +22,7 @@ public class Usuario {
 	private String password;
 	
 	@NotEmpty
-	@Email
+	@Email(message = "formato incorrecto")
 	private String email;
 
 	public String getUsername() {

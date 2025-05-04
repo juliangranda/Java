@@ -1,6 +1,10 @@
 package com.bolsadeideas.springboot.form.app.controllers;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 
 //import javax.validation.Valid;
 
@@ -14,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
+import com.bolsadeideas.springboot.form.app.editors.NombreMayusculaEditor;
 import com.bolsadeideas.springboot.form.app.models.domain.Usuario;
 import com.bolsadeideas.springboot.form.app.validation.UsuarioValidador;
 
@@ -29,6 +34,13 @@ public class FormController {
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
 		binder.addValidators(validador);
+		SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
+		//setLenient: para que sea estricto y no sea tolerante con el tipo de formato ingresado
+		dateformat.setLenient(false);
+		binder.registerCustomEditor(Date.class, "fechaNacimiento", new CustomDateEditor(dateformat, true));
+		
+		binder.registerCustomEditor(String.class, "nombre", new NombreMayusculaEditor());
+		binder.registerCustomEditor(String.class, "apellido", new NombreMayusculaEditor());
 	}
 	
 	@GetMapping("/form")

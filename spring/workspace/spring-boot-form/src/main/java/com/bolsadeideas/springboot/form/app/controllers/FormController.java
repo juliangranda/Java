@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import com.bolsadeideas.springboot.form.app.editors.NombreMayusculaEditor;
+import com.bolsadeideas.springboot.form.app.models.domain.Pais;
 import com.bolsadeideas.springboot.form.app.models.domain.Usuario;
 import com.bolsadeideas.springboot.form.app.validation.UsuarioValidador;
 
@@ -32,40 +33,53 @@ import jakarta.validation.Valid;
 @Controller
 @SessionAttributes("usuario")
 public class FormController {
-	
+
 	@Autowired
-	private UsuarioValidador validador; 
-	
+	private UsuarioValidador validador;
+
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
 		binder.addValidators(validador);
 		SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
-		//setLenient: para que sea estricto y no sea tolerante con el tipo de formato ingresado
+		// setLenient: para que sea estricto y no sea tolerante con el tipo de formato
+		// ingresado
 		dateformat.setLenient(false);
 		binder.registerCustomEditor(Date.class, "fechaNacimiento", new CustomDateEditor(dateformat, true));
-		
+
 		binder.registerCustomEditor(String.class, "nombre", new NombreMayusculaEditor());
 		binder.registerCustomEditor(String.class, "apellido", new NombreMayusculaEditor());
 	}
-	
-	@ModelAttribute("paises")
-	public List<String> paises(){
-		return Arrays.asList("España","Mexico","Chile","Argentina","Peru","Colombia","Venezuela");
+
+	@ModelAttribute("listaPaises")
+	public List<Pais> ListaPaises(){
+		return Arrays.asList(
+				new Pais(1,"ES","España"),
+				new Pais(2,"MX","Mexico"),
+				new Pais(3,"CL","Chile"),
+				new Pais(4,"AR","Argentina"),
+				new Pais(5,"PR","Peru"),
+				new Pais(6,"CO","Colombia"),
+				new Pais(7,"VE","Venezuela"));
 	}
-	
+
+	@ModelAttribute("paises")
+	public List<String> paises() {
+		return Arrays.asList("España", "Mexico", "Chile", "Argentina", "Peru", "Colombia", "Venezuela");
+	}
+
 	@ModelAttribute("paisesMap")
-	public Map<String,String> paisesMap(){
-		Map<String,String> paises = new HashMap<String,String>();
-		paises.put("ES","España");
-		paises.put("MX","Mexico");
-		paises.put("CL","Chile");
-		paises.put("AR","Argentina");
-		paises.put("PR","Peru");
-		paises.put("CO","Colombia");
-		paises.put("VE","Venezuela");
+	public Map<String, String> paisesMap() {
+		Map<String, String> paises = new HashMap<String, String>();
+		paises.put("ES", "España");
+		paises.put("MX", "Mexico");
+		paises.put("CL", "Chile");
+		paises.put("AR", "Argentina");
+		paises.put("PR", "Peru");
+		paises.put("CO", "Colombia");
+		paises.put("VE", "Venezuela");
 		return paises;
 	}
-	
+
 	@GetMapping("/form")
 	public String form(Model model) {
 		Usuario usuario = new Usuario();
@@ -76,25 +90,25 @@ public class FormController {
 		model.addAttribute("usuario", usuario);
 		return "form";
 	}
-	
+
 	@PostMapping("/form")
 	public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status) {
-		
+
 		validador.validate(usuario, result);
-		
+
 		model.addAttribute("titulo", "Resultado form");
-		
-		if(result.hasErrors()) {
-			/* manera manu e explicita
-			 * Map<String, String> errores = new HashMap<>();
-			result.getFieldErrors().forEach(err ->{
-				errores.put(err.getField(), "El campo ".concat(err.getField()).concat(" ").concat(err.getDefaultMessage()));
-			});
-			model.addAttribute("error", errores);*/
+
+		if (result.hasErrors()) {
+			/*
+			 * manera manu e explicita Map<String, String> errores = new HashMap<>();
+			 * result.getFieldErrors().forEach(err ->{ errores.put(err.getField(),
+			 * "El campo ".concat(err.getField()).concat(" ").concat(err.getDefaultMessage()
+			 * )); }); model.addAttribute("error", errores);
+			 */
 			status.setComplete();
 			return "form";
 		}
-		
+
 		model.addAttribute("usuario", usuario);
 
 		return "resultado";

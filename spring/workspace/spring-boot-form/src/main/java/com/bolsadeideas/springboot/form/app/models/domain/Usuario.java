@@ -54,7 +54,7 @@ public class Usuario {
 	@Past
 	private Date fechaNacimiento;
 
-	@Valid
+	@NotNull
 	private Pais pais;
 	
 	public String getUsername() {

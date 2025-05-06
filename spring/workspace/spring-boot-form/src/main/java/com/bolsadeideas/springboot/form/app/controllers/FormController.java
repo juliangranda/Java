@@ -21,8 +21,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.context.annotation.SessionScope;
 
 import com.bolsadeideas.springboot.form.app.editors.NombreMayusculaEditor;
 import com.bolsadeideas.springboot.form.app.editors.PaisPropertyEditor;
@@ -138,12 +140,9 @@ public class FormController {
 	}
 
 	@PostMapping("/form")
-	public String procesar(@Valid Usuario usuario, BindingResult result, Model model, SessionStatus status) {
-
-		validador.validate(usuario, result);
-
-		model.addAttribute("titulo", "Resultado form");
-
+	public String procesar(@Valid Usuario usuario, BindingResult result, Model model) {
+		//validador.validate(usuario, result);
+		
 		if (result.hasErrors()) {
 			/*
 			 * manera manu e explicita Map<String, String> errores = new HashMap<>();
@@ -151,12 +150,23 @@ public class FormController {
 			 * "El campo ".concat(err.getField()).concat(" ").concat(err.getDefaultMessage()
 			 * )); }); model.addAttribute("error", errores);
 			 */
-			status.setComplete();
+			model.addAttribute("titulo", "Resultado form");
 			return "form";
 		}
-
 		model.addAttribute("usuario", usuario);
-
+		return "redirect:/ver";
+	}
+	
+	@GetMapping("/ver")
+	public String ver(@SessionAttribute(name="usuario", required = false) Usuario usuario, Model model, SessionStatus status) {
+		
+		//evita que se pierda el usuario en la session.
+		if(usuario == null) {
+			return "redirect:/form";
+		}
+		model.addAttribute("titulo","Resultado form");
+		
+		status.setComplete();
 		return "resultado";
 	}
 

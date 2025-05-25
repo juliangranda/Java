@@ -1,0 +1,3773 @@
+[33mcommit 939b318f36926b5cf6f7c93f853046727d759871[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat May 24 19:20:12 2025 -0500
+
+    Interceptores HTTP en springboot
+
+[33mcommit 1aaa74ba8df79930d757081dc12ea70104a57de0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 12 10:08:39 2025 -0500
+
+    recursos static css
+
+[33mcommit b3e9d0e6ce83d02d3bd9379a637a2f375f60998f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed May 7 18:15:55 2025 -0500
+
+    estilos css con bootstrap
+
+[33mcommit 82d75ea6f18dab4cfa41862a715011c527ad0d81[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue May 6 18:43:58 2025 -0500
+
+    manejo de resultado con redirect
+
+[33mcommit 776534ce95f1b23ec85e29f039bbbbeab129fde8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue May 6 17:42:53 2025 -0500
+
+    Mandar valores por defecto al formulario sean objeto/clases o listas en la clase principal
+
+[33mcommit b80a1fb990d2ad3ff1c7fd7b56548fe780c2ec3b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue May 6 17:06:52 2025 -0500
+
+    valor oculto usando hidden en el formulario
+
+[33mcommit 6387482ec233d081ea16118ef2520b84ee55d59a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue May 6 16:59:15 2025 -0500
+
+    radioButton manera mas automatica o programable
+
+[33mcommit 8da4f8a4228aecef4a171f03d0572abb1ef14a17[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue May 6 16:41:59 2025 -0500
+
+    radioButton manera simple
+
+[33mcommit 101cfbfd8670cc409f389e8c667dd1e0cc4d591c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue May 6 15:30:52 2025 -0500
+
+    checkboxes
+
+[33mcommit 32e3d50b8fdde6682f1b7f6ed762ed0c1fa41123[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 5 11:29:12 2025 -0500
+
+    checkbox habilitado o deshabilitado
+
+[33mcommit eca4b332b924a3e224e166ff2429bcf3b5bdfd7c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 5 11:16:43 2025 -0500
+
+    Verificacion de checkboxes usando un objeto con PropertyEditor
+
+[33mcommit 9035dc5a42ff0103b3ff45e751f14ce06ca79544[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 5 10:54:48 2025 -0500
+
+    Verificacion de checkboxes con thymeleaf usando un Objeto y no Map
+
+[33mcommit b5b5a99fe631b492361fd2907e85ca8b49631570[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 5 10:33:49 2025 -0500
+
+    verificacion de checkboxes con thymeleaf con Map
+
+[33mcommit 33f79de04b02ac90d77622319b2b986251da406e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 5 10:24:28 2025 -0500
+
+    verificacion de checkboxes con thymeleaf de manera sencilla
+
+[33mcommit e134ff51400d59700e6d57c260d8c2d15c7ace9f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon May 5 09:36:23 2025 -0500
+
+    PropertyEditor para lista desplegable o select
+
+[33mcommit d544b39eead0f3ac308e253eb12ceaf7c358faff[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun May 4 18:40:32 2025 -0500
+
+    lista desplegable de paises usando PropertyEditor para mostrar identificador/posicion pais,codigo pais y nombre pais(Forma Recomendada) debido a que es mas asbtracta y generica
+
+[33mcommit 9097f4ef3c7a43a8ce902c69d3bd99535e5c5bd6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun May 4 18:06:32 2025 -0500
+
+    lista despegable usando Map con la clase Pais para obtener el value o key por separado
+
+[33mcommit 222fad0feeaf44d2bb90a5fd32f31cb6108f53bc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun May 4 17:49:38 2025 -0500
+
+    lista desplegable en form mostrando el key del Map
+
+[33mcommit 950917d7d0cbc73b480c5a1663c6bc1c29e7f08e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun May 4 17:20:07 2025 -0500
+
+    Lista despplegable del form usando Map
+
+[33mcommit 9383208d4d98da3ccb48e81b8dd925832feb5b8b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun May 4 17:12:01 2025 -0500
+
+    lista desplegable en el form con spring y thymeleaf
+
+[33mcommit 5a2ff3b69d7e297349407ee8b751b46c3fa78790[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun May 4 16:07:43 2025 -0500
+
+    anotaciones @Past,@Future y CustomEditor,PropertyEditorSupport para editar/validar las fechas
+
+[33mcommit edba478edb66c961ec09ccb0e9102fd69370bc82[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri May 2 17:19:11 2025 -0500
+
+    Validacion numeros y fechas
+
+[33mcommit 0ab806615ae019080bc639ff804488fe17de44ac[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri May 2 15:55:36 2025 -0500
+
+    validaciones con anotaciones personalizadas
+
+[33mcommit d16ca07e1f8f5723c26846307fc8a69f81d47265[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri May 2 11:57:50 2025 -0500
+
+    validaciones personalizadas de forma manual y automatica
+
+[33mcommit 8c6321beed28a1b46adec4bd96f26d1a5ad8fe79[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 17:34:59 2025 -0500
+
+    mensajes personalizados usando un archivo properties
+
+[33mcommit 9daf57b5710c669978e7516c47de4e286fba53cf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 17:06:47 2025 -0500
+
+    personalizar mensajes forma simple
+
+[33mcommit 9afb46b7fce5aabb55100728d678aae42e575bad[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 17:00:25 2025 -0500
+
+    anotaciones @Size y @Email
+
+[33mcommit 790d2db29f7805a13b6fa29a5d0420b616708ad1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 16:51:50 2025 -0500
+
+    uso de @sessionAtributes para persistir datos haciendo uso de la sesion http
+
+[33mcommit d9594a21d2ea4827ecfcc4b774cb9fbe6c0f39a6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 15:46:36 2025 -0500
+
+    validar formularios de forma mas automatica
+
+[33mcommit ecfb3853f7e2462afa05f10dceaf70aef705533d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 12:27:38 2025 -0500
+
+    validacion manual
+
+[33mcommit dba710faaabc801574b2ab666f3865c69de28e48[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Apr 29 10:13:14 2025 -0500
+
+    manejo de formularios con thymeleaf y spring
+
+[33mcommit 3cd7be6a73fbb579e82557da5dea1b99d1c23768[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Apr 27 16:38:00 2025 -0500
+
+    añadiendo comentarios en inyeccion de dependencias con springboot
+
+[33mcommit 09ddebb5bc85944d52b5700a93cf8dd21cac6783[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Apr 25 16:11:09 2025 -0500
+
+    añado algunos comentario por el tema de inyeccion de depencias en spring
+
+[33mcommit 6f4aec8961ab9974f96ab473e30430127cb97d90[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Apr 25 14:56:46 2025 -0500
+
+    se añaden comentario
+
+[33mcommit 836e8dee2d8ca879db275508e4c6202da705b668[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Apr 25 11:25:32 2025 -0500
+
+    pasar/enviar/recibir parametros/variables/datos por medio de las url
+
+[33mcommit 1fd3ff63dbac3d9d63ac9614f41c93c4956618de[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Apr 24 18:27:37 2025 -0500
+
+    añado un comentario de request mapping para una ruta primaria para todos los metodos
+
+[33mcommit e137a18d8163ec0ac89f91f52cf6fb5440807e4d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Apr 24 18:13:00 2025 -0500
+
+     se añaden algunos comentarios para el controlador de la clase 664
+
+[33mcommit 39fabf99ec69f178c7f122bf0d3e9bbc6340dcde[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Dec 9 17:03:21 2024 -0500
+
+    Metodo handler para recibir y procesar los datos enviados
+
+[33mcommit 06141e3dd71a3274866b57f84a131398b04a9d08[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Dec 9 16:12:52 2024 -0500
+
+    Añadiendo la vista del formulario
+
+[33mcommit 1e4963125db56b8857317895c9e1bac9f4be9019[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Dec 9 16:01:52 2024 -0500
+
+    Añadir dependencia Validation
+
+[33mcommit 284b52e0483d476fc49af932a295c3d5cc1c42ca[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Dec 9 15:50:59 2024 -0500
+
+    Creando nuevo proyecto form
+
+[33mcommit aca826f7bf4f7229872140fbe1c8ad905971fa6c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 18:19:05 2024 -0500
+
+    Contextos(Scope) de los componentes
+
+[33mcommit 9222b6e0864614ec208e630a1175313dbbae1c89[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 17:50:10 2024 -0500
+
+    Ciclo de vida del compoente - @PostContruct y @PreDestroy
+
+[33mcommit de208d9a87b6a2d2f3bd8961448b24b2571ff825[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 17:32:04 2024 -0500
+
+    Registrando otras lineas para la factura
+
+[33mcommit cb7a6970513370df063ba169e53bc23ccfe16b92[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 17:01:18 2024 -0500
+
+    Creando el controlador FacturaController y su vista
+
+[33mcommit 49e2ad33f0be1a0534bf3d14310da4846d6d8bdd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 16:32:30 2024 -0500
+
+    Registrando componente ItemsFactura
+
+[33mcommit a89d7f0167ca19e4ebe92816db5df0bacf6a2ba7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 16:18:41 2024 -0500
+
+    Ejemplo Factura y relaciones entre componentes
+
+[33mcommit 9c4dbdc82ffb3cbcc41997c329337b55c2ec693f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 15:17:39 2024 -0500
+
+    Registrando componentes usando clase de configuracion @Configuration y la anotacion @Bean
+
+[33mcommit 6eaff0598ac7c0cd8688ee4c40dce9dafc6f45c7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 15:06:53 2024 -0500
+
+    Anotacion @Qualifier
+
+[33mcommit 9fa7c60a090ea66057802f48b8140f23dbb4eff9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 14:47:01 2024 -0500
+
+    Anotacion @Primary
+
+[33mcommit a4df0c94aad83c8f9e68231ea69fca2bfe999c5a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 11:27:24 2024 -0500
+
+    Inyectando mediante la interface
+
+[33mcommit 2ebf59625a9a4f8142937454f5b2837d846efe9b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 11:16:51 2024 -0500
+
+    implementando inyeccion de dependencias con la anotacion @Autowired
+
+[33mcommit 2e176edfdb73ef5805d135aeef19dbf4040728ef[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 10:54:44 2024 -0500
+
+    Añadiendo la clase de servicio - sin inyeccion de dependencias
+
+[33mcommit d04dbd3b30bf6b728bb07589fea03e1a39e249bd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 26 10:40:04 2024 -0500
+
+    Creando nuevo proyecto y controlador
+
+[33mcommit 831b2163552b8a11389e734b74f15bf773cae330[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 16:16:24 2024 -0500
+
+    Retornando redirect y forward como respuesta en metodos del controlador
+
+[33mcommit c21eeed73f3c2eb775d691343777c79aaa6354f2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 15:28:33 2024 -0500
+
+    Agregando otros archivos properties personalizados para los textos
+
+[33mcommit ec896a9943e12a9d8b500b9b1e98966043424e9f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 15:12:02 2024 -0500
+
+    Inyectar valores usando la anotacion @Value
+
+[33mcommit b5d9a25fd569a6b2f7fc2b1544682ebb4562b1d0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 12:50:51 2024 -0500
+
+    Agregando recursos estaticos y estilos CSS personalizados
+
+[33mcommit 7d23c16d38b782912c68a2b9ecd294f8f7adc135[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 12:26:00 2024 -0500
+
+    Obtener varios parametros de la ruta con @PathVariable
+
+[33mcommit 0fdd9e2390e31cdb6288362b2acc6db10b6857bc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 12:10:12 2024 -0500
+
+    Anotacion @PathVariable
+
+[33mcommit ec625007d240fee6af3935f0341f075c6f8c799b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 25 11:50:09 2024 -0500
+
+    Obtener varios parametros de la URL con @RequestParam
+
+[33mcommit 40f403d515c589adad3edb90477661139b90e6e9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 22 15:05:54 2024 -0500
+
+    Anotacion @RequestParam
+
+[33mcommit 1631c006e84a0da18063c6aaeef17d55bec2b6f3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 22 12:13:44 2024 -0500
+
+    Anotacion @RequestParam - pasar datos a traves de url
+
+[33mcommit c5013597e7592842d3d6b68839260dcc1fcc291c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 22 11:37:41 2024 -0500
+
+    Anotacion @ModelAttribute
+
+[33mcommit 0413ef4538a69fd48e6883d75f93ce40a1cb6ef4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 22 11:11:42 2024 -0500
+
+    Directiva each(foreach) de Thymeleaf
+
+[33mcommit 1d83241ea26bb13ebbba66d51cb9c3c8dec890f6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 22 10:52:33 2024 -0500
+
+    en caso de un error de sintaxis
+
+[33mcommit c89ff65214a8a6460138b6c2a45608fc7fe4d1bf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 22 10:42:21 2024 -0500
+
+    Directiva if de Thymeleaf
+
+[33mcommit 4f4c6782f62ff3be34702e2d8d3c6b5c2e195278[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 21 17:19:29 2024 -0500
+
+    El objeto Model
+
+[33mcommit f449eaffdc0ccd92b7d3e0beaa4fc729b0b221a2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 21 16:30:13 2024 -0500
+
+    Anotacion @RequestMapping sobre el controlador
+
+[33mcommit 84849d486039ed0c6ced06e792b9a01651d0d3e1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 21 16:13:59 2024 -0500
+
+    Pasar datos a la vista
+
+[33mcommit 1cb2960df1e7d19e93de7e72b45fd3093056e3b9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 21 12:05:25 2024 -0500
+
+    Creando el controlador y la vista - @Controller
+
+[33mcommit df31440b97595e0ab26a3bdf83b0e6e42c76ccfc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 21 11:08:06 2024 -0500
+
+    inicio de spring
+
+[33mcommit 2bcb2d8b756e8f6030ff4c7bfb587eb11f2b9d90[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 20 17:39:26 2024 -0500
+
+    Comprobando seguridad programaticamente en los EJB
+
+[33mcommit da3ed8d0809641df94d8382b19ac70df1b588cc3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 20 17:26:09 2024 -0500
+
+    Implementando seguridad JAAS en EJB remote
+
+[33mcommit 7a34f693d1f387e845af183dcfc714e371f8a802[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 20 17:03:23 2024 -0500
+
+    Implementando seguridad JAAS en Servicios Web Soap
+
+[33mcommit 762645d93444754708589906a53eda8eccc9df7d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 20 15:47:40 2024 -0500
+
+    añadiendo reglas de seguridad url y metodos http en archivo web.xml
+
+[33mcommit 03c4e99ebb4c5f4dc9b953af30407c9d3a17e74d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 20 11:49:18 2024 -0500
+
+    Logout o cerrar sesion
+
+[33mcommit 82ec498e0422e8742b31b385244f6a6e3045b74f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 20 11:13:16 2024 -0500
+
+    Paginas JSF personalizadas de form login y error
+
+[33mcommit b94a12eb31bff164e78af826a04fd6bd6746eb3f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 19 18:39:24 2024 -0500
+
+    Implementando seguridad JAAS en aplicacion web empresarial (EJB y JSF3)
+
+[33mcommit f8efd6ff1c44db94f75f051c8bc028f95c5bb300[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 19 13:05:56 2024 -0500
+
+    Ejemplo JAX-RS con relaciones ciclica de objetos y problema de recursividad, solucion a error por relaciones ciclicas
+
+[33mcommit 5ebb8d578c325d85b995dd8877248764b43986c0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 19 12:27:45 2024 -0500
+
+    Ejemplo JAX-RS con relaciones de objetos entities y JSON anidados
+
+[33mcommit b0e6e49753a5cc95441197288b0911437da64bec[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 19 11:35:33 2024 -0500
+
+    Ejemplo Cliente HTTP con RESTEasy JAX-RS parte 2
+
+[33mcommit e72ee5c836ab8f0d2df93a95364bd791df956d72[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 19 11:05:35 2024 -0500
+
+    Ejemplo Cliente HTTP con RESTEasy JAX-RS parte 1
+
+[33mcommit 34fb75045a2f3a3b15c447dd22cba38e1676542a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 18 17:49:40 2024 -0500
+
+    Ejemplo implementando JAX-RS parte 2
+
+[33mcommit b216a432c58d4aed486f07b18d8a9eb959dcbbd1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 18 16:52:15 2024 -0500
+
+    corregir pequeño error faltante
+
+[33mcommit bd67c2b29e984aeb9ec613722d97a8e01ae6e6e6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 18 16:42:18 2024 -0500
+
+    Ejemplo implementando JAX-RS parte 1 - APIREST
+
+[33mcommit 1dce9768e96b987f0d08fb00a86e40902b1ff142[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 16 18:23:56 2024 -0500
+
+    Ejemplo JAx-WS EJB y JPA
+
+[33mcommit ea16430734bb8df5b89a1797a40835c62c74eca4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 16 18:07:25 2024 -0500
+
+    error corregido
+
+[33mcommit 6dc0dff2d2bc6cbb45db6402ade328b05ed9fc47[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 16 17:42:59 2024 -0500
+
+    Ejemplo JAX-WS EJB y JPA - ocurre un error seguir con opcion 2 o Ok
+
+[33mcommit a9c5da382663eddc9d82839308c8223c1432169e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 16 16:26:07 2024 -0500
+
+    Cliente para consumir WebServices
+
+[33mcommit f49516c8afda2c9dcff4bfbccaa66e352c2f9676[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 16 15:55:54 2024 -0500
+
+    Implementando y publicando WebServices JAX-WS - SOAP
+
+[33mcommit 428048741b6a80bb9c26859e0cff7148598ef751[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 16 12:03:46 2024 -0500
+
+    Implementando ventana de modal o dialogo ajax
+
+[33mcommit 500124a928316ca0fc514fcf09760bf9d2cc1919[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 15 18:42:09 2024 -0500
+
+    Implementando buscador Ajax
+
+[33mcommit 6c33f583cfa0ed01fb70853b24af0ffb595dd8d5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 15 17:13:47 2024 -0500
+
+    primefaces parte 2 paneles, form layout y ajax
+
+[33mcommit d81cc232c23057b7b08c8643870a3a48479385c2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 15 11:45:52 2024 -0500
+
+    Instalacion y Componenetes UI
+
+[33mcommit 467ebac787710b5e7c6ec14144efbc27c7eae66c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 14 17:13:02 2024 -0500
+
+    Utilizando e injectando los textos de idioma (resource bundle) en el controlador
+
+[33mcommit ebe468bb4cc60087427f9e51e791fd2d06d103cd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 14 16:49:08 2024 -0500
+
+    implementando controlador para cambiar el idioma
+
+[33mcommit 7e4db5a9ef22f6b90eb45d3da467ab5b811b2ed2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 14 16:04:28 2024 -0500
+
+    Configurando archivos de idiomas properties(Resource Bundle)
+
+[33mcommit aac43a5a3cec2308460f7359b050f8caac463c25[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 14 12:39:12 2024 -0500
+
+    Mensajes Flash
+
+[33mcommit 6b96294ee36706771dbf4a8d9daaf52bb4090cd4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 14 11:54:32 2024 -0500
+
+    Sistema de Layouts o templates
+
+[33mcommit 164d01d6e23a1db1e36326bf7595d67cc4f1789b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 14 11:11:12 2024 -0500
+
+    Aplicando estilos CSS con Bootstrap
+
+[33mcommit 3c0bf0f9591717eb1e911f8ee2bbcf6b63097912[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 19:50:39 2024 -0500
+
+    Validando formulario usando anotaciones
+
+[33mcommit 212d6de8a0a6ef97f67600b6db3baf1a63fb747a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 19:01:44 2024 -0500
+
+    Clase converter para lista select
+
+[33mcommit 4a8460ff4351b0de6f3f7a293762e565ce920302[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 18:38:36 2024 -0500
+
+    Form lista select o combo box
+
+[33mcommit fa9a8d848277c0ea15a9b9968eb71b59377e2ade[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 17:33:27 2024 -0500
+
+    Form campo Fecha
+
+[33mcommit 860ea98e665d86efbb65bf6614850d2d9f490a9d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 17:09:31 2024 -0500
+
+    Form CRUD completo editar y eliminar
+
+[33mcommit 6416a2982889ad4918f6fd3955f703a79dccf68e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 12:54:16 2024 -0500
+
+    Agregando crear con JPA
+
+[33mcommit 8977aa3198e451725b0bf65cf8c88810b79ce08e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 13 09:08:53 2024 -0500
+
+    Implementando plantilla formulario y procesar
+
+[33mcommit eecfa19eb17395932f23ba69bc805949b689283a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 12 21:21:52 2024 -0500
+
+    commit de seguridad de seccion inicial de JSF que funciona correctamente
+
+[33mcommit 5500c985463dfa94dad194da2bc9b298f47d8bb8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 12 21:17:49 2024 -0500
+
+    Añadiendo el Repository Service EJB y probando en controller CDI - codigo añadido de la clase ademas de otro archivo que se encuentra correctamente
+
+[33mcommit 54c26b9c3bbd8ab44cc5868a9e783fccdded34b0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 12 20:07:51 2024 -0500
+
+    configurando JPA
+
+[33mcommit 80e1c664b4a1aff2a02a322312e64e3958489ece[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 12 19:23:19 2024 -0500
+
+    la clase controller CDI
+
+[33mcommit 1beec494ec4caa4615599f7e23c9e07ccb58a7cf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 12 18:50:10 2024 -0500
+
+    Creando nuevo proyecto webapp JSF
+
+[33mcommit 740d00230d24565c4cec01e6d17402293ed79b4f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 12 12:14:19 2024 -0500
+
+    Migrando aplicacion webapp-jpa a EJB - seccion con errores que no se pudieron resolver
+
+[33mcommit 6d4c25ad29cdccfd5cc59de6fe4379e5c2ec44fa[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 10 15:26:57 2024 -0500
+
+    Implementando e inyectando EJB en Servlet en modulo war
+
+[33mcommit 3f787e6e4fff7aad6fad7fc402c9d45fd146ae7d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 10 12:04:19 2024 -0500
+
+    Implementando repositorio con JPA (Componente CDI) y service EJB en modulo ejb
+
+[33mcommit dfea95003b8eef1e39ad2d18c5e01dd8c9c389e2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 10 11:32:35 2024 -0500
+
+    Configurando DataSource en servidor Wildfly y persistencia JPA en el modulo ejb
+
+[33mcommit 67f7082e300b36c54369d21c1195e7e296443936[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 9 15:39:46 2024 -0500
+
+    Creando estructura modular EAR
+
+[33mcommit 89079bc57d02797d897e8d12880e62167fbb6e0a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 9 13:45:54 2024 -0500
+
+    Despliegues (deployments) en consola admin web de Wildfly
+
+[33mcommit bf406b566dfb5661db4aad762b7724505e9fe4bc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 9 12:16:30 2024 -0500
+
+    Ejemplo con la interfaz @Remote - EJB
+
+[33mcommit 443989a8d7317bb01dda900ca9c397998ffb2ec7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 19:13:03 2024 -0500
+
+    Añadiendo otros metodos a la interfaz @Local
+
+[33mcommit 160fc878abf3d2cb8a58b42616d6499085478ad8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 17:53:42 2024 -0500
+
+    La interfaz @Local
+
+[33mcommit 8c832cfa99e22dce90014b36073dcd397994ac6d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 16:50:10 2024 -0500
+
+    Obteniendo EJB programaticamente usando InitialContext lookup con JNDI
+
+[33mcommit 8153ed6b36308ad0062f699ddaa88633b8c88d26[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 16:32:20 2024 -0500
+
+    Ejemplo EJB @Stateless vs @Stateful
+
+[33mcommit a56b5c3c7b8004e31d9ae2c6f6afcc2653953277[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 15:59:46 2024 -0500
+
+    Primer Ejemplo con EJB
+
+[33mcommit 55463d0eb81f8f257b5d1fb991968a5da277aa45[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 12:20:30 2024 -0500
+
+    probando webapp-jpa
+
+[33mcommit 2fef0ff21802b8dda682a4688ea70e50ae9fff93[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 10:36:41 2024 -0500
+
+    El service con repositorio JPA y manejo de transacciones con anotaciones
+
+[33mcommit a403110fdcac72795b3a7d0d24ec3f69b653b8cd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 10:17:14 2024 -0500
+
+    Implementando repositorios JPA
+
+[33mcommit 3120c6942823c565b95acfb0ecd84e0e09615ed1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 8 09:53:30 2024 -0500
+
+    implementando clases Entities y configurando Entity Manager
+
+[33mcommit e69693f0082c11733b278cf7647bd5ed371a6d4e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 16:50:59 2024 -0500
+
+    Creando un nuevo proyecto webapp Servlet y configuraciones JPA
+
+[33mcommit e4adfaae9c9b7445d3079332d58a250ae3bc17a6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 16:35:36 2024 -0500
+
+    API Criteria y Join Fetch en asociacion OneToMany
+
+[33mcommit 9b0ce7784342acbff9105fa9934d5592cf70a5b4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 16:01:30 2024 -0500
+
+    API criteria y join fetch en asociaciones ManyToOne
+
+[33mcommit ba80f059aacea834334d45afea0540c701612d26[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 11:38:30 2024 -0500
+
+    Fetch en asociaciones @ManyToMany usando ResultList
+
+[33mcommit b98b1753cb21b3cef5a815e3e50fe6e9e839725e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 11:04:03 2024 -0500
+
+    Fetch en anotaciones @OneToMany y @OneToOne usando ResultList
+
+[33mcommit cede93ced983e35ce0d2fce3c2bdc119b58c7b24[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 10:27:07 2024 -0500
+
+    FetchType Lazy en asociacion @OneToMany usando join fetch - consulta personalizada sql
+
+[33mcommit 5e3e1763417adc5d16e80390dd3e43fc160710b5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Nov 7 10:03:38 2024 -0500
+
+    FetchType Lazy en asociacion @OneToMany
+
+[33mcommit 208c8631855b3da2c35259d0bf1919a99269c227[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 6 18:03:58 2024 -0500
+
+    Relacion ManyToMany Bidireccional
+
+[33mcommit b016038093dfde8ad2a71c78aa747798730bbe70[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 6 16:09:49 2024 -0500
+
+    Relacion ManyToMany parte 2 otros detalles
+
+[33mcommit e1a52db149118e0c721518b4e62a72bf847c613a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 6 15:39:54 2024 -0500
+
+    Relacion ManyToMany
+
+[33mcommit 27f5ba693c0c25f437c27a6e4cdc58e1e6ef01bc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Nov 6 15:11:06 2024 -0500
+
+    Relacion OneToOne Bidireccional
+
+[33mcommit 6c49d3fa2e91e55782ad332dc355707fa353d413[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 17:50:58 2024 -0500
+
+    Relacion OneToOne
+
+[33mcommit 6eeab5c1e9b4797962d91739ed8ea2c526257889[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 17:21:31 2024 -0500
+
+    Eliminar objetos dependientes en OneToMany Bidireccional
+
+[33mcommit 0504e909f560cfacb4c6189cc403e24db655d478[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 16:52:19 2024 -0500
+
+    Relacion OneToMany Bidireccional
+
+[33mcommit 8705a58dd8194cd72525f6af4ee97c88f5a8a0fd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 11:31:38 2024 -0500
+
+    Eliminar objetos dependientes o hijos en la relacion OneToMany
+
+[33mcommit 58b5ba4baf83933b8b19db51a8ba60e317bff982[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 11:20:51 2024 -0500
+
+    Esquema con tabla de enlace OneToMany
+
+[33mcommit 14cc80ac3d48b67867d37c061c1fad92dc2ab1d6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 11:11:08 2024 -0500
+
+    Codificando ejemplo OneToMany
+
+[33mcommit 1dfe67876d31612b69c83aba2e87e4b86732cada[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 10:49:44 2024 -0500
+
+    La relacion OneToMany
+
+[33mcommit 9a3d15dc1cc834a60e7e1d956ef3cb1c0a2da7cc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 10:18:10 2024 -0500
+
+    Codificando ejemplo ManyToOne
+
+[33mcommit cc9595c8db3fa4df63cee989a6626a3e1a74ca07[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 09:50:58 2024 -0500
+
+    Creando nuevo proyecto y la relacion @ManyToOne
+
+[33mcommit 792a6ac2045f1fbde38cb946552401447bd1e221[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Nov 5 09:36:22 2024 -0500
+
+    Generacion Automatica de las tablas con schema generation drop-and-create
+
+[33mcommit 791ef83517c38db2a6db656e3f2984bfe99d4763[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 18:40:29 2024 -0500
+
+    Anotaciones @Embeddable y @Embedded
+
+[33mcommit b91a5e8fe7eeb141f836b4130b3f1ddb9af94bc0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 18:32:14 2024 -0500
+
+    Eventos del ciclo de vid @PrePersist y PreUpdate
+
+[33mcommit 3fb06b7c5823834acc29fdabf1a43e1fc9c2d493[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 18:10:01 2024 -0500
+
+    Busqueda dinamica con el API criteria
+
+[33mcommit be0d5b2686a1093c825dbae627e55a61b4d5b571[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 18:02:39 2024 -0500
+
+    Funciones de agregacion count,sum,min,max
+
+[33mcommit 7e056345290360f6be789ee5776b9452da2a791f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 17:56:54 2024 -0500
+
+    Clausula multiselect para campos personalizados
+
+[33mcommit 03adc3ced4400a2ceb28e572018284d3284f685b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 17:50:41 2024 -0500
+
+    Funciones de expresion concat, upper y lower
+
+[33mcommit 832ffe5c0465c30249a5bec44f5b7d9017e15bc8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 17:46:29 2024 -0500
+
+    Clausula order by, ejemplo con single result por id, distint nombre y upper
+
+[33mcommit c09c7c1c263e6a89d24767bb7495f4bf64ddf6f8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 17:30:27 2024 -0500
+
+    Predicados conjuncion and y disyuncion or
+
+[33mcommit cadbcea9e995c049a9784240b8457717ddc05d7d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 17:17:23 2024 -0500
+
+    Operadores in,gt(mayor que),ge(mayor que o igual),lt(menor que) y le
+
+[33mcommit 01539e9e9b7cd422e4c6bad9de7e2e863e266fbd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 17:00:09 2024 -0500
+
+    Operadores like y between
+
+[33mcommit 8c08064ebd4f3a7ae9502078740245a808c452ae[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 16:33:41 2024 -0500
+
+    El API criteria
+
+[33mcommit ecd98d1b24987b33a4010cbdb7331b585b85ab91[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 12:23:27 2024 -0500
+
+    Subquery o subconsulta en JPQL
+
+[33mcommit 2cf2c1ab681be800280a23e88fb02130f257ff8e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 12:08:12 2024 -0500
+
+    Funciones JPQL de agregacion count,sum,min,max,avg
+
+[33mcommit faee028f5b19194ce67466fdfd2339f3db4aa297[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 11:48:00 2024 -0500
+
+    Usando palabras claves between y order by de JPQL
+
+[33mcommit afb1523298a0d04354761ce0b93cd486481fa431[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 11:39:31 2024 -0500
+
+    Funciones JPOL concat,upper,lower y operador like
+
+[33mcommit e5601e63ad75714dc3f0658a5b3e7a0a0303fbc7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 10:31:41 2024 -0500
+
+    Usando DISTINCT palabra clave de JPQL / HQL
+
+[33mcommit dedf40453c3f4b0ea05ac1f04c0af2d1e49637b3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 10:17:48 2024 -0500
+
+    JPQL Instanciacion dinamica de clase personalizada
+
+[33mcommit 4bcc94bcdb88af4e3efc68cc0e10d8109527198d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Nov 4 09:51:18 2024 -0500
+
+    JPQL campos personalizados
+
+[33mcommit 12b4b0eba15c1b3830a68d440400fb1584c41954[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 15:36:35 2024 -0500
+
+    Probando el service en una clase cliente con el metodo main
+
+[33mcommit c7745be94df96c98d9481380cf0c4f90d39a92b1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 15:15:49 2024 -0500
+
+    El componente service
+
+[33mcommit 1cb16654c7fba344dff7eb89ed6185ceab819bf7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 15:06:30 2024 -0500
+
+    el componente CRUD repositorio
+
+[33mcommit 2a2832480bb8cab29aa0db1116f46de508023dee[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 14:54:40 2024 -0500
+
+    Eliminar registros con el metodo remove
+
+[33mcommit c65023fa1639a9553b9658a302ea731f2d4b0051[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 14:48:28 2024 -0500
+
+    Actualizar registros con el metodo merge del EntityManager
+
+[33mcommit 781077fc5609d27deb67158a2cef231f72cd1294[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 14:38:52 2024 -0500
+
+    Crear registros con el metodo persist del EntityManager
+
+[33mcommit 45b0f3bcf66bd43c3f09ade2dec520960ebae9ce[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 12:02:22 2024 -0500
+
+    Metodos SingleResult vs ResultList
+
+[33mcommit d0d4ddc4973b654828d4253a439806c60b189276[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 11:42:32 2024 -0500
+
+    Clausula where HQL (Hibernate con SQL) - porId y ListarWhere
+
+[33mcommit f8e5ae1c47f60654565156b0776cbadc87998f5e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 11:24:54 2024 -0500
+
+    Sentencia HQL y configurando el EntityManagerFactory
+
+[33mcommit 2fe5b9636fd52d56fe180bcd33667d0e5f3182f3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 11:04:35 2024 -0500
+
+    Creando la clase entity de persistencia
+
+[33mcommit 34d58ce9f9ffc7fa47057b3377eb929d4330e3a2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Nov 3 10:49:27 2024 -0500
+
+    Creando Proyecto y configuraciones JPA persistence.xml
+
+[33mcommit cbd9e98ef76c144e2723669537cafcff52f04e18[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 2 18:31:42 2024 -0500
+
+    Manejo de transacciones usando Interceptores y anotaciones
+
+[33mcommit 4512b0f03ec56a7a4584a5bbb74275170d035859[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Nov 2 18:13:36 2024 -0500
+
+    Manejo de interceptores CDI
+
+[33mcommit 38097deb5397c2e38e79d59058ede799e8476de7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 17:58:12 2024 -0500
+
+    Ciclo de vida de los beanscon anotaciones @Postconstruct y @Predestroy
+
+[33mcommit ba08fb7c062c33fc6ae7b3a6e7f793661c4ea8e7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 15:21:42 2024 -0500
+
+    Bean discovery en annotated y anotacion @Disposes para cerrar recursos como bd
+
+[33mcommit 246fa07857c783e59b5ab8c3f4a7ac381da2d787[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 14:51:16 2024 -0500
+
+    Estereotipos con la anotacion @Stereotype
+
+[33mcommit b1ef6500af9b5353fa6aa81ce80a162722fda5bf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 14:40:42 2024 -0500
+
+    Calificadores con la anotacion @Quealifier
+
+[33mcommit 7699a67633c3adbe100582a07f3338d67c033896[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 14:08:02 2024 -0500
+
+    Inyectando beans Services en los servlets
+
+[33mcommit 455de1ebb745a3915ce03abeda4956953d59a865[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 11:09:43 2024 -0500
+
+    Componentes CDI Repositories y Services
+
+[33mcommit 0b06277cb898b4b41f7313c29b964c115d3bb5f4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Nov 1 10:55:08 2024 -0500
+
+    Registrando conexion JDBC en contenedor CDI
+
+[33mcommit 67af94cf5f4d067c29442528e6935658e0c4e5c4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 31 15:48:59 2024 -0500
+
+    Configurando proyecto y bean carro con alcance @sessionScope
+
+[33mcommit 43f5ef86ecdf1cdb82f0c2322842cc4658a035af[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 31 11:39:10 2024 -0500
+
+    Configurando el pool de conexiones
+
+[33mcommit c0333efe3ed35a16986d57ac416a9c5b585438d3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 30 12:10:24 2024 -0500
+
+     Tarea 50 - Crud completo de los usuarios
+
+[33mcommit 8f77fe71f19163763404298bcb3599205a701f54[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 30 10:58:20 2024 -0500
+
+    Implementando la clase UsuarioService para el proceso de login y servlet
+
+[33mcommit 5ec4e22ad217d08011050c00c1898acf1fa57fda[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 30 10:25:07 2024 -0500
+
+    Creando el esquema de la tabla usuarios y la clase UsuarioRepositorio
+
+[33mcommit 354fe1f80c06d2f49a278be873a957104ed5bdf2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 29 18:04:31 2024 -0500
+
+    Agregando menu de navegacion en el header del layout
+
+[33mcommit bb688b72365d5ceabe61b9ef9979845b75ea77cc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 29 17:18:52 2024 -0500
+
+    Catalogo sistema de layout en jsp
+
+[33mcommit d40e2fd6a2ef2dfcc9b20d02b289b51784be7dee[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 29 16:30:04 2024 -0500
+
+    Agregando estilos CSS BOOTSTRAP
+
+[33mcommit c6a5f1348a43f164254ec06dcf45cb7149ca7627[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 29 11:52:23 2024 -0500
+
+    Migrando a JSTL en JSP carro de compras
+
+[33mcommit a732da6c470f47e7db1076175f952ba37834e17d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 29 11:38:06 2024 -0500
+
+    Migrando a JSTL en JSP Form
+
+[33mcommit 695a9e8efd01165d24e4640990f9d27168091f75[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 29 10:37:41 2024 -0500
+
+    Migrando a JSTL en la vista JSP listar
+
+[33mcommit 523d82b03e76c51f7b9d85f0ed0548a51889158d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 18:30:44 2024 -0500
+
+    Implementando eliminar y dando seguridad a nuestras rutas del CRUD
+
+[33mcommit 587ccc9e2ca25f31e2181f46dc2060daa3762b30[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 18:06:22 2024 -0500
+
+    corregir error de nombre null en ProductFormServlet
+
+[33mcommit 0681289ae834386f1268ed27c6bed9d51101df19[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 17:51:53 2024 -0500
+
+    Implementando editar procesos form
+
+[33mcommit c7192e8888d9ae9fbaccf82d622b9a6c30615850[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 16:11:10 2024 -0500
+
+    Implementando formulario editar
+
+[33mcommit 7c1a719a5c65653a94837435d3990f0f02c3ba0f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 12:18:12 2024 -0500
+
+    Validando el formulario
+
+[33mcommit d5ab2a4fb800fe726fca290e696d8807a2fa679a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 11:33:46 2024 -0500
+
+    Procesando el formulario con doPost para crear
+
+[33mcommit 085f127cc360b41391ff0299e80e40f3c6e8bcb5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 11:16:19 2024 -0500
+
+    Agregando formulario para crear
+
+[33mcommit c4b76c7c93c724f73ea9fca47827511580bf3151[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 10:15:35 2024 -0500
+
+    Agregando Repositorio de categoria y Service guardar e eliminar
+
+[33mcommit de5ad00859827c0328fbe0879d9ff17ba3c45922[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 09:53:55 2024 -0500
+
+    Implementado CRUD (insert,update y delete) en el Repository o DAO
+
+[33mcommit c7f868b5a7beae06d3af8ffb028ef760e52c5020[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 28 09:41:20 2024 -0500
+
+    Añadiendo relacion entre producto y categoria y otros atributos
+
+[33mcommit f29d3ccaa7eb6202b530d425bd09e4216f36fab7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 25 12:36:39 2024 -0500
+
+    Modificando el listado de productos con vista JSP Y MVC
+
+[33mcommit 11a9787cb919034485bf9f47b340bb176cd20e6d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 25 11:26:51 2024 -0500
+
+    Instalando el driver MySQL en el servidor tomcat y modificando los Servlets
+
+[33mcommit 93868eb2f3e9dd8ad7aaa8212e754e7a9b58cefe[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 21 18:21:58 2024 -0500
+
+    Implementando el componente Service con JDBC
+
+[33mcommit fce1e631c02dfe0b807ac6c1260f73009fcd4d93[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 21 17:48:20 2024 -0500
+
+    Añadiendo la interfaz repositorio y su implementacion con JDBC
+
+[33mcommit fdc565f9e5e38c05c2ab65cb62b487493a9839f9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 21 16:42:01 2024 -0500
+
+    Implementando filtro HTTP para la conexion a la base de datos
+
+[33mcommit 1a511fac2557693cae2fba01065f3703fee5a133[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 18 18:32:25 2024 -0500
+
+    Implementando un filtro que valida la session de usuario o login
+
+[33mcommit f43fa89fe00c3b10af46ba79eb494ebeea805fc0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 18 16:33:44 2024 -0500
+
+    Guardando atributos de contextos
+
+[33mcommit 49e913504a8ae4c9b20c5dc97b00f598bac8d131[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 18 15:37:43 2024 -0500
+
+    Introduccion a los Listeners - añadir parte faltante de Ver carro de compras
+
+[33mcommit cde21fa4e3787f8531ae957ac77c4bb3444dbca1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 18 11:34:44 2024 -0500
+
+    Ver carro compras y corregir error de un espacio en ProductoServlet
+
+[33mcommit 34d5f0a5fde24b99acac12d511bee07f24857bb4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 18 09:22:20 2024 -0500
+
+    Agregando items al carro compras
+
+[33mcommit 1c3bea73e80df0875e74cbf1c3e536866dba2bab[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Oct 18 08:48:57 2024 -0500
+
+    Creando clases Carro e ItemCarro
+
+[33mcommit a4ea9133b0f09dfaf92a5d52cd69a5d273a53ec8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 17 16:31:14 2024 -0500
+
+    Sistema de login con http session
+
+[33mcommit 37a8377802ba59fde5abe8f70d1ca157785624c5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 17 16:02:38 2024 -0500
+
+    Introduccion y nuevo proyecto - Manejo de sesiones con HttpSession
+
+[33mcommit 50ec2a6a72b1a241b9df429bac5bc7b5332ff466[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 17 11:51:28 2024 -0500
+
+    Sistema Login con cookies parte 3 cerrando session logout - evitando que la cookie se mantenga en el cache
+
+[33mcommit 1589cb0287d5c4a68a0ec40622d2bf371a169851[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 17 11:40:08 2024 -0500
+
+    Sistema de login con Cookies parte 2 protegiendo recursos
+
+[33mcommit f195d733cedca1411c79762e3eb52bfc88a5b27d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 17 11:22:58 2024 -0500
+
+    Sistema de login con cookies
+
+[33mcommit 3f802c16ac5dd815534096a69bac7387826d7aba[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 17 10:46:33 2024 -0500
+
+    Introduccion y nuevo proyecto
+
+[33mcommit cfe5ffd33c1612aa1c3cdd84370b5a7ba97d19b5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 18:36:02 2024 -0500
+
+    tarea 40 - optimizar/mejorar BuscarProductoServlet
+
+[33mcommit c2e2e8fa6f5debab9c13702d6d3490b3d01e474e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 18:27:33 2024 -0500
+
+    Status HTTP Response 401 No Encontrado
+
+[33mcommit 12eac01df75c66125cc27b7da23c4a73146b116a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 18:04:01 2024 -0500
+
+    Status HTTP Response 401 No Autorizado
+
+[33mcommit f94fb6f6713cc560977f7dae4b48c74c589aa8e3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 15:47:46 2024 -0500
+
+    Cabeceras HTTP Response Location vs Dispatcher forward
+
+[33mcommit 15c0f44a7cac7b392434a97939e469e609c5af0d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 15:15:39 2024 -0500
+
+    Cabeceras http para enviar un objeto json en el cuerpo del request(API_REST) - uso de postman para simular el post
+
+[33mcommit cf1113248b92b13aa981e096ca0e47dd03c3190d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 11:19:13 2024 -0500
+
+    Cabeceras http Response para generar una respuesta (API REST)
+
+[33mcommit 5a9f7a805542135ee8f7078d4fe91939e5f2025c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 15 10:47:52 2024 -0500
+
+    Cabeceras HTTP Response para exportar Excel
+
+[33mcommit 2142eecc5e7d89115125028626cc81698dc901eb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 14 17:18:15 2024 -0500
+
+    Cabeceras HTTP del request
+
+[33mcommit 6d7c02e9543e3a5ef479a1872a37aa72724b8ff7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 14 15:52:02 2024 -0500
+
+    Manteniendo valores del formulario y selecciones al validar
+
+[33mcommit 4b2f384543221ef6d43015fe6a9343b971f315ec[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 14 12:26:05 2024 -0500
+
+    Aplicando estilos CSS con Boostrap
+
+[33mcommit 67c68c472c3e7afd70efb423d919d95162aebe71[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Oct 14 11:41:24 2024 -0500
+
+    Visualizando los mensajes de error debajo de cada campo en el form y corregir un error de nombres en el FormServlet
+
+[33mcommit fbf1b8b386b897cf510787771feaa657ecbb0587[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Oct 13 12:14:47 2024 -0500
+
+    Mostrando los mensajes de error en la vista jsp sobre el formulario
+
+[33mcommit d6d62a13d482c32bec247eccdba42f22b2fc4f8a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Oct 13 11:26:41 2024 -0500
+
+    Validando formulario
+
+[33mcommit 021b5cc8b7613f32e9bf5a6c21b48a78949fcc3f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Oct 12 17:41:30 2024 -0500
+
+    Agregando otros campos de radio button, checkbox y hidden
+
+[33mcommit ce4eac28aa3dcbcdef61cb71cd9c758f0629b909[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Oct 12 17:25:25 2024 -0500
+
+    Procesando elementos select y checkbox en el servlet
+
+[33mcommit 3ecd14bd36df2d7444b287ac34c485590f84ba14[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Oct 12 16:29:40 2024 -0500
+
+    Agregando elementos select y checkbox en el html
+
+[33mcommit fae277165fce869a4814ff48f1621d24c83a5814[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Oct 12 16:07:23 2024 -0500
+
+    Creando la clase servlet para procesar el formulario
+
+[33mcommit 8a682c4e875e2325b22c72be642e887b98732ebb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Oct 12 15:41:27 2024 -0500
+
+    Creando nuevo proyecto form - formulario con api-servlet
+
+[33mcommit 400aaf6ec987a36093f95581f2e52f8db8044393[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 10 16:54:11 2024 -0500
+
+    Enviando multiples parametros GET url
+
+[33mcommit e982f4ae0b2d948c0145e50d212e35d00a87f902[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 10 16:27:31 2024 -0500
+
+    Enviando parametros GET de la url o Query String
+
+[33mcommit 3af39b005d12b71096e7b4d480863cb4035e0b3a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 10 15:07:34 2024 -0500
+
+    Primer ejemplo con Servlet
+
+[33mcommit 9cbd074c62e560bf3eeab4cfc38c0e5cc26a6ea6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Oct 10 10:46:44 2024 -0500
+
+    adelantos de tomcat
+
+[33mcommit 4c0cf248e2935f5a1ef5a531fe2755443822628d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 16:58:28 2024 -0500
+
+    test del id incremental en el metodo guardar usando Invocation Argument
+
+[33mcommit f599b57a38e4f72f8b8d947010a26d58e4ab8cbc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 16:31:26 2024 -0500
+
+    Inyeccion de dependecia y anotaciones @Mock,@InjectMock y ExtendWith
+
+[33mcommit ef255c98083035c9610091a7bee6cdefe2aed740[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 15:44:21 2024 -0500
+
+    Probando con verify
+
+[33mcommit 8f218717a0a2c182421b882ae1fa37ae5be950eb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 15:33:51 2024 -0500
+
+    Probando nuevas dependencias Mock
+
+[33mcommit 8c98656ad5e612b94a0a5c2c64d0f9be58dd39db[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 15:18:57 2024 -0500
+
+    Agregando nuevas dependencias mock
+
+[33mcommit f95b1a0abe2268034d0a57e631b22a6bf86286e2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 11:20:15 2024 -0500
+
+    Realizando primeras pruebas con mockito
+
+[33mcommit 972f70a1d1727b0f34081d8a7a7344670d23c970[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 10:51:36 2024 -0500
+
+    Implementando la clase Service
+
+[33mcommit beacb235cc920598e8a1f3c2892d2e3da47e68cf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Oct 2 10:15:21 2024 -0500
+
+    Creando y configurando el proyecto Junit5 y Mockito
+
+[33mcommit 8b021e55d6fc3e3e9b429aa8c36dab262cd7d4f5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 18:50:23 2024 -0500
+
+    Timeout en Junit5
+
+[33mcommit 1c2f8ebf3dd26977062938db903b64a973ed820e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 18:45:45 2024 -0500
+
+    Inyeccion de Dependencia & componentes testInfo y TestReporter
+
+[33mcommit 6f933cee6dc793be0b06a50cab1c2dcc15343b3b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 18:22:31 2024 -0500
+
+    Tagging con anotacion @Tag
+
+[33mcommit 6ffe3bca83f99a264bb378e640a961cb22b63438[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 18:08:45 2024 -0500
+
+    Pruebas Unitarias parametrizadas con @ParametrizedTest parte 3.1
+
+[33mcommit 292fe0f001f35ef6c8d8ac37b98b875330ef7f80[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 18:08:02 2024 -0500
+
+    Pruebas Unitarias parametrizadas con @ParametrizedTest parte 3
+
+[33mcommit 9ca7398a7ec3c9999a6e2f20362cc8c139ee837a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 17:52:08 2024 -0500
+
+    Pruebas Unitarias parametrizadas con @ParametrizedTest parte 2
+
+[33mcommit 5579cc888b1ce5923c05a972158ffec4299d43fd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 17:11:58 2024 -0500
+
+    Escribiendo pruebas parametrizadas con @ParametrizedTest
+
+[33mcommit 1cb28aca08b536903d3075b2ffa71f5ccff2b9d7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 11:53:28 2024 -0500
+
+    Repitiendo pruebas con @RepeatedTest
+
+[33mcommit 6a0e38c6142c1e3f6751c387ee13191cd18dc8dc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 11:33:53 2024 -0500
+
+    Clases de test anidadas usando @Nested
+
+[33mcommit e562fd2dd2918942e0b96fc6a4eb18dd2a24fa71[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 10:44:40 2024 -0500
+
+    Ejecucion de test condicional con Assumptions programaticamente
+
+[33mcommit 2ab1a29030b8c6704735aec31e7e4651fda21a5f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 10:13:20 2024 -0500
+
+    Ejecuciones de test condicionales con @EnabledIfEnvironmentVariable
+
+[33mcommit fd00da2d579fbd1fe8bb475aa71da9f5d666a429[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Oct 1 09:42:57 2024 -0500
+
+    Test condicionales @EnabledOnOs,@EnabledOnJre,@EnabledIfSystemProperty,etc
+
+[33mcommit e5b6e2a1175d3922306609a739412b7b8f225a59[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 18:25:06 2024 -0500
+
+    Ciclo de vida anotaciones @AfterAll y @BeforeAll
+
+[33mcommit 79f5ce5e11b38ba024a729c7f82d3f4f38ab3d9d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 18:08:33 2024 -0500
+
+    Ciclo de vida anotaciones @AfterEach y @BeforeEach
+
+[33mcommit d12a3c814e8b62d395f3318905a224375c53ae17[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 17:41:13 2024 -0500
+
+    Arreglar comentario
+
+[33mcommit 3436e7fcd1f5e00646decfeb320c865e9b7a70d0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 17:38:38 2024 -0500
+
+    Usando anotaciones @DisplayName y @Disabled
+
+[33mcommit a01c16238792f7e9e47c4fb2cd9447376e15a787[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 17:04:14 2024 -0500
+
+    Agregando mensajes de falla en los metodos assertions
+
+[33mcommit afe94573f46ba30980506662f616b026d3705f96[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 16:46:04 2024 -0500
+
+    corregir un comentario
+
+[33mcommit af9ca3958b29391846e031755a1f9261281884f7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 16:43:35 2024 -0500
+
+    Usando el metodo assertAll
+
+[33mcommit 8ac8e0d547b8253eaf0e6efc8b3df2dd495c96e7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 16:22:11 2024 -0500
+
+    Probando y afirmando las relaciones entre Banco y Cuenta
+
+[33mcommit 63cfa0333e1048702f5c8f653ee7296bafd5d8cd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 15:50:27 2024 -0500
+
+    Añadiendo la clase banco y la relacion con las cuentas
+
+[33mcommit 71de529c5ff958a972c6c79f832763670e3d45e7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 15:23:55 2024 -0500
+
+    Probando y afirmando excepciones con assertThrows en Junit 5
+
+[33mcommit 2da16d4d4683cc43eabb40f1348836e30ab9d9ca[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 11:39:42 2024 -0500
+
+    TDD para debito y credito
+
+[33mcommit ab793e3be13ecf8db770f123219168fa751d1c03[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 11:20:53 2024 -0500
+
+    Test driven development TDD con Junit
+
+[33mcommit a0363fadfc7985320dcf22dbc0c6333f3981bf42[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 30 10:53:42 2024 -0500
+
+    Escribiendo test para el saldo
+
+[33mcommit fbfe251f2c5e631812f75b81c2573b0de1a727b8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 28 17:01:11 2024 -0500
+
+    Escribiendo y ejecutando primeras pruebas unitarias con Assertions
+
+[33mcommit e494f5df4cc4824eb16c8cc50a32d5e3f119138d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 28 16:35:03 2024 -0500
+
+    creando y configurando el proyecto con junit5
+
+[33mcommit 2fc4fdbe82e0f604c150b7548d2db80f89d2de49[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 28 12:33:37 2024 -0500
+
+    Utilizando la clase service en la clase ejemplo main
+
+[33mcommit f16904a0af78d3c1641ccdc0ea0a0b8d90794a00[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 28 12:24:31 2024 -0500
+
+    Implementando los metodos de la clase Service
+
+[33mcommit 62ed1b5190fd777f41e09e01514ec7aa6e1e3777[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 28 12:08:48 2024 -0500
+
+    Agregando interface service y su clase de implementacion transaccional
+
+[33mcommit b387b78d1efa8244b443526f8fbe8125caeeb8ca[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 28 11:45:25 2024 -0500
+
+    Ejemplo Transaccionescon pool de conexiones parte 4
+
+[33mcommit 6e8c7b1e6ec0ab20c547c7c0e5ba60af1fc16691[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 19:49:16 2024 -0500
+
+    Ejemplo Transacciones con pool de conexiones parte 3 (obtener ultimo insert id)
+
+[33mcommit 087e4b0827403bfaa1dbc98fbc4e62475816bfc7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 19:03:26 2024 -0500
+
+    Ejemplo Transacciones con pool de conexiones parte 2
+
+[33mcommit 652958299b15ea42b8a63f230f3c0b726f1034f0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 18:46:52 2024 -0500
+
+    Solucion 2 errores
+
+[33mcommit 6f78198db1b943da0658314d113a05a9018c20fd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 18:45:08 2024 -0500
+
+    Ejemplo Transacciones con pool de conexiones
+
+[33mcommit dec0c49b874da38f7998579f88d54f1a437e3c80[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 18:27:05 2024 -0500
+
+    Ejemplo Transacciones Singleton parte 2
+
+[33mcommit 0028097cc11f44d249eea9b5d9e56b18f9a76dd1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 18:12:55 2024 -0500
+
+    Ejemplo Transacciones Singleton
+
+[33mcommit acbe39e19033c13232bdf024a27a4928738e43a5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 17:37:40 2024 -0500
+
+    Implementando pool de conexiones
+
+[33mcommit 0d5ed5abdef010efe53c432c24ae1e5325af364c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 27 12:34:48 2024 -0500
+
+    Mantenedor de usuarios - JDBC tarea 37
+
+[33mcommit 78c31b827f101a6ffdf0f038ab033cd8c920e002[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 19:06:38 2024 -0500
+
+    Una conexion por sentencia u operacion
+
+[33mcommit b6b4b912108f1b4fe86d1181094f7b967a315361[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 18:48:32 2024 -0500
+
+    Añadir codigo faltante
+
+[33mcommit 7f802c87413e31e53ed068d4f896aecc9455fcbe[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 18:45:50 2024 -0500
+
+    Relaciones de objetos del modelo o DTO
+
+[33mcommit 1ec946acbc5dba459143432ae47f3d849dd1b36d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 18:29:58 2024 -0500
+
+    Relaciones de Objetos del modelo o DTO
+
+[33mcommit ebc6127228464a2b414b7c53c2aa9e9551e5e2c8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 17:31:27 2024 -0500
+
+    la clase Repositorio parte 4 probando el CRUD
+
+[33mcommit 1cb93d7ccd840ebdb049706d3f46614ff8a15c1b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 17:09:40 2024 -0500
+
+    Implementando la clase Repositorio parte 3
+
+[33mcommit 89951c019b8a7aa684a1f1204fcc7a760f0da5b4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 16:47:28 2024 -0500
+
+    Implementando la clase Repositorio clase 2
+
+[33mcommit dc5a02325b6fe84314fe14124bdb53523af6900b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 16:00:55 2024 -0500
+
+    Implementando la clase repositorio
+
+[33mcommit c6235dfef67a341654e837a0e1e05b7c55dc4bb2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 15:40:39 2024 -0500
+
+    La interface Repositorio
+
+[33mcommit 63d485b322548fc46641c8cd402300d5f75d4af1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 15:28:17 2024 -0500
+
+    Añadiendo la clase Singleton de conexion de bases de datos
+
+[33mcommit 7bb27690d6e1e7e400b6417878a3dc021690d393[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 15:16:52 2024 -0500
+
+    Cerrando conexiones,recursos y manejo de errores
+
+[33mcommit 2054cd6813e2bf66c104726c80026515bd3a955f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 12:17:33 2024 -0500
+
+    importante para dependencias en maven https://mvnrepository.com/
+
+[33mcommit d1c818c22639c7e5a775b28ef35ff2589566d36d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 26 12:16:02 2024 -0500
+
+    Creando nuestro proyecto java JDBC
+
+[33mcommit d1b8c374eaa96412134479bc39eeb8fc9cb8f4f5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Sep 24 15:32:46 2024 -0500
+
+    leer archivos
+
+[33mcommit d3e30859d5013844a0b2217356bdd3727cf38955[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Sep 24 15:15:55 2024 -0500
+
+    Usando BufferedWriter y PrintWriter para escritura de archivos
+
+[33mcommit 2a2e92a4fbb2b88ed31f9d286af7e3bbbf7a391e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Sep 24 15:01:39 2024 -0500
+
+    creando archivos - escribiendo en el archivo
+
+[33mcommit 5333a06ab1e8fb4d71c6f3cd818df3f275afc700[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Sep 24 11:28:41 2024 -0500
+
+    Patron Observer
+
+[33mcommit 26d217ca17947601e55bf4478380dffb7e61c91c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Sep 24 10:39:02 2024 -0500
+
+    Patron Composite parte 2
+
+[33mcommit a3e363ac6dfe5e4d2274415d91436a3806a07ba7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 23 18:57:37 2024 -0500
+
+    Patron Composite
+
+[33mcommit a0715c7a5a9939892e793132951248665e052a86[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 23 17:23:20 2024 -0500
+
+    Patron Decorator parte 2
+
+[33mcommit 77425d2fe6253f08baa38b1715f7210484d7b683[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 23 16:24:12 2024 -0500
+
+    Patron Decorator
+
+[33mcommit bc831c3ffab42c0cfe9a4ba1c48b76bd44424fa7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 23 10:59:10 2024 -0500
+
+    Patron abstract factory parte 3
+
+[33mcommit 2147ca4ee9ada1ea2513d917401d0ceb5e8c4e51[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 22 18:51:59 2024 -0500
+
+    Patron abstract Factory parte 2
+
+[33mcommit 3fc3e595e076253602358583dacf11fe16c64b40[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 22 17:32:22 2024 -0500
+
+    Patron Abstract Factory
+
+[33mcommit a6d1e7cbd944dabdca0a4e82bb7a34a5599f5f9a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 22 17:11:54 2024 -0500
+
+    Patron singleton
+
+[33mcommit 31aabb25d69fa2d4205f8f2ea953d0f144d0ceaf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 22 16:17:21 2024 -0500
+
+    Añadir codigo mas entendible de recursividad y algunas notas importantes
+
+[33mcommit 8b2ef85dad3b407f80d320a9dcac5c6709f1718c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 22 15:16:35 2024 -0500
+
+    Añadiendo metodo recursivo que recorre el arbol
+
+[33mcommit f2b1b889b8f484d188ade03fb086bf7b98c29dc6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 22 14:58:59 2024 -0500
+
+    Creando la clase componente recursiva - Recursividad
+
+[33mcommit a394d5733cb51b9e461d0396d4455b696de906bc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 20 18:09:11 2024 -0500
+
+    Añadiendo nueva anotacion para metodo @Target METHOD
+
+[33mcommit f9c972a7b04a08458ec8a9fb6fc8b3c81d946694[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 20 17:47:22 2024 -0500
+
+    Creando la clase procesador JsonSerializador y agregando capitalizador
+
+[33mcommit 6429d4da8328ab26e272e9f366514399033e7763[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 20 17:28:07 2024 -0500
+
+    Procesando las anotaciones usando el api de reflexion de java
+
+[33mcommit 080377993469a5c73893854e6e4172dbd28953d2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 20 16:51:46 2024 -0500
+
+    Introduccion y creando nuestra primera anotacion
+
+[33mcommit eec61e7c29484d05bec6d062642ffabbd6f083ba[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 20 12:15:03 2024 -0500
+
+    Tarea 35 - Calcular la edad con LocalDate
+
+[33mcommit 0c546a99fd4f4960f07a66b1378a0203b0dfdbf7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 19 18:45:51 2024 -0500
+
+    trabajando con periodos y duracion
+
+[33mcommit d27e111bf77e175e7802a45ed5c5e0590db81822[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 19 18:11:12 2024 -0500
+
+    Trabajando con Zonas Horarios usando ZoneDateTime parte 2
+
+[33mcommit fc0719b061392993dd0faf21a28305374aad3faa[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 19 12:30:28 2024 -0500
+
+    Trabajando con Zonas Horarios usando ZoneDateTime
+
+[33mcommit c4ffcb76c4906dab5247c06922e8adb440b8e70c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 19 11:31:53 2024 -0500
+
+    Trabajando con LocalDateTime para fecha y hora
+
+[33mcommit d20a2fb7091bf381c182b3e5b5ddb63a91267486[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 19 11:04:22 2024 -0500
+
+    Formateando hora tiempo con DateTimeFormatter
+
+[33mcommit 4591168adb7c46002a075ba1af677de0839bf443[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 19 10:39:28 2024 -0500
+
+    Trabajando con LocalTime para hora tiempo
+
+[33mcommit 754c30b95eb93e949902f14a3bca9ee2813e2fb8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 18 19:05:55 2024 -0500
+
+    Trabajando con LocalDate con fechas
+
+[33mcommit f172de50ce864d3bb37a1ca45a748298b9db09a8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 18 15:49:32 2024 -0500
+
+    Optional operadores map(),flatmap(),filter()
+
+[33mcommit 4f4371958839238246376b5919eeee4e037da71d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 18 12:35:59 2024 -0500
+
+    Optional metodo orElseThrow
+
+[33mcommit a3c8a151f45eb2bfa61063d31285d95f65fad7bf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 18 12:24:07 2024 -0500
+
+    Optional metodos orElse() vs orElseGet() - diferencias
+
+[33mcommit 2514120fe60790707c00bc55c3bcc7a550b041be[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 18 11:36:01 2024 -0500
+
+    Ejemplo Repositorio usando Optional
+
+[33mcommit cbe4b7c30be0ed8347fbcd998e78ff1527bbf31b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 16 17:37:15 2024 -0500
+
+    Introduccion a la clase Optional - Optional basico y metodos/funciones importantes
+
+[33mcommit 844f1110f4c8fe58b2c94070e289a98521f14942[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 16 15:51:39 2024 -0500
+
+    añado linea de codigo con peek() para ver los resultados de los importes de cada producto
+
+[33mcommit 6163545efeb5948331d9712f34ac55dd56aa7b58[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 16 15:48:44 2024 -0500
+
+    Tarea34 - calcular el importe de una lista de productos
+
+[33mcommit 1e0f3ae155325bf8bfcc70801ec28e9adf1b2339[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 16 13:42:54 2024 -0500
+
+    tarea 33 - Aplanar un arreglo bidimensional en una solo nivel usando flatmap para aplanar
+
+[33mcommit 04612207c32c06fa7d8f3500e5ade10943d6bb0b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 16 12:24:42 2024 -0500
+
+    Tarea 32 - Numero Maximo con Programacion Funcional y ApiStream
+
+[33mcommit 8c403f2111438a6097a43cec66f56c3a834eb468[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 12:30:06 2024 -0500
+
+    Operador parallel() - procesar datos con thread en paralelo
+
+[33mcommit 3ebdddb3de2ae2db4f6fb82a5aaf09b7327fa443[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 12:15:36 2024 -0500
+
+    Ejemplo flatMap facturas de usuarios
+
+[33mcommit cd06610d312c60df4a95da60f720bcb087fdf636[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 11:29:43 2024 -0500
+
+    Generando Stream infinito o bien emitiendo elementos en un intervalo de tiempo
+
+[33mcommit 4773872c310ff8872e9f3aceb65a096247e954d1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 11:21:41 2024 -0500
+
+    Convirtiendo un List a un Stream
+
+[33mcommit 5d14d3246b7165212b16f96bb7689d6bcdbe4562[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 11:05:43 2024 -0500
+
+    renombrar archivos
+
+[33mcommit 7b885af3acbeb5583a7a1fe81ff9bb069f83afb7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 10:34:35 2024 -0500
+
+    Operador flatMap()
+
+[33mcommit d7472c63d166f837bd7cb3dba43ef125ad709ece[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 12 09:50:21 2024 -0500
+
+    Operadores maptoIn(),sum() y summaryStatistics()
+
+[33mcommit 88544e189000f99e7f3afd1dc0db9d70c734b3f4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 11 18:48:20 2024 -0500
+
+    Operadores varios filter(),distint(),reduce(),sum() y summaryStatistics()
+
+[33mcommit de9446c98ae23cf0f7971b8cd4635108bb1a231d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 11 17:10:09 2024 -0500
+
+    Un resumen al API Optional de java 8
+
+[33mcommit 7bb999700923873d7f4bb60876bccbe35255ec6f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 11 10:39:20 2024 -0500
+
+    el operador anyMatch y count - Streams
+
+[33mcommit 7df905b2b8307867f4928bf9957ad2dfb0ff3ff8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 11 10:15:56 2024 -0500
+
+    Comentario
+
+[33mcommit bbc70facd584b9188a3a4ca5a8db479e0bf10678[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 11 10:11:25 2024 -0500
+
+    El operador filter - retornar un solo objeto Usuario
+
+[33mcommit 03262fcc877b3826fe68a4e0aeed2704fab50cdd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 11 09:18:38 2024 -0500
+
+    El operador map parte 2 - usando clases poo
+
+[33mcommit a211b1b6e16642f961a43f09f035ce408cd87afc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 9 18:18:54 2024 -0500
+
+    comentario uso de map en Stream
+
+[33mcommit 1a6c6454f164d6fdd17786ee8502819db15effdc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 9 18:08:22 2024 -0500
+
+    Forma optima de convertir Stream a List
+
+[33mcommit 086d84caa79b676f41992e63b58164951f248b15[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 9 18:06:21 2024 -0500
+
+    el operador map y peek - Streams
+
+[33mcommit 1c859a1ec38c88dce3bdf538fea6673d58bd8d90[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 9 17:28:14 2024 -0500
+
+    añade unos comentarios
+
+[33mcommit 7dd43d2294b6a20623345ed03c6ff9c9b9d0354f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Sep 9 17:16:21 2024 -0500
+
+    Creando un Stream de diferentes formas
+
+[33mcommit 7e2c2bcd33e629bf3d474ec18826b51c9d7d055f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 18:04:17 2024 -0500
+
+    Tarea 30(bad) - Expresion Lambda que cuenta la cantidad de veces
+
+[33mcommit 1d11303d53a64fa5e7cb9d41b8277c5fe68b41d2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 17:08:25 2024 -0500
+
+    Expresion Lambda que elimine espacios - usando Interface con clase anonima
+
+[33mcommit a33ce461bbf845912932c198821459528d274edb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 15:57:47 2024 -0500
+
+    Creando nuestra propia expresion lambda con una interfaz funcional
+
+[33mcommit 2ca1d941aacfc39ba69a703c8173e660a60ed11d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 15:41:21 2024 -0500
+
+    Expresiones Lambda Predicate
+
+[33mcommit 9b84e0bf6c6bbf502655fce86372fba3bc48c2b1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 15:16:44 2024 -0500
+
+    Expresiones Lambda Function
+
+[33mcommit 6f706a6b2c5beee4520cd3edbdf4a8bc8085465e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 12:24:59 2024 -0500
+
+    Referencias de metodos en expresiones lambda de tipo Consumer e informacion de Tipo Supplier
+
+[33mcommit f2422d08c476ec7f54330d40eb07beddd4f56515[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 11:55:13 2024 -0500
+
+    Expresiones Lambda Consumidores o Consumer
+
+[33mcommit 8504c99f66142f42b2d55b389a8fc9208560bfc6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 8 11:26:47 2024 -0500
+
+    Executor Framework - Tareas Programadas que se repiten cada cierto periodo
+
+[33mcommit 371762e4ff4dd56a90da556d2f82cbeca16d71b2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 7 18:42:32 2024 -0500
+
+    Executor Framework - Tareas programadas con ScheduledExecutorService
+
+[33mcommit 3b9d29bdb6ac0f9815f23972281ee7d926f6cb55[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 7 18:21:24 2024 -0500
+
+    Executor Framework - personalizando parametros del pool con ThreadPoolExecutor
+
+[33mcommit 7611d640f44b5fc50db29bb06d4894ade5a66281[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 7 18:01:25 2024 -0500
+
+    Executor Framework - Fixed Thread Pool
+
+[33mcommit 8ee698d2635096602ea29a2b4b8eaae6358cf38b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Sep 7 17:18:48 2024 -0500
+
+    Executor Framework - Future
+
+[33mcommit 6a3b7fc56eabaa387cd0b3ab2bd59b7f7025c96b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 18:25:39 2024 -0500
+
+    Executor Framework - Single Thread Executor
+
+[33mcommit f3c1899b489fb1993d1ebf6f71cac5cb27fd35eb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 18:01:42 2024 -0500
+
+    nuevo comentario
+
+[33mcommit b0364c2c8993639401ca8489766a9eedf264feab[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 17:48:15 2024 -0500
+
+    Agendando tareas programadas que se repiten cada cierto periodo de tiempo con Timer / timerTask y uso toolkit para sonidos
+
+[33mcommit 32e8678a131b56db2f62b30a9b6c887e7ec9ac5a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 17:29:58 2024 -0500
+
+    Usando Timer y TimerTask para agendar tareas programadas
+
+[33mcommit 4171b8cb897be90a67a9747f6fecb2c9a7a209f5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 17:13:29 2024 -0500
+
+    Ejemplo sincronizacion Productor Consumidor con java 8 lambda
+
+[33mcommit 40f50e492597e5b223bd05fec95cbd4d6c70fe9a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 15:40:01 2024 -0500
+
+    Metodos wait() y notify() sincronizacion Productor Consumidos parte2 usando Interfaz Runnable para ejecucion de los Thread
+
+[33mcommit 725e3cd6b9983ff5d55acc5c9bea0b26db36131a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 15:18:25 2024 -0500
+
+    Metodos wait() y notify() sincronizacion Productor Consumidor
+
+[33mcommit c28631c340335fabeff3f802de3e1a36c4273908[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Sep 6 14:53:17 2024 -0500
+
+    Usando modificador synchronized para la sincronizacion de hilos - para mantener un orden en los hilos y evitar el bloqueo
+
+[33mcommit fac64aeb9b19376b5ed49522b6730b3194c94bb1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 19:03:48 2024 -0500
+
+    Comentarios sobre las diferencias entre join vs sleep
+
+[33mcommit f10d03475861b6126034de03a62c54b8f6c0d4e5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 18:51:19 2024 -0500
+
+    El metodo join vs sleep}
+
+[33mcommit 01b8b7678f2a2e20085ee2c72c2d19434103eacf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 18:26:49 2024 -0500
+
+    Implementando hilos con expresiones lambda y Runnable
+
+[33mcommit 076eb349c3a17e27134ddb785d157746b77374fd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 18:16:45 2024 -0500
+
+    demas archivos
+
+[33mcommit e1977760948c7ab3f9c06554e73ba218bb27faf1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 18:11:46 2024 -0500
+
+    Creando hilos implementando la interface Runnable
+
+[33mcommit 331fac2427d6432919f79bc2d60a45b4187b1508[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 17:41:30 2024 -0500
+
+    Creando hilos heredando de la clase Thread
+
+[33mcommit cac4a59922b91a5b4d15d52c8a4372d59c19b6da[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Sep 5 11:04:25 2024 -0500
+
+    añadir informacion
+
+[33mcommit 231a4ae0a58d915c769be5c206465f3d7e9a1aea[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 4 19:42:14 2024 -0500
+
+    Proyecto Encuentra tu Vuelo - Tarea 27
+
+[33mcommit 6e3ce09848830519e95e707407d2fd7a259eb0b7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 4 14:29:31 2024 -0500
+
+    Ejemplo TreeMap -comparacion por largo del string
+
+[33mcommit aad3bb699b897e097191ca53b3e427062a5ef006[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 4 14:21:44 2024 -0500
+
+    Ejemplo HashMap con valor de tipo Object y relaciones de objetos - parte2
+
+[33mcommit 3e433e5bd28718584cc497007a4e0dff266701dd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 4 14:13:27 2024 -0500
+
+    Ejemplo HashMap con valor del tipo Object y relaciones de objetos - HashMap anidado
+
+[33mcommit 72d8e29f336f7eca9381ad4cf2602581d4fbec3a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 4 10:56:34 2024 -0500
+
+    Ejemplo HashMap metodos importantes
+
+[33mcommit 8b81e4093e2f743cca497eca0c7bc30da635b5cf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Sep 4 10:25:47 2024 -0500
+
+    Ejemplo HashMap
+
+[33mcommit 4a4af76610347fd0ef780f498aa6404451e80033[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 17:10:27 2024 -0500
+
+    Ejemplo LinkedList - pilas y colas - metodos importantes
+
+[33mcommit 081f0247a85672351928086a9d9ccbbf042bd40a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 16:50:57 2024 -0500
+
+    Ejemplo ArrayList metodos mas usados
+
+[33mcommit 2babc3548c1c1afbba816885ed2583e45f5b7bd3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 16:30:46 2024 -0500
+
+    Ejemplo ArrayList Comparable y Comparator
+
+[33mcommit 9ee117e26270534d4619bcbbfab8930563abf1d4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 15:46:47 2024 -0500
+
+    Formas de loop o iteraciones en los Collection Set y List
+
+[33mcommit 81f83ac701bdc6b5156eb21bfc44b8f35353763e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 15:33:07 2024 -0500
+
+    Eliminar algo
+
+[33mcommit f8cb5dda452983be79ae8086373788741e6c58cf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 12:24:11 2024 -0500
+
+    Singularidad en TreeSet y HashSet
+
+[33mcommit dedb60c4b8ce1ca198af165d8f38ee1005ab2275[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 12:02:30 2024 -0500
+
+    Ejejmplo TreeSet Comparable y Comparator
+
+[33mcommit b94a62f4f750280c937edee7a285151aaa892518[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 11:39:08 2024 -0500
+
+    Ejemplo TreeSet
+
+[33mcommit 4bb7cf9492a9699fb5e0627ec7aedad3bcf8d01f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 11:28:37 2024 -0500
+
+    Ejemplo HashSet detectando duplicados
+
+[33mcommit 109e066ce0cc50c4a8637bea5a8b55c8045069c8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Sep 1 11:14:57 2024 -0500
+
+    Ejemplo HashSet
+
+[33mcommit 70d867e28cfeeae76d7455b8c94b94635971c760[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 31 20:35:05 2024 -0500
+
+    Manejo de Excepciones en el ejemplo Crud Repositorio - parte 2
+
+[33mcommit d1cb3f5feadf4eb9497e6d9ef46cb60c100dcc38[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 31 19:42:20 2024 -0500
+
+    Manejo de Excepciones en el ejemplo Crud Repositorio
+
+[33mcommit 1b88a952a524a2872ed9884d52bb33e2c19b8b14[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 31 18:56:02 2024 -0500
+
+    Implementando nuestras propias excepciones checked - parte 2
+
+[33mcommit b2e576d75233ab584d2fecbc34621d8553ccb18b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 31 18:15:23 2024 -0500
+
+    Implementando nuestras propias excepciones checked - Exception personalizada(unchecked)
+
+[33mcommit cdd433e1e664ba32149682d05da5331882037655[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 31 17:57:49 2024 -0500
+
+    Ejemplos de manejos de excepciones no comprobadas(unchecked) - Excepcions
+
+[33mcommit 2866671eadeba577c84464ab858f7fbc4fda4f28[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 29 16:16:08 2024 -0500
+
+    Tarea 26 - Bolsa de Supermercado - Generics
+
+[33mcommit e51bda01792ad6dd978b44a9f14da7cc12ab4f82[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 28 19:55:14 2024 -0500
+
+    Implementando un Repositorio de Producto
+
+[33mcommit d35046e283adb4157761bfc2e58750f0d19d44c4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 28 18:08:23 2024 -0500
+
+    Ejemplo Repositorio con limites - Bounded Generics
+
+[33mcommit 89e23739faeab166072b1c2806bc5127efe6558a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 28 17:30:08 2024 -0500
+
+    Ejemplo Repositorio con tipos genericos (Generic Type)
+
+[33mcommit bef57aea3c880abf83274f7240ec996e4e2e15ee[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 28 16:56:34 2024 -0500
+
+    Clases genericas - modificando la clase generica con el parametro T
+
+[33mcommit bd739ef70f94af6b1e5aded3da7f554614e3ba2b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 28 16:35:01 2024 -0500
+
+    Clases genericas - añadiendo ejemplo con main
+
+[33mcommit a3744a104a6c6efdd87511b8b186df367f4aee3e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 27 19:00:09 2024 -0500
+
+    Clases genericas
+
+[33mcommit 4abec586b38615a81187c766e16d9d9f0fd0be4e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 27 17:27:00 2024 -0500
+
+    Metodos genericos maximo de tres objetos usando Comparable y el metodo compareTo
+
+[33mcommit 7fa5f288f2d179a5c0740ee6d086943167e03167[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 18:39:54 2024 -0500
+
+    comodines - wildcard Generics
+
+[33mcommit dba2aa0fa3c0b77b6444cbcfadfd6473a585b93c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 18:04:06 2024 -0500
+
+    Metodos genericos con limites - Bounded Generics
+
+[33mcommit a38dbaf90f7efa34f26f0fe37ba3444fa46a15ba[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 17:24:39 2024 -0500
+
+    Metodos genericos - Generic Methods
+
+[33mcommit 948511cd68850223f1e5ad5b54e048dd1c79ddab[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 14:07:31 2024 -0500
+
+    Herencia multiple entre interfaces(importante)
+    !
+
+[33mcommit 2303a062e9b92f61041e2cd2425aec7cc740b251[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 12:10:02 2024 -0500
+
+    Creando la clase Ejemplo con el metodo main y probando el crud repositorio
+
+[33mcommit d5e8e5d55b1c6b3cbcc90dfaa9340fefabd72853[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 11:38:58 2024 -0500
+
+    Implementando metodos de interfaces para ordenar y paginar
+
+[33mcommit d622497b5b8ac2ebb1ed65ec5d2ca24a9e891911[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 11:12:02 2024 -0500
+
+    Creando implementacion concreta y herencia multiple de interfaces
+
+[33mcommit 460c6899158c39bdf940a0b864f01c9466fe72f9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 26 10:54:48 2024 -0500
+
+    Creando interface Crud Repositorio y otras
+
+[33mcommit 9e0d5747b9c888c29202d6b0d3128a362b08986d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sun Aug 25 18:30:02 2024 -0500
+
+    Proyecto Catalogo - Interfaces , importante uso de instanceof
+
+[33mcommit 49aec2218845ae576dac2a970044696d37efd8e7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 24 18:31:03 2024 -0500
+
+    Metodo default y static en interfaces
+
+[33mcommit 2a412077378621b9dbbc66cb38dabfac58d7a6a4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 24 18:09:12 2024 -0500
+
+    Añadiendo algunas mejoras y potimizaciones en el codigo
+
+[33mcommit e49bffb080fa00f3e9a2bf3857c780f405bc6876[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 24 16:50:58 2024 -0500
+
+    Añadiendo la clase libro y la interface
+
+[33mcommit f680747cd666a6e92b1edabe1e06912df8e36f4c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 24 16:27:04 2024 -0500
+
+    Creando la clase ejemplo con el metodo main
+
+[33mcommit 2775cefe0f2ab29b7383feb9856d5f036d512046[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 24 16:06:18 2024 -0500
+
+    Creando nuevo proyecto y clase abstracta con su jerarquia
+
+[33mcommit b5dc2b9c958d7f101c6e8ab941c078448a9eab24[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 18:46:54 2024 -0500
+
+    Tarea24 - Proyecto Mamiferos
+
+[33mcommit 666a3ced952395a7240c79725c08861525d7ec67[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 17:17:14 2024 -0500
+
+    Clases abstractas en su respectiva ubicacion
+
+[33mcommit f0b8ff52b818cda598f70be5a6ef0cb19426d2e6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 16:09:46 2024 -0500
+
+    Implementando interface para formatear mensajes de errores
+
+[33mcommit 211c0221ab6d74b04addf8b99b6117c640fe056e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 15:52:34 2024 -0500
+
+    Añadiendo el nombre del campo en los mensajes de errores
+
+[33mcommit 5bd1cd4052e21c010114c997ce8cf230fb315315[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 15:41:03 2024 -0500
+
+    Validando los elementos del formulario
+
+[33mcommit 3be35b9f21c3a79eb72da80b6852ed885ee5de18[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 15:30:12 2024 -0500
+
+    Implementado la validacion en la clase abstracta ElementoForm
+
+[33mcommit daf43bf7fe3d8e642f72baa60bcc05a5c6a1596b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 12:35:46 2024 -0500
+
+    Creando la clase concreta EmailValidador
+
+[33mcommit 0152d408a4517aacc06a4ec349532c8c3260a107[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 12:28:00 2024 -0500
+
+    Creando la clase concreta LargoValidador para validar el min y max de caracteres
+
+[33mcommit 726c6d168e8c69fe3acb10aab00b96e3a5561dcf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 12:23:57 2024 -0500
+
+    Creando la clase abstracta Validador con tres clases hijas concretas
+
+[33mcommit 3ce92d36064c18973db0a8d1e5e6422c7bb40d5c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 12:09:19 2024 -0500
+
+    Clases anonimas
+
+[33mcommit 171254b972810c9bb65e689ccfb5b09d96bb16b1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 11:57:37 2024 -0500
+
+    Dibujando elementos del formulario
+
+[33mcommit 3e58568be5061fec380b7509c2f1dc740e69d560[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 11:23:05 2024 -0500
+
+    Creando la clase ejemplo con el metodo main EjemploForm
+
+[33mcommit 21e0855f9cd7ff9f4ddd11202ad0b674eef6e6a1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 11:08:51 2024 -0500
+
+    Creando la clase concreta SelectForm
+
+[33mcommit eec33c4b917bd1c864610456f2c2cdc1c96d4a5b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 10:39:30 2024 -0500
+
+    Creando clase padre abstracta ElementoForm - clases abstractas
+
+[33mcommit 5d7aba0949f9f15a43973b1c6fc386300a5d2ccc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 22 10:13:17 2024 -0500
+
+    cambio nombre del proyecto de un almacen de venta por mayor
+
+[33mcommit 4c1d988b4415b1a977e5e4ea1f5fa7676ff7a0d3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 20:19:33 2024 -0500
+
+    Tarea 23 con UML y corregir nombre de paquetes
+
+[33mcommit 6f1cf7fe63889624514dc8074deba0848582dbb2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 19:19:47 2024 -0500
+
+    Almacen y verduleria - Tarea 22
+
+[33mcommit 9a8ed0f4f09d9dbae9a9e8cf423c9e9737628d0f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 18:21:35 2024 -0500
+
+    cambio nombre tarea21 e inicio tarea22
+
+[33mcommit 8461efff3964def93debb88dede960a1f1a6c5db[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 18:18:31 2024 -0500
+
+    Personas de una compañia - Tarea21
+
+[33mcommit 986ab44f0b48789306f9d7ab9423b81d407ed554[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 16:23:58 2024 -0500
+
+    Modificador 'final' para evitar la herencia y la sobre-escritura de metodos
+
+[33mcommit 5f9a29d7b1a69842d401520d8153fb1c13bb072b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 16:18:39 2024 -0500
+
+    SobreEscritura metodo toString() - Poliformismo por Sobreescritura de metodos y constructores
+
+[33mcommit e62179f6ec1e59968ace9b224e2c575f27c6c071[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 15:48:49 2024 -0500
+
+    Sobre Escritura de metodos en la herencia
+
+[33mcommit 6509faf19d7ad349babb857b891706512d02bf64[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 11:35:55 2024 -0500
+
+    Creando instancias via contructores con argumnetos y control de tipos
+
+[33mcommit 79414530f99e57a34c3b708bff1e1fb8c099b662[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 11:09:09 2024 -0500
+
+    La referencia super() en constructor
+
+[33mcommit 358235acd7e91e2e201f65995de19417f140cb41[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 10:43:09 2024 -0500
+
+    LLamando los constructores en cadena
+
+[33mcommit f3358129b630380d95c2aa1f3006b4ea2e6948ff[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 10:18:30 2024 -0500
+
+    Herencia y el ApI de reflexion de java - Forma de saber quien es la clase y hija opadre
+
+[33mcommit 0e402963797f4a3277b0d7b41725b948f10deb0b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 21 09:55:31 2024 -0500
+
+    Creando la jerarquia de clases
+
+[33mcommit 3e4e8fa15e24e71c32ae292ce8c13fbec922d864[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 19:01:22 2024 -0500
+
+    SobreCarga y metodos estaticos
+
+[33mcommit 80c37cd4917a23b24bd3632640ba767b9362f2f7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 18:50:40 2024 -0500
+
+    Varargs numero variable de argumentos
+
+[33mcommit 74eb328291c49fe1d7202a86314ebfcf3ecb46d5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 18:41:24 2024 -0500
+
+    Corriendo ejemplo sobreCarga en modo debug
+
+[33mcommit 68d6670e691b8c92dd04dcc4696925b96dff521e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 18:37:55 2024 -0500
+
+    Implementando clase con sobreCarga de metodos
+
+[33mcommit 33ec875eaf23acc40188381a3902bf2aee372723[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 18:23:03 2024 -0500
+
+    Añadir un n° para mejor comentario
+
+[33mcommit cb88c3e7c300443af181c1a0c11c8fa3bede7f11[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 18:09:22 2024 -0500
+
+    Optimizando la aplicacion
+
+[33mcommit 8cd3655845df6538fb5f2d0daa0050ecd3e67ed4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 17:52:48 2024 -0500
+
+    Creando la clase principal de aplicacion de facturas
+
+[33mcommit 91865e54cb9dc848b646a68b49dd94511e38967b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 17:31:54 2024 -0500
+
+    Generando detalle de la factura
+
+[33mcommit 3dc6f3f076fae425bf43615d7151f00929840f99[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 17:23:30 2024 -0500
+
+    Calculando el importe de la linea y gran total de la factura
+
+[33mcommit b4ea75190a997b6b8bbc3ab48a46a96e885e1700[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 17:08:06 2024 -0500
+
+    Ejemplo facturas - creando las clases del modelo/domain
+
+[33mcommit 07eca1a986c0a3aba5abbe30180b12b2abdb4a35[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 15:59:46 2024 -0500
+
+    Paquetes e importar metodos y constantes Estaticas
+
+[33mcommit a8c12c7483b026ee98ce03a86d7e96491e6c62e9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 13:33:40 2024 -0500
+
+    Optimizado la creacion del producto
+
+[33mcommit f38a5edafcd06addc5e1a00c491e1692023170d4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 13:28:24 2024 -0500
+
+    OrdenCompraTarea20 parte 2 Finalizado
+
+[33mcommit 71d9e5f1a477d43d60dfac65deabee65e216d9ec[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 11:50:47 2024 -0500
+
+    Tarea 20 - OrdenCompra parte 1
+
+[33mcommit e05a9f8b3e5d1305da9460dc673e83ffd8fe0bb4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Aug 20 10:47:24 2024 -0500
+
+    El metodo compareTo para ordenar objetos
+
+[33mcommit c9f530e859e26c318752d9cf65ee02ebbf045aee[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 19 19:01:07 2024 -0500
+
+    Añadiendo el metodo add para agregar elementos de un arreglos(metodos encadenados de arreglos
+
+[33mcommit aef79a3aaf32c0308262d01bafca18cff078e94c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 19 18:37:17 2024 -0500
+
+    Relacionando los demas objetos
+
+[33mcommit b2440d5d44376745543f9502f9ac4d90cb938e6f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 19 17:12:19 2024 -0500
+
+    Soluciones a posibles errores NullPointerException
+
+[33mcommit bf7500d72dc6b57e9b4ce2b35d25e32871f737de[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 19 16:57:47 2024 -0500
+
+    Modificando clase con atributos de relaciones de objetos
+
+[33mcommit 45c65768001a0a9c2bca7013057755c669acbd08[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Mon Aug 19 16:23:11 2024 -0500
+
+    creando clases relacionadas y uml-star/umbrello u otro
+
+[33mcommit 8bee48de77becc629f4d8d8e740216cfe70b809b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 17 12:58:36 2024 -0500
+
+    Iterando enum con foreach
+
+[33mcommit 41ad1add56791f2a80a8491d4144f31b09390129[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 17 12:51:11 2024 -0500
+
+    Utilizando enum con sentencias switch case - Nueva forma de Switch por version de java +13
+
+[33mcommit 6d96d5ec5fe0e22a82d74427cdf5c4c29189fa22[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 17 12:26:49 2024 -0500
+
+    Implementando enumerador con mas atributos
+
+[33mcommit d5fb0571f9fdac01193a5f7baef7d3b8fbaed60c[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 16:48:52 2024 -0500
+
+    Algunos comentarios
+
+[33mcommit 750d786a86d8c208dee6412562149d437d87a5ee[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 16:46:48 2024 -0500
+
+    Enumerador Color (enum)
+
+[33mcommit d3696ab3be2d6c8d66d1374dc546bd7b91257fdb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 16:22:22 2024 -0500
+
+    Atributos constantes final parte 2(colores)
+
+[33mcommit 9bd39d323a8e2a70734528b3c25a6f80af6ecc84[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 16:11:01 2024 -0500
+
+     Atributos constantes final - constantes
+
+[33mcommit b84097d35ad3d46d2e7569476c035db413b982db[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 16:02:43 2024 -0500
+
+    Atributos y metodo estaticos parte 2 - Asignacion de Id a un Objeto
+
+[33mcommit 1c639a2ce971a049109bb71dc20caa58f68ffc02[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 15:32:40 2024 -0500
+
+    Atributos y metodos estaticos de la clase
+
+[33mcommit b60858566364ac5d2207173cd3aed5139b26a4d2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 15:03:09 2024 -0500
+
+    Metodo toString()
+
+[33mcommit 2d94ebf3e5a0b7dd9ed8178e80bd68bb1024750a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 14:54:07 2024 -0500
+
+    El metodo equals segunda parte
+
+[33mcommit 70d9de652d064586d4a6f5f25e421aa73f78bda8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 14:46:22 2024 -0500
+
+    El metodo equals primera parte
+
+[33mcommit 15485633b3c878c915a59b9bbaf3fa79a745d84d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 12:32:03 2024 -0500
+
+    SobreCarga de Constructores y uso de this() para optimizar la sobreCarga
+
+[33mcommit e90297127553016b4c072898702906264e44598e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 12:22:50 2024 -0500
+
+    Implementando constructor
+
+[33mcommit 3f3b1da3008c39760372103fb2570140211af20a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 12:12:14 2024 -0500
+
+    get y set en clase principal
+
+[33mcommit 090f715ce4d708b84f96b93d387208acad92c3f9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 12:10:43 2024 -0500
+
+    Principio de ocultacion de atributos get-set
+
+[33mcommit 856a8d64534b5078309f19f348d6e71585898a22[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 12:04:45 2024 -0500
+
+    Metodos con argumentos,sobrecarga de metodos y encapsulamiento
+
+[33mcommit be5f7b77083d9318b9458107b08fd1664852f682[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 11:54:13 2024 -0500
+
+    Metodos con argumentos
+
+[33mcommit 25ef0f17e3d4dc5e6c2830c20bdcfd259f63dc8f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 11:46:24 2024 -0500
+
+    Agregando metodos
+
+[33mcommit 7005aaec13d86f3cd8f8092a2c17cd659dc58ff4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 11:38:50 2024 -0500
+
+    Creando objetos con el operador new
+
+[33mcommit c9d4f3f91c4208725275c5a0bc8ff8edb3c54f07[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 11:30:59 2024 -0500
+
+    Creando nuestra primera clase
+
+[33mcommit 69fa5404017eccc965b1be464869371f3fd0c873[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Fri Aug 16 11:20:08 2024 -0500
+
+    Tarea 19 - Imprimir una silla
+
+[33mcommit c198f87109a835cc99d015f0a41fcd073dddef3f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 18:57:59 2024 -0500
+
+    Tarea 18 - Matriz con forma de x
+
+[33mcommit a41539e44daadc972b9050d92971e8ba42d35a3e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 18:18:55 2024 -0500
+
+    limites inferior y superior de la matriz y la diagonal principal
+
+[33mcommit 0e4ba0bfd712265eb47226d7cbfa2393259ce581[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 18:16:21 2024 -0500
+
+     Matriz identidad
+
+[33mcommit f84cd0d7bbf6428eced4d3179fb4792b26046cad[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 18:06:37 2024 -0500
+
+    Operaciones aritmeticas en matrices
+
+[33mcommit 6c14f0071b47f80a626e61e76fb0363b51310adb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 18:04:59 2024 -0500
+
+    creando la matriz transpuesta de una matriz
+
+[33mcommit 667289fb86d70f938d3343b1be37c141d36e3fd6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 18:00:22 2024 -0500
+
+    convertir a la matriz transpuesta
+
+[33mcommit 8ff0dd2a391b73e1b1b0afe06c27af72957b3d5e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 17:17:55 2024 -0500
+
+    Matriz Simetrica
+
+[33mcommit 701c00becbbd05260204b1f5a7fa8080864e81e5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 17:12:59 2024 -0500
+
+    Buscando un elemento en una matriz usando etiquetas y break
+
+[33mcommit af967d3792478f6bef530f431b378bffeb66f1aa[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 17:08:41 2024 -0500
+
+    Tamaños de columnas variable en una matriz
+
+[33mcommit 88ad8ecd8e72d81d479e608f29b438917c9e58ba[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 17:02:36 2024 -0500
+
+    Ejemplo de un arreglo de string e iterando con for
+
+[33mcommit 858023e4b1b53e5d765353b5d49871b11bec701e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Thu Aug 15 16:52:08 2024 -0500
+
+    Ejemplo de una matriz de enteros
+
+[33mcommit ea45871f39582259edc9d5a37e4dd019f2e1c5b8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 18:53:22 2024 -0500
+
+    Tarea17:Histograma
+
+[33mcommit c4a3b4a40a173f49353ba5e7a5ccc25a061399c0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 17:55:50 2024 -0500
+
+    Tarea 16 - mayor ocurrencia en el arreglo
+
+[33mcommit 17a67dae98fe15e48553d257f784d88da18f28d8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 15:55:07 2024 -0500
+
+    Tarea15: Mayor Ocurrencia en el arreglo
+
+[33mcommit 5f07e388bfba2ca7b288d1ca8af55f538abaf2de[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 15:23:05 2024 -0500
+
+    Tarea 14:Imprima el numero mas alto del arreglo
+
+[33mcommit fad3e43f1b2c089a9c0156a81deb147773c5f807[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 15:02:02 2024 -0500
+
+    Tarea 13: Ordenar el arreglo de la forma ultimo primero,etc
+
+[33mcommit 9246d5381f20f4ad467a9a9b635d4d84db93b351[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 14:46:31 2024 -0500
+
+    Insertando un nuevo elemento e incrementando el tamaño del arreglo
+
+[33mcommit 1fe41a0cdcc2b78228050b522e1be2af9d8ffb74[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 14:32:07 2024 -0500
+
+    Comentario en Eliminar un elemento de un arreglo
+
+[33mcommit 3302c1642a0590171bfaa91ad78b763281fb4563[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 14:20:12 2024 -0500
+
+    Eliminar un elemento del arreglo
+
+[33mcommit e58414d16a89b929b13c517ea704bc9ff954c129[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 14:17:39 2024 -0500
+
+    Agregar un lemento en una posicion adecuada de manera que se mantenga ordenado
+
+[33mcommit f413fb0ce1b7b73e614fa39d530959ce88c4dffe[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 14:07:39 2024 -0500
+
+    Agregar un Elemento en una posicion indicada y mover los siguientes elementos
+
+[33mcommit d76f1ce1c1a71235c9fa2e841f9e9984c8cda2b8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 14 13:54:44 2024 -0500
+
+    Agregar un elemento en una posicion desde el inicio del arreglo hasta el final
+
+[33mcommit 70d3d9f35324fbf065f2f7c5e9ef7b83a0ca5bf4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 19:14:48 2024 -0500
+
+    Buscar elementos en un arreglo
+
+[33mcommit 80f4ed9146aa5834b58bacf2c40b0a7eff058fd1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 19:10:26 2024 -0500
+
+    Sistema de notas de alumnos por asignaturas
+
+[33mcommit aabd3a1f0306f00136f81caffae4ac78914a16a1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 19:06:36 2024 -0500
+
+    Copiar pares e impares de un arreglo de enteros y en sus respectivos arreglos
+
+[33mcommit 1a9c9915df8a189e3c67598f89b83bfd2693633b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 19:01:00 2024 -0500
+
+    Detectar orden del arreglo con comentario a tener en cuenta para error: Index i out of...
+
+[33mcommit 936d89f19defd40c57bd71af357bbdb2e527e24a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 18:50:59 2024 -0500
+
+    Obtener el numero mayor de un arreglo de enteros
+
+[33mcommit e3016e0aadce6092355c0ccb5914b8307c3a3bef[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 18:35:16 2024 -0500
+
+    Combinar dos arreglos en untercero con multiples elementos
+
+[33mcommit b925d7c2dc06b41e9a576f71db535f35d06df403[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 18:33:32 2024 -0500
+
+    Combinar dos arreglos en un tercero
+
+[33mcommit 16d9756d63ff61755086165e91c2211b5f9e5f17[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 18:24:44 2024 -0500
+
+    Imprimiendo el i-esimo numero por el principio y el i-esimo por el final
+
+[33mcommit 5ff4bd34452b5e8160ce9ccac90786343344bc01[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 18:04:34 2024 -0500
+
+    Modificando el arreglo en reverso
+
+[33mcommit 2b4a50b8eac268cc4944e6cc4c1de2085b1b65e4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 17:54:38 2024 -0500
+
+    Iterando en orden inverso un arreglo
+
+[33mcommit 3fca6d9ea492873ff02718d6ede699ba785fe1c3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 17:47:38 2024 -0500
+
+    Iterando Arreglos
+
+[33mcommit ba9ccfe8504b45c7c48ec7a0cef57b1b2d62d3b3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 17:42:45 2024 -0500
+
+    Ejemplo de un arreglo de String y ordenas con .sort
+
+[33mcommit 036f6661700f7fd63b219024c6b1eafb05643369[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Aug 7 17:38:24 2024 -0500
+
+    Ejemplo arreglo de enteros
+
+[33mcommit 9400995c64aec11d8938980b3ff4116f70515a3f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:55:00 2024 -0500
+
+    Argumentos Linea de Comandos Calculadora
+
+[33mcommit 73b92bf470753e5f3edf1dbdc1baf85f394178d7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:52:42 2024 -0500
+
+    argumentos linea de comandos
+
+[33mcommit df7f1fad9c18ecdf2687767437ec232963e4397d[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:46:57 2024 -0500
+
+    Tarea 12 - Calcular el area del circulo
+
+[33mcommit f609109efe64865cc06428c3d7571c0baba08c35[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:35:51 2024 -0500
+
+    la Clase Random de java util
+
+[33mcommit 8613f3986fbbfc03307af6204e6094c08ec469f8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:32:16 2024 -0500
+
+     El metodo Random(9 para generar numeros aleatorios
+
+[33mcommit b8877dead8c603095e318b2fa0048ddd4f404c32[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:26:15 2024 -0500
+
+    la clase  Math parte 2 (trigonometria)
+
+[33mcommit dd61f85549db2479515a6afa64c1d173d97b435e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 18:21:34 2024 -0500
+
+    Clase Math parte 1
+
+[33mcommit c78910a9c633b39efafa59feadc155b3a967ae69[m
+Merge: b6129a3 79a7c38
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 17:30:35 2024 -0500
+
+    Merge pull request #7 from juliangranda/ClaseSystem
+    
+    Clase system
+
+[33mcommit 79a7c389711e54c13da869d76073c158eec08c8a[m[33m ([m[1;31morigin/ClaseSystem[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 17:29:12 2024 -0500
+
+    Clase runtime para ejecutar aplicaciones del SO
+
+[33mcommit 75572fa40070fd45b73ee2e10b051b056bb83001[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 17:24:32 2024 -0500
+
+    Obtener las variables de ambiente del sistema operativo
+
+[33mcommit 9bb9b0bd770d521b28c17fb1927467d2ac5f2797[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 17:20:54 2024 -0500
+
+    Agregar y customizar propiedades y configuraciones de la aplicacion
+
+[33mcommit af5cd9e4b500033e86aa8566173d05463c6e8dce[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 17:15:29 2024 -0500
+
+    Obtener propiedades del sistema
+
+[33mcommit b6129a3e376a55134ca0e0d263b7730ba830e9b5[m
+Merge: 3789c39 6c072bc
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 16:56:03 2024 -0500
+
+    Merge branch 'main' of https://github.com/juliangranda/Java
+
+[33mcommit 6c072bc224384ec1d7e429975746022151513ced[m
+Merge: 9dfce30 832b5cf
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:58:35 2024 -0500
+
+    Merge pull request #6 from juliangranda/ClasesWrapper
+    
+    Clases wrapper
+
+[33mcommit 3789c396156c31e395c7147fb9e20401de70ffb5[m
+Merge: 452f7d9 9dfce30
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:57:42 2024 -0500
+
+    merging
+
+[33mcommit 9dfce30df6984defa79f87de4f6fd636f3a34e36[m
+Merge: efebc06 b0b0d5b
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:52:49 2024 -0500
+
+    Merge pull request #5 from juliangranda/DateyCalendar
+    
+    Datey calendar
+
+[33mcommit 452f7d9bbcf14f66bc755333e524144b228a78cf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:50:35 2024 -0500
+
+    update
+
+[33mcommit b0b0d5b1a2df12868214277a34c9ff40816ef02b[m[33m ([m[1;31morigin/DateyCalendar[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:43:42 2024 -0500
+
+    Calcular Fechas
+
+[33mcommit 8c2dba96a90b2d1933e20a669912f7df68155491[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:39:54 2024 -0500
+
+    Comparar fechas
+
+[33mcommit fd301e6451d8485883f4acc2df34a01fa96b98ae[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:35:21 2024 -0500
+
+    Convertir una fecha String a objeto del tipo Date
+
+[33mcommit a90f4f504f657afcf96ed9d2de97b1cb387ede35[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:27:58 2024 -0500
+
+    La Clase Calendar
+
+[33mcommit 2466a716b01c3b0ad967f53356dc8baf76ab7802[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:23:48 2024 -0500
+
+    Tiempo en milisegundos con metodo getTime()
+
+[33mcommit 1f888d12b53baf1028c488ea532214d92d0a28cb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 15:15:20 2024 -0500
+
+    la clase Date y formatos de fechas
+
+[33mcommit a1cf5c77bb4a79cc70ecfaaeec8a60761a1e8526[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:54:58 2024 -0500
+
+    Pasar Argumento por referencia de objeto persona
+
+[33mcommit e4084ca2f279490b534ffcd58c5b959ec9b601c1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:41:49 2024 -0500
+
+    Pasar argumento por referencia
+
+[33mcommit f342d9a44c6d30f4e48dcbc9a2f32f3e7b601fcd[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:38:58 2024 -0500
+
+    Pasar argumento por valor
+
+[33mcommit 832b5cff24025e8984b05c2f1345e751cb67576e[m[33m ([m[1;31morigin/ClasesWrapper[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:33:08 2024 -0500
+
+    El metodo getClass() del objeto para reflexion y metadata
+
+[33mcommit 5b3456b26cde971629ebd0702937503c50824390[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:28:29 2024 -0500
+
+    Clase Wrapper Boolean
+
+[33mcommit 99e69a69119567381c8d6fffa794cbbd70b5339a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:22:14 2024 -0500
+
+    Clases Wrapper numericas y operadores relacionales
+
+[33mcommit b791a4c6680596ed4f630806f54ce528ee753a74[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:16:48 2024 -0500
+
+    Autoboxing y unboxing
+
+[33mcommit cfb3ba4f26db9a801ff25c29d541217398754880[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Sat Aug 3 14:13:30 2024 -0500
+
+    Clase Wrapper Integer
+
+[33mcommit efebc0696a86d28f707dc2d41cfde5d9f2d9ccb1[m
+Merge: 89f2f82 a110c78
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 18:07:48 2024 -0500
+
+    Merge pull request #4 from juliangranda/FlujosDeControl
+    
+    Flujos de control
+
+[33mcommit a110c78edbf1de3dcf3a8880c44ec5b5df5d35e5[m[33m ([m[1;31morigin/FlujosDeControl[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 17:51:38 2024 -0500
+
+    Tarea 8 - Sistemas de notas de alumnos
+
+[33mcommit 6018556343940cb1ac66cc96cd17057d1689dff3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:41:17 2024 -0500
+
+    Tarea 7: Calcular el numero menor de multiples valores
+
+[33mcommit 16d25edbc08556470ea9bf37e3effaa78696b5b0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:24:21 2024 -0500
+
+    Ejemplo buscar con sentencias for anidadas y eqtiquetas
+
+[33mcommit 4f596e530bb7fd608ba84f13c7afe3ec58afa9e4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:20:09 2024 -0500
+
+    Eqiquetas en las sentencias for y while
+
+[33mcommit 5724076a8dc9b6913c9cbb78a1cb87795ad1028f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:14:38 2024 -0500
+
+    Sentencia ForEach
+
+[33mcommit 78f67243fc8180ca2f44628f083b1e03bb653753[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:12:34 2024 -0500
+
+    Flujo de control while y do while
+
+[33mcommit def7e14bf729f32d571de7768c4102bd1c501611[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:09:34 2024 -0500
+
+    Iterando arreglos con sentencia for y palabras reservadas break y continue
+
+[33mcommit 649b6d84b26fd35744e82fc20a93789df53467aa[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 16:00:55 2024 -0500
+
+    Sentencia For
+
+[33mcommit 17e4a48af28113891445db213387fedb1dad4525[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:56:57 2024 -0500
+
+    Switch case Ejemplo numero de dias del mes
+
+[33mcommit 4ac6d0905f7615452d7190cfc7ee76bd9c11a98f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:52:33 2024 -0500
+
+    Sentencia Switch case ejemplo nombre del mes
+
+[33mcommit 5ca4eb5d9fa58aabccdf25041e077c7a6a6d87c4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:51:12 2024 -0500
+
+    Flujo de control Switch case
+
+[33mcommit 23b843011090748653deeef51da83ed0d2ae7a7f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:47:17 2024 -0500
+
+    Flujo de Control IF Else ejemplo año bisiesto
+
+[33mcommit f1382c8986358e261498c753dbfdf096cc3afcc6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:40:27 2024 -0500
+
+    Flujo de Control IF Else
+
+[33mcommit 89f2f82bc244442ffc15c8c6ed24004b1d6d9a89[m
+Merge: c790d0f 1067f10
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:29:41 2024 -0500
+
+    Merge pull request #3 from juliangranda/Operadores
+    
+    Operadores
+
+[33mcommit 1067f10d9a1712d41a29b65b0188d0a4cf6516d3[m[33m ([m[1;31morigin/Operadores[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 15:28:03 2024 -0500
+
+    Tarea 6 - Obtener el nombre mas largo, usando metodo split
+
+[33mcommit 4889b861689ebe09d70cdd4b4231a4bf753048ce[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 14:40:13 2024 -0500
+
+    Tarea 5 - Sistema de Estanque
+
+[33mcommit b611d9f27d4d1542641417dd8da2483c3d6bc12b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 14:30:37 2024 -0500
+
+    Tarea 4 - numero mayor usando Operador Ternario
+
+[33mcommit 4487280a92ae4b34f2c073713ab9f728ca215dcc[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 14:18:52 2024 -0500
+
+    Precedencia de los Operadores - div,mul,res,sum de izq a der
+
+[33mcommit 412059886429ba177ab7c0726d6f4ce810430b84[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 14:11:42 2024 -0500
+
+    Operador InstanceOf con tipos abstractos o genericos
+
+[33mcommit 994ae6c0cea90d92e7b197356859ef1a2912fe1a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 14:09:52 2024 -0500
+
+    Operador InstanceOf - referencia a tipoPrimitivo
+
+[33mcommit 89b5ddac3f6d74286aa1fa148b1db41db54fc40f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 14:04:39 2024 -0500
+
+    Operador Ternario numero mayor
+
+[33mcommit 6fa096905938bfbc36b01828f71f5e937cee6e2a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:59:53 2024 -0500
+
+    Operador Ternario
+
+[33mcommit 8d1a7d2a2204d9e03dff4470aec9d93842424a44[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:53:21 2024 -0500
+
+    Ejemplo login con Operadores Logicos y Arreglos
+
+[33mcommit ffbd794f070e255d77b443bf1044ae6eac2b63d2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:46:55 2024 -0500
+
+    Precedencia en los Operadores Logicos
+
+[33mcommit 352931420895e779a612561fd69a8f5191c76a59[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:44:46 2024 -0500
+
+    Operadores Logicos
+
+[33mcommit 7b6a599ab0f67e7e45a9784c9ba1e1885ba14cc0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:39:02 2024 -0500
+
+    Operadores Relacionales
+
+[33mcommit 4cf1c99f56fd03cd8333382321cc4813d8135921[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:34:12 2024 -0500
+
+    Operadores de Incremento y Decremento
+
+[33mcommit 53d796f38aed4ddf837cd97f7c2ac5368bda511f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:26:25 2024 -0500
+
+    Operadores Unarios
+
+[33mcommit d9a5ca4789dc318529b5676a3ab5b70fb7ac8104[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:22:34 2024 -0500
+
+    Operadores de Asignacion
+
+[33mcommit 3dfc3cd8c33e683601202631eac13cedcf3bc0a9[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Wed Jul 31 13:20:42 2024 -0500
+
+    Operadores Aritmeticos
+
+[33mcommit c790d0f018fa9f9040d2e953ea6db05d4614f747[m
+Merge: 7ecd9e0 dc89753
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 20:01:45 2024 -0500
+
+    Merge pull request #2 from juliangranda/TipoStringCadenas
+    
+    Tipo string cadenas
+
+[33mcommit dc89753437d0abe07e21e4630566f8b97d652381[m[33m ([m[1;31morigin/TipoStringCadenas[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 19:59:11 2024 -0500
+
+    Tarea 3 - Nombres de familiares
+
+[33mcommit f499da9eabad445c59ff1c2fa09aa1ed5f75faaf[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 19:02:43 2024 -0500
+
+    comentario
+
+[33mcommit 412ab9c1be2470db6449e65a5de70f1d95f52a9a[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 19:01:03 2024 -0500
+
+    metodos utiles para convertir un String en un Arreglo
+
+[33mcommit baf881b25d34625a23f66768a25dbc54cb6cf8a1[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 18:45:55 2024 -0500
+
+    Obtener la extension de un archivo
+
+[33mcommit e58e5ac7e756d7382b442b50c4002bbf1ca9c4b4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 18:37:22 2024 -0500
+
+    Metodos importantes del objeto String parte 2
+
+[33mcommit b8ec7af24ce83c8e3c71ce24628e2293896742d6[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 18:31:13 2024 -0500
+
+    Metodos importantes String parte 1
+
+[33mcommit f0370f009663832a115236f1e659218c62136f39[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 18:18:10 2024 -0500
+
+    Validar un string
+
+[33mcommit 6426d45e780297aad7a0bd9912e7385ce401bcd8[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 18:09:49 2024 -0500
+
+    Test rendimiento con operador(+) vs metodo concat() vs StringBuilder
+
+[33mcommit 3ab7fdc1f6e3d6f5cd45fadc420cad29f44435e0[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 18:01:39 2024 -0500
+
+    Inmutabilidad
+
+[33mcommit aeafdadd9f3975cd83d4eb3eb2a7edc0c87e77f7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 17:47:02 2024 -0500
+
+    Concatenando String
+
+[33mcommit 06389de9f0cc563783b8229ea002730f98926975[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 17:37:53 2024 -0500
+
+    crean un objeto String en la literal vs operador new
+
+[33mcommit 7ecd9e07e8e9b23236db40052203ed6862f282be[m
+Merge: b5950cb 83202a4
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 17:05:39 2024 -0500
+
+    Merge pull request #1 from juliangranda/Variables
+    
+    Variables
+
+[33mcommit 83202a488f3c766b8050fe664271de0532f0ef15[m[33m ([m[1;31morigin/Variables[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 17:04:39 2024 -0500
+
+    Tarea2: Detalle de la factura
+
+[33mcommit a19d66d70d39c5e3e697fc4d8a62104de55ba91b[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 16:48:30 2024 -0500
+
+    Conversion entre tipos Primitivos
+
+[33mcommit 643fa028bc8a06b95528efd7b7cb94b53e885aa5[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 16:23:22 2024 -0500
+
+    Conversiones de tipo primitivos a cadenas
+
+[33mcommit 7589a715d46d9b02e686ab76f5cc27d954f6350e[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 16:19:12 2024 -0500
+
+    Conversion de cadenas a primitivos
+
+[33mcommit 84d6edf6bf73ceaab93290b56510f7904a7f32d3[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 16:15:28 2024 -0500
+
+    Sistemas Numericos y entradas de datos desde el terminal
+
+[33mcommit 56df755b60576cb67af088b5601731a370233ff4[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 15:09:51 2024 -0500
+
+    Sistemas numericos y entradas de datos desde la ventana de dialogo
+
+[33mcommit 7a9cd7530132d0bb722ed8ce2bf334370bf973e7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 12:43:42 2024 -0500
+
+    Sistema numerico: decimal,binario,octal,hexadecimal
+
+[33mcommit 747618123aad3b0d38c19e99021dd618090586fb[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 12:42:32 2024 -0500
+
+    Primitivo Boolean o logico Binario
+
+[33mcommit 3b200e9e528fb5c3f85f2bf5e43081fb60316596[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 12:38:47 2024 -0500
+
+    Primitivo char o caracter y caracteres especiales
+
+[33mcommit 2bc20994d836f3e4f8c5e8edd56cdff6386aa766[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 12:34:45 2024 -0500
+
+    Primitivos numericos float y double
+
+[33mcommit 799f850f04bdb06175f846f07451b1bd36ece3f2[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 12:31:30 2024 -0500
+
+    Primitivos numericos enteros
+
+[33mcommit b5950cb1a3a71965a230cd468edf9f523f114d03[m[33m ([m[1;31morigin/ValorPorReferencia[m[33m)[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 12:25:42 2024 -0500
+
+    Introduccion
+
+[33mcommit c346772ebc788751e5b2e18bc5df7ecef30af73f[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 10:34:36 2024 -0500
+
+    Seccion1 - Inicios de Curso de Java
+
+[33mcommit 336517587ac20afb64487a4037df6edbd85700d7[m
+Author: juliangranda <juliangranda@hotmail.com>
+Date:   Tue Jul 30 10:14:33 2024 -0500
+
+    Initial commit

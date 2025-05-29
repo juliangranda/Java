@@ -16,6 +16,9 @@ import jakarta.transaction.Transactional;
  * el ciclo de vida las persiste dentro del contexto,
  * las actualiza,las elimina,puede realizar consultas.
  * las consultas son de JPA.CRUD
+ * @Transactional = gestiona transacciones de bases de datos 
+ * de forma declarativa, asegurando que las operaciones dentro 
+ * de un método se confirmen o reviertan completamente según su éxito o fracaso.
  * */
 @Repository()
 public class ClienteDaoImpl implements IClienteDao {
@@ -24,17 +27,30 @@ public class ClienteDaoImpl implements IClienteDao {
 	private EntityManager em;
 	
 	@SuppressWarnings("uncheked")
-	@Transactional
 	@Override
 	public List<Cliente> findAll() {
-		
 		return em.createQuery("from Cliente").getResultList();
 	}
 
 	@Override
-	@Transactional
+	public Cliente findOne(Long id) {
+		return em.find(Cliente.class, id);
+	}
+	
+	@Override
 	public void save(Cliente cliente) {
-		em.persist(cliente);		
+		if(cliente.getId() != null && cliente.getId() > 0) {
+			em.merge(cliente);
+		}else {
+			em.persist(cliente);
+		}			
+	}
+
+	@Override
+	public void delete(Long id) {
+		//Cliente cliente = findOne(id);
+		//em.remove(cliente);
+		em.remove(findOne(id));
 	}
 
 }

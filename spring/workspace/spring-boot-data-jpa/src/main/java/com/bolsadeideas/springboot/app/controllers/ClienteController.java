@@ -8,27 +8,32 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
-import com.bolsadeideas.springboot.app.models.dao.IClienteDao;
+import com.bolsadeideas.springboot.app.models.dao.service.IClienteService;
 import com.bolsadeideas.springboot.app.models.entity.Cliente;
 
 import jakarta.validation.Valid;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Controller
+@SessionAttributes("cliente")
 public class ClienteController {
 	//@GetMapping
 	@Autowired
-	private IClienteDao clienteDao;
+	private IClienteService clienteService;
 
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
 	public String listar(Model model) {
 		model.addAttribute("titulo", "Listado de clientes");
-		model.addAttribute("clientes", clienteDao.findAll());
+		model.addAttribute("clientes", clienteService.findAll());
 		return "listar";
 	}
 	
@@ -41,17 +46,42 @@ public class ClienteController {
 		return "form";
 	}
 	
+	@RequestMapping(value="/form/{id}")
+	public String editar(@PathVariable(value="id") Long id, Map<String, Object> model) {
+		
+		Cliente cliente = null;
+		
+		if(id > 0) {
+			cliente = clienteService.findOne(id);
+		}else {
+			return "redirect:/listar";
+		}
+		model.put("cliente", cliente);
+		model.put("titulo", "Editar Cliente");
+		return "form";
+	}
+	
 	//cliente en guardar debe de ser el mismo que el de metodo crear u otro nombre.
 	@RequestMapping(value = "/form", method = RequestMethod.POST)
 	public String guardar(@Valid Cliente cliente, BindingResult result, Model model, SessionStatus status) {
+		
 		if(result.hasErrors()) {
 			model.addAttribute("titulo", "Formulario de Cliente");
 			return "form";
 		}
 		
-		clienteDao.save(cliente);
+		clienteService.save(cliente);
 		status.setComplete();
 		return "redirect:listar";
+	}
+	
+	@RequestMapping(value="/eliminar/{id}")
+	public String requestMethodName(@PathVariable(value="id") Long id) {
+		
+		if(id > 0) {
+			clienteService.delete(id);
+		}
+		return "redirect:/listar";
 	}
 	
 }

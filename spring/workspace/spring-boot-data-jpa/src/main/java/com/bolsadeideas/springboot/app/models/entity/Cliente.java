@@ -1,7 +1,11 @@
 package com.bolsadeideas.springboot.app.models.entity;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
+
+import org.antlr.v4.runtime.misc.NotNull;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +14,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+
+/*
+ * temporal es solo para fechas y se encarga de indicar el formato en el que se
+ * guarda la fecha en la BD
+ */
 
 @Entity
 @Table(name = "clientes") // opcional el nombre
@@ -19,19 +31,22 @@ public class Cliente implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@NotEmpty
 	private String nombre;
+	
+	@NotEmpty
 	private String apellido;
+	
+	@NotEmpty
+	@Email
 	private String email;
 
-	/*
-	 * temporal es solo para fechas y se encarga de indicar el formato en el que se
-	 * guarda la fecha en la BD
-	 */
-
+	@Valid //@Past
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date createAt;
-
+	
 	public Long getId() {
 		return id;
 	}

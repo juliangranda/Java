@@ -3,6 +3,9 @@ package com.bolsadeideas.springboot.app.controllers;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -32,9 +35,16 @@ public class ClienteController {
 	private IClienteService clienteService;
 
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
-	public String listar(Model model) {
+	public String listar(@RequestParam(name="page", defaultValue = "0") int page, Model model) {
+		
+		//4 elementos/registros por cada pagina.
+		Pageable pageRequest = PageRequest.of(page, 4);
+		
+		Page<Cliente> clientes = clienteService.findAll(pageRequest);
+		
 		model.addAttribute("titulo", "Listado de clientes");
-		model.addAttribute("clientes", clienteService.findAll());
+		//clientes por la paginacion/pageable
+		model.addAttribute("clientes", clientes);
 		return "listar";
 	}
 	

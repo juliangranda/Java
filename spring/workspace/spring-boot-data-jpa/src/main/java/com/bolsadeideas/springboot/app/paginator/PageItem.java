@@ -4,11 +4,12 @@ public class PageItem {
 
 	private int numero;
 	private boolean actual;
+
 	public PageItem(int numero, boolean actual) {
-		super();
 		this.numero = numero;
 		this.actual = actual;
 	}
+
 	public int getNumero() {
 		return numero;
 	}
@@ -16,4 +17,5 @@ public class PageItem {
 	public boolean isActual() {
 		return actual;
 	}
+
 }

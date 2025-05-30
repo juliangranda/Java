@@ -36,24 +36,25 @@ public class PageRender<T> {
 		paginaActual = page.getNumber() + 1;
 		
 		int desde, hasta;
-		if(totalPaginas <= numElementosPorPagina) {
+		if (totalPaginas <= numElementosPorPagina) {
 			desde = 1;
 			hasta = totalPaginas;
 		}else {
-			if(paginaActual <= numElementosPorPagina/2) {
+			if (paginaActual <= numElementosPorPagina / 2) {
 				desde = 1;
 				hasta = numElementosPorPagina;
-			} else if(paginaActual >= totalPaginas - numElementosPorPagina/2){
+			} else if (paginaActual >= totalPaginas - numElementosPorPagina / 2) {
 				desde = totalPaginas - numElementosPorPagina + 1;
 				hasta = numElementosPorPagina;
 			} else {
-				desde = paginaActual - numElementosPorPagina/2;
+				desde = paginaActual - numElementosPorPagina / 2;
 				hasta = numElementosPorPagina;
-				}
+			}
 		}
 		//paginas que se van a mostrar en el paginador.
 		for(int i=0;i < hasta; i++) {
-			paginas.add(new PageItem(desde + i, paginaActual == desde+1));
+			paginas.add(new PageItem(desde + i, paginaActual == desde + i));
+			
 		}
 		
 	}

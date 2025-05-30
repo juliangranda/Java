@@ -17,6 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.bolsadeideas.springboot.app.models.dao.service.IClienteService;
 import com.bolsadeideas.springboot.app.models.entity.Cliente;
+import com.bolsadeideas.springboot.app.paginator.PageRender;
 
 import jakarta.validation.Valid;
 
@@ -35,17 +36,18 @@ public class ClienteController {
 	private IClienteService clienteService;
 
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
-	public String listar(@RequestParam(name="page", defaultValue = "0") int page, Model model) {
+	public String listar(@RequestParam(name="page", defaultValue="0") int page, Model model) {
 		
 		//4 elementos/registros por cada pagina.
 		Pageable pageRequest = PageRequest.of(page, 4);
 		
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 		
-		
+		// "/listar" url base para el paginador
+		PageRender<Cliente> pageRender = new PageRender<Cliente>("/listar", clientes);
 		model.addAttribute("titulo", "Listado de clientes");
-		//clientes por la paginacion/pageable
 		model.addAttribute("clientes", clientes);
+		model.addAttribute("page", pageRender);
 		return "listar";
 	}
 	

@@ -42,6 +42,7 @@ public class ClienteController {
 		
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 		
+		
 		model.addAttribute("titulo", "Listado de clientes");
 		//clientes por la paginacion/pageable
 		model.addAttribute("clientes", clientes);

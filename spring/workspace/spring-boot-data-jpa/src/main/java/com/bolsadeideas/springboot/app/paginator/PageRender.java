@@ -5,6 +5,10 @@ import java.util.List;
 
 import org.springframework.data.domain.Page;
 
+//se encarga de calcular parametros muy importantes se encarga de calcular como:
+//elementosPorPagina con el size(), numero total paginas y 
+//desde donde hasta donde se va a mostrar(paginas/elementos).
+
 public class PageRender<T> {
 	//paginar lista de productos o clientes.
 	
@@ -47,7 +51,7 @@ public class PageRender<T> {
 				hasta = numElementosPorPagina;
 				}
 		}
-		
+		//paginas que se van a mostrar en el paginador.
 		for(int i=0;i < hasta; i++) {
 			paginas.add(new PageItem(desde + i, paginaActual == desde+1));
 		}
@@ -70,18 +74,22 @@ public class PageRender<T> {
 		return paginas;
 	}
 	
+	//primera pagina
 	public boolean isFirst() {
 		return page.isFirst();
 	}
 	
+	//ultima pagina
 	public boolean isLast() {
 		return page.isLast();
 	}
 	
+	//avanzar de pagina de uno en uno.
 	public boolean isHasNext() {
 		return page.hasNext();
 	}
 	
+	//retroceder de pagina
 	public boolean isHasPrevious() {
 		return page.hasPrevious();
 	}

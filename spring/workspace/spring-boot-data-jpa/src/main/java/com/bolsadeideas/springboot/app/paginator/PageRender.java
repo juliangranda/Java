@@ -32,7 +32,7 @@ public class PageRender<T> {
 		//size declarado en controller
 		numElementosPorPagina = page.getSize();
 		totalPaginas = page.getTotalPages();
-		//pageNumber(9 toma el valor por defecto en controller.
+		//pageNumber(toma el valor por defecto en controller.)
 		paginaActual = page.getNumber() + 1;
 		
 		int desde, hasta;

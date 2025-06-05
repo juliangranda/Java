@@ -11,6 +11,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
+
 @Entity
 @Table(name = "facturas_items")
 public class ItemFactura implements Serializable {
@@ -20,9 +21,9 @@ public class ItemFactura implements Serializable {
 	private Long id;
 
 	private Integer cantidad;
-	
+
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name="producto_id")
+	@JoinColumn(name = "producto_id")
 	private Producto producto;
 
 	public Long getId() {
@@ -44,7 +45,7 @@ public class ItemFactura implements Serializable {
 	public Double calcularImporte() {
 		return cantidad.doubleValue() * producto.getPrecio();
 	}
-	
-	private static final long serialVersionUID = 2910858375045097527L;
+
+	private static final long serialVersionUID = 1L;
 
 }

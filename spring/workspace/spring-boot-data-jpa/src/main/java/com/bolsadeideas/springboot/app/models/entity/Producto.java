@@ -14,26 +14,26 @@ import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
 @Entity
-@Table(name="productos")
-public class Producto implements Serializable{
+@Table(name = "productos")
+public class Producto implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String nombre;
-	
+
 	private Double precio;
-	
+
 	@Temporal(TemporalType.DATE)
-	@Column(name="createAt")
+	@Column(name = "create_at")
 	private Date createAt;
-	
+
 	@PrePersist
 	public void prePersist() {
 		createAt = new Date();
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -64,10 +64,6 @@ public class Producto implements Serializable{
 
 	public void setCreateAt(Date createAt) {
 		this.createAt = createAt;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 
 	private static final long serialVersionUID = 1L;

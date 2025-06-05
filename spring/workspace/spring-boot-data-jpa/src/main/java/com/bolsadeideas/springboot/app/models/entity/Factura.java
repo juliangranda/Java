@@ -34,7 +34,7 @@ public class Factura implements Serializable {
 
 	@Temporal(TemporalType.DATE)
 	@Column(name = "create_at")
-	private Date createAt;
+	private Date create_at;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Cliente cliente;
@@ -49,7 +49,7 @@ public class Factura implements Serializable {
 
 	@PrePersist
 	public void prePersist() {
-		createAt = new Date();
+		create_at = new Date();
 	}
 
 	public Long getId() {
@@ -76,12 +76,12 @@ public class Factura implements Serializable {
 		this.observacion = observacion;
 	}
 
-	public Date getCreateAt() {
-		return createAt;
+	public Date getCreate_at() {
+		return create_at;
 	}
 
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
+	public void setCreate_at(Date create_at) {
+		this.create_at = create_at;
 	}
 
 	public Cliente getCliente() {

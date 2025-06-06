@@ -46,11 +46,11 @@
 				}
 			});
 		});
-		
+		//operaciones para calcular el gran total de la factura.
 		var itemsHelper = {
 				calcularImporte: function(id, precio, cantidad){
 					$("#total_importe_" + id).html(parseInt(precio) * parseInt(cantidad));
-					this.calcularGranTotal();
+					this.calcularGranTotal();//para que vuelva hacer el calculo
 				},
 				hasProducto: function(id){
 					
@@ -76,7 +76,9 @@
 				calcularGranTotal: function(){
 					var total = 0;
 					
+					//el sombrero(^) en id se usa para buscar donde en el span se encuentre todos los id total_importe
 					$('span[id^="total_importe_"]').each(function(){
+						//($(this).html()) = por cada span asigna el valor de html en el total_importe.
 						total += parseInt($(this).html());
 					});
 					

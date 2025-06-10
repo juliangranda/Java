@@ -11,8 +11,13 @@ import org.springframework.security.core.userdetails.User.UserBuilder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.bolsadeideas.springboot.app.auth.handler.LoginSuccessHandler;
+
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
+	
+	@Autowired
+	private LoginSuccessHandler sucessHandler;
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -21,8 +26,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 				// privados en base a roles
 				"/listar").permitAll().antMatchers("/ver/**").hasAnyRole("USER").antMatchers("/uploads/**")
 				.hasAnyRole("USER").antMatchers("/form/**").hasAnyRole("ADMIN").antMatchers("/eliminar/**")
-				.hasAnyRole("ADMIN").antMatchers("/factura/**").hasAnyRole("ADMIN").anyRequest().authenticated().and()
-				.formLogin().loginPage("/login")
+				.hasAnyRole("ADMIN").antMatchers("/factura/**").hasAnyRole("ADMIN").anyRequest().authenticated()
+				.and()
+					.formLogin()
+					.successHandler(sucessHandler)
+						.loginPage("/login")
 				.permitAll()
 				.and()
 				.logout()

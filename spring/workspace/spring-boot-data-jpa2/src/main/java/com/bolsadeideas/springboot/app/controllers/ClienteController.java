@@ -73,7 +73,7 @@ public class ClienteController {
 				.body(recurso);
 	}
 
-	//@PreAuthorize("hasAnyRol('ROLE_USER','ROLE_ADMIN')")
+	//@PreAuthorize("hasAnyRole('ROLE_USER','ROLE_ADMIN')")
 	//@PreAuthorize("hasRole('ROLE_USER')")
 	@Secured("ROLE_USER")
 	@GetMapping(value = "/ver/{id}")

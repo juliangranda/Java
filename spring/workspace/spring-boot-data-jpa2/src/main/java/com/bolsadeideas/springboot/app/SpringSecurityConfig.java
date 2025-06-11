@@ -1,22 +1,15 @@
 package com.bolsadeideas.springboot.app;
 
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.User.UserBuilder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-
 import com.bolsadeideas.springboot.app.auth.handler.LoginSuccessHandler;
+import com.bolsadeideas.springboot.app.models.service.JpaUserDetailService;
 
-//@EnableGlobalMethodSecurity(securedEnabled = true)
 @EnableGlobalMethodSecurity(securedEnabled=true, prePostEnabled=true)
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -24,8 +17,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private LoginSuccessHandler sucessHandler;
 	
-	@Autowired 
-	DataSource dataSource;
+	@Autowired
+	private JpaUserDetailService userDetailService;
 	
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
@@ -35,14 +28,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		// publico uso de antMatchers
 		http.authorizeRequests().antMatchers("/", "/css/**", "/js/**", "/images/**","/listar").permitAll()
 				 //privados en base a roles
-				/*
-				 * .antMatchers("/ver/**").hasAnyRole("USER")
-				 * .antMatchers("/uploads/**").hasAnyRole("USER")
-				 * .antMatchers("/form/**").hasAnyRole("ADMIN")
-				 * .antMatchers("/eliminar/**").hasAnyRole("ADMIN")
-				 * .antMatchers("/factura/**").hasAnyRole("ADMIN")
-				 */
-				 
 				.anyRequest().authenticated()
 				.and()
 					.formLogin()
@@ -56,30 +41,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 				.exceptionHandling().accessDeniedPage("/error_403");
 
 	}
-	
-	/*
-	 * @Bean public static BCryptPasswordEncoder passwordEncoder() { return new
-	 * BCryptPasswordEncoder(); }
-	 */
-
 	@Autowired
 	public void configurerGlobal(AuthenticationManagerBuilder build) throws Exception{
-		
-		//JDBC
-		build.jdbcAuthentication().
-		dataSource(dataSource)
-		.passwordEncoder(passwordEncoder)
-		.usersByUsernameQuery("select  username,password,enabled from users where username=?")
-		.authoritiesByUsernameQuery("select u.username, a.authority from authorities a inner join users u on (a.user_id=u.id) where u.username=?");
-		
-		/*
-		 * PasswordEncoder encoder = this.passwordEncoder; UserBuilder users =
-		 * User.builder().passwordEncoder(encoder::encode);
-		 * 
-		 * builder.inMemoryAuthentication()
-		 * .withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
-		 * .withUser(users.username("andres").password("12345").roles("USER"));
-		 */
+		//JPA
+		build.userDetailsService(userDetailService)
+		.passwordEncoder(passwordEncoder);
 		
 	}
 

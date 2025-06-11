@@ -107,7 +107,9 @@ public class ClienteController {
 			logger.info("Hola ".concat(auth.getName()).concat(" NO tienes acceso!"));
 		}
 
-		//otra manera de authentication con SecurityContextHolderAwareRequestWrapper
+		//otra manera de authentication con SecurityContextHolderAwareRequestWrapper, donde va "" se puede cambiar por ROLE_
+		// y solo se escribiria ADMIN / USER en vez de ROLE_ADMIN pero como es vacio ("") se pone el nobre completo dado 
+		//que pide un prefijo ROLE_ADMIN u otro.
 		SecurityContextHolderAwareRequestWrapper securityContext = new SecurityContextHolderAwareRequestWrapper(request,"");
 
 		if (securityContext.isUserInRole("ROLE_ADMIN")) {

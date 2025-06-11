@@ -22,6 +22,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private LoginSuccessHandler sucessHandler;
 	
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		// publico uso de antMatchers
@@ -49,20 +52,21 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	}
 	
-	@Bean
-	public static BCryptPasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+	/*
+	 * @Bean public static BCryptPasswordEncoder passwordEncoder() { return new
+	 * BCryptPasswordEncoder(); }
+	 */
 
 	@Autowired
-	public void configurerGlobal(AuthenticationManagerBuilder builder) throws Exception {
-
-		PasswordEncoder encoder = passwordEncoder();
+	public void configurerGlobal(AuthenticationManagerBuilder builder) throws Exception{
+		
+		PasswordEncoder encoder = this.passwordEncoder;
 		UserBuilder users = User.builder().passwordEncoder(encoder::encode);
-
-		builder.inMemoryAuthentication().withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
-				.withUser(users.username("andres").password("12345").roles("USER"));
-
+		
+		builder.inMemoryAuthentication()
+		.withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
+		.withUser(users.username("andres").password("12345").roles("USER"));
+		
 	}
 
 

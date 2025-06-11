@@ -1,5 +1,7 @@
 package com.bolsadeideas.springboot.app;
 
+import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +23,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
 	private LoginSuccessHandler sucessHandler;
+	
+	@Autowired 
+	DataSource dataSource;
 	
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
@@ -58,14 +63,23 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	 */
 
 	@Autowired
-	public void configurerGlobal(AuthenticationManagerBuilder builder) throws Exception{
+	public void configurerGlobal(AuthenticationManagerBuilder build) throws Exception{
 		
-		PasswordEncoder encoder = this.passwordEncoder;
-		UserBuilder users = User.builder().passwordEncoder(encoder::encode);
 		
-		builder.inMemoryAuthentication()
-		.withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
-		.withUser(users.username("andres").password("12345").roles("USER"));
+		build.jdbcAuthentication().
+		dataSource(dataSource)
+		.passwordEncoder(passwordEncoder)
+		.usersByUsernameQuery("select  username,password,enabled from users where username=?")
+		.authoritiesByUsernameQuery("select u.username, a.authority from authorities a inner join users u on (a.user_id=u.id) where u.username=?");
+		
+		/*
+		 * PasswordEncoder encoder = this.passwordEncoder; UserBuilder users =
+		 * User.builder().passwordEncoder(encoder::encode);
+		 * 
+		 * builder.inMemoryAuthentication()
+		 * .withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
+		 * .withUser(users.username("andres").password("12345").roles("USER"));
+		 */
 		
 	}
 

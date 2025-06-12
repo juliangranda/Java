@@ -30,7 +30,7 @@
 					</thead>
 					<tbody>
 						<tr th:each="cliente: ${clientes}">
-							<td sec:authorize="hasRole('ROLE_USER')"><a class="btn btn-primary btn-xs"
+							<td sec:authorize="hasAnyRole('ROLE_USER','ROLE_ADMIN')"><a class="btn btn-primary btn-xs"
 								th:href="@{/ver/} + ${cliente.id}" th:text="${cliente.id}"></a></td>
 							<td th:text="${cliente.nombre}"></td>
 							<td th:text="${cliente.apellido}"></td>
